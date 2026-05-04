@@ -4,6 +4,7 @@ import OurPromise from "@/components/sections/OurPromise";
 import FeatureGrid from "@/components/sections/FeatureGrid";
 import Footer from "@/components/layout/Footer";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import QuoteBanner from "@/components/sections/QuoteBanner";
 
 export default function Home() {
     return (
@@ -27,9 +28,14 @@ export default function Home() {
                     <FeatureGrid />
                 </ScrollReveal>
 
+                {/* 5. Banner de Buda */}
+                <ScrollReveal>
+                    <QuoteBanner/>
+                </ScrollReveal>
+
             </div>
 
-            {/* 5. Pie de Página */}
+            {/* 6. Pie de Página */}
             <Footer />
 
         </main>
