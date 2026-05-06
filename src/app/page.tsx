@@ -1,10 +1,10 @@
 import Navbar from "@/components/layout/Navbar";
-import HomeHero from "@/components/sections/HomeHero";
-import OurPromise from "@/components/sections/OurPromise";
-import FeatureGrid from "@/components/sections/FeatureGrid";
+import HomeHero from "@/components/sections/home/HomeHero";
+import OurPromise from "@/components/sections/home/OurPromise";
+import FeatureGrid from "@/components/sections/home/FeatureGrid";
 import Footer from "@/components/layout/Footer";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import QuoteBanner from "@/components/sections/QuoteBanner";
+import QuoteBanner from "@/components/sections/home/QuoteBanner";
 
 export default function Home() {
     return (
