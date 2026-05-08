@@ -16,7 +16,7 @@ export default function HomeHero() {
                     Móviles: Un degradado muy sutil solo en la base para fusionar con la siguiente sección.
                     Desktop (lg): El desvanecimiento elegante de izquierda a derecha.
                 */}
-                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent lg:bg-gradient-to-r lg:from-white lg:via-white/70 lg:to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent lg:bg-gradient-to-r lg:from-white lg:via-white/20 lg:to-transparent"></div>
             </div>
 
             {/* CONTENIDO DEL TEXTO */}

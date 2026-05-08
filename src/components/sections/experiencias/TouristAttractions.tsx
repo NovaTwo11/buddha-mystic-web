@@ -47,63 +47,74 @@ const attractions = [
 
 export default function TouristAttractions() {
     return (
-        <section className="py-20 px-3 sm:px-8 lg:px-16 max-w-[1600px] mx-auto">
-            {/* Cabecera de Sección */}
-            <div className="text-center mb-12 md:mb-16">
-                <h2 className="font-serif font-light text-3xl md:text-4xl text-gray-900 mb-4">
-                    Nuestros <span className="italic font-medium text-[#D4AF37]">Alrededores</span>
+        <section className="py-24 px-4 sm:px-8 lg:px-16 max-w-[1600px] mx-auto bg-[#FAFAFA]">
+            {/* Cabecera de Sección Estilizada */}
+            <div className="text-center mb-16 md:mb-24 max-w-3xl mx-auto">
+                <span className="text-[#00A896] tracking-[0.3em] text-xs font-semibold uppercase mb-4 block">
+                    Nuestra Región
+                </span>
+                <h2 className="font-serif font-light text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+                    Tesoros que <span className="italic font-medium text-[#D4AF37]">aguardan</span> tu llegada
                 </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto font-light leading-relaxed text-sm md:text-base px-4">
-                    Explora los tesoros que la naturaleza y la cultura han dejado cerca de nuestro refugio en Doradal.
+                <p className="text-gray-600 font-light leading-relaxed text-base md:text-lg">
+                    Explora los rincones donde la naturaleza y la cultura antioqueña se entrelazan.
+                    Cada destino es una invitación a despertar los sentidos y expandir tu conexión.
                 </p>
             </div>
 
-            {/* Grid: grid-cols-2 para móviles (horizontalmente de 2 en 2) */}
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
+            {/* Grid Equitativo pero Espectacular:
+                - gap-y-16 da un respiro vertical amplio para acomodar el efecto 3D.
+            */}
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12 md:gap-x-8 md:gap-y-16">
                 {attractions.map((item, index) => (
-                    <div
-                        key={index}
-                        className="group relative rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 bg-white/70 backdrop-blur-md border border-white/50 flex flex-col"
-                    >
-                        {/* Contenedor de Imagen */}
-                        <div className="relative h-40 sm:h-64 overflow-hidden">
+                    <div key={index} className="group flex flex-col">
+
+                        {/* Contenedor de Imagen (Proporción de Retrato Elegante) */}
+                        <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden z-0 shadow-sm">
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000"
+                                className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[10000ms] ease-out"
                             />
-                            {/* Etiqueta de Categoría - Oculta en móviles muy pequeños para evitar ruido visual, o ajustada */}
-                            <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-0.5 md:px-3 md:py-1 rounded-full border border-white/50">
-                                <span className="text-[10px] md:text-xs font-medium tracking-wide text-[#00A896] uppercase">
+
+                            {/* Velo que desaparece al pasar el ratón para dar luz a la imagen */}
+                            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 pointer-events-none" />
+
+                            {/* Etiqueta de Categoría Flotante */}
+                            <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-sm shadow-sm">
+                                <span className="text-[9px] sm:text-xs font-semibold tracking-widest text-[#00A896] uppercase">
                                     {item.category}
                                 </span>
                             </div>
                         </div>
 
-                        {/* Contenido de la Tarjeta */}
-                        <div className="p-4 md:p-8 flex flex-col flex-grow">
-                            <h3 className="font-serif font-light text-lg md:text-2xl text-gray-900 mb-2 md:mb-3 group-hover:text-[#D4AF37] transition-colors duration-300">
+                        {/* El Panel de Cristal Superpuesto (Efecto 3D)
+                            - -mt-10 o -mt-16: Sube el panel para que "muerda" la imagen de arriba.
+                            - mx-3: Le da márgenes laterales para que no toque los bordes de la imagen.
+                        */}
+                        <div className="relative z-10 bg-white/85 backdrop-blur-xl p-5 md:p-8 rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.06)] border border-white/60 -mt-12 mx-3 sm:-mt-16 sm:mx-6 flex-grow flex flex-col group-hover:-translate-y-3 transition-transform duration-500">
+
+                            <h3 className="font-serif font-light text-lg sm:text-2xl text-gray-900 mb-2 sm:mb-3 group-hover:text-[#D4AF37] transition-colors duration-500">
                                 {item.title}
                             </h3>
 
-                            {/* Descripción: Se limita la altura en móvil para mantener la rejilla uniforme */}
-                            <p className="text-gray-600 font-light leading-relaxed mb-4 md:mb-6 text-xs md:text-base line-clamp-3 md:line-clamp-none">
+                            <p className="text-gray-600 font-light text-xs sm:text-sm leading-relaxed line-clamp-3 mb-4 sm:mb-6 flex-grow">
                                 {item.description}
                             </p>
 
-                            {/* Enlace dinámico a la página del atractivo */}
                             <div className="mt-auto">
                                 <Link
                                     href={`/experiencias/${item.slug}`}
-                                    className="inline-flex items-center text-[10px] md:text-sm text-[#00A896] uppercase tracking-widest font-semibold group/btn hover:text-[#D4AF37] transition-colors duration-300"
+                                    className="inline-flex items-center text-[10px] sm:text-xs text-[#00A896] uppercase tracking-[0.2em] font-semibold group-hover:text-[#D4AF37] transition-colors duration-500"
                                 >
                                     Descubrir
-                                    <svg className="w-3 h-3 md:w-4 md:h-4 ml-1.5 md:ml-2 transform group-hover/btn:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                     </svg>
                                 </Link>
                             </div>
                         </div>
+
                     </div>
                 ))}
             </div>
