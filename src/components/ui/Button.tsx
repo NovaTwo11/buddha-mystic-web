@@ -16,8 +16,8 @@ export default function Button({
     const baseStyle = "px-8 py-4 text-xs font-bold tracking-widest uppercase transition-all duration-500 inline-flex justify-center items-center";
 
     const variants = {
-        // Dorado radiante que transiciona a nuestro Aquamarina profundo
-        primary: "bg-buddha-gold text-white shadow-xl shadow-buddha-gold/20 hover:bg-[#00A896] hover:shadow-[#00A896]/20",
+        // Dorado radiante (usando HEX exacto) que transiciona a nuestro Aquamarina profundo
+        primary: "bg-[#D4AF37] text-white shadow-xl shadow-[#D4AF37]/20 hover:bg-[#00A896] hover:shadow-[#00A896]/20",
 
         // Borde sutil que se ilumina con Aquamarina
         outline: "border border-gray-300 text-gray-800 hover:border-[#00A896] hover:text-[#00A896] bg-transparent",

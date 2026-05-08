@@ -1,0 +1,163 @@
+export interface Room {
+    id: number;
+    slug: string;
+    name: string;
+    capacity: string;
+    energy: string;
+    description: string;
+    lowPrice: string;
+    highPrice: string;
+    mainImage: string;
+    gallery: string[];
+    features: string[];
+}
+
+export const rooms: Room[] = [
+    {
+        id: 1,
+        slug: 'individual',
+        name: 'Habitación Individual',
+        capacity: '1 persona',
+        energy: 'Ideal para Introspección',
+        description: 'Un refugio diseñado para el viajero solitario que busca reconectar consigo mismo. Este espacio minimalista ofrece el equilibrio perfecto entre confort y silencio, permitiendo que la mente descanse sin distracciones.',
+        lowPrice: '$150.000',
+        highPrice: '$250.000',
+        mainImage: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1522771731470-ee1dd154e285?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva']
+    },
+    {
+        id: 2,
+        slug: 'pareja',
+        name: 'Habitación Pareja',
+        capacity: '2 personas',
+        energy: 'Refugio de Paz',
+        description: 'Un santuario íntimo creado para fortalecer vínculos y encontrar la serenidad en compañía. Cada detalle, desde la iluminación hasta las texturas, está pensado para inspirar tranquilidad y un descanso profundo a dos almas.',
+        lowPrice: '$150.000',
+        highPrice: '$250.000',
+        mainImage: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva']
+    },
+    {
+        id: 3,
+        slug: 'superior',
+        name: 'Suite Superior',
+        capacity: '2 personas',
+        energy: 'Amplitud y Armonía',
+        description: 'Nuestra Suite Superior eleva la experiencia de descanso con acabados premium y una disposición espacial que invita a la paz profunda. El espacio ideal para una estadía inolvidable, envuelta en lujo sutil.',
+        lowPrice: '$170.000',
+        highPrice: '$270.000',
+        mainImage: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1560067174-c5a3a8f37060?q=80&w=2069&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV 50"', 'Wifi de alta velocidad', 'Baño privado de lujo', 'Nevera ejecutiva']
+    },
+    {
+        id: 4,
+        slug: 'triple',
+        name: 'Habitación Triple',
+        capacity: '3 personas',
+        energy: 'Unión y Confort',
+        description: 'Un espacio diseñado para familias pequeñas o grupos íntimos que buscan compartir momentos de calidad. Sus dimensiones ofrecen la comodidad necesaria para convivir en completa armonía.',
+        lowPrice: '$225.000',
+        highPrice: '$290.000',
+        mainImage: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
+    },
+    {
+        id: 5,
+        slug: 'cuadruple',
+        name: 'Habitación Cuádruple',
+        capacity: '4 personas',
+        energy: 'Espacio Compartido',
+        description: 'Ideal para la familia moderna. Esta habitación ofrece la amplitud necesaria para que cada huésped encuentre su propio rincón de descanso sin perder la calidez y conexión del grupo.',
+        lowPrice: '$280.000',
+        highPrice: '$420.000',
+        mainImage: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
+    },
+    {
+        id: 6,
+        slug: 'sextuple',
+        name: 'Habitación Séxtuple',
+        capacity: '6 personas',
+        energy: 'Familia Extendida',
+        description: 'Un ambiente generoso pensado para acoger grandes familias. Un refugio donde la convivencia y la risa se armonizan con el diseño sutil, limpio y relajante de la esencia Buddha Mystic.',
+        lowPrice: '$480.000',
+        highPrice: '$550.000',
+        mainImage: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1522771731470-ee1dd154e285?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
+    },
+    {
+        id: 7,
+        slug: 'octuple',
+        name: 'Habitación Óctuple',
+        capacity: '8 personas',
+        energy: 'Gran Encuentro',
+        description: 'Diseñada para albergar a grupos extensos en un solo espacio unificado. Sus dimensiones majestuosas aseguran un confort absoluto para todos los integrantes, promoviendo el descanso colectivo.',
+        lowPrice: '$550.000',
+        highPrice: '$720.000',
+        mainImage: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Múltiples baños', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
+    },
+    {
+        id: 8,
+        slug: 'acomodacion-10-pax',
+        name: 'Acomodación 10 pax',
+        capacity: '10 personas',
+        energy: 'Círculo de Luz',
+        description: 'Un santuario colectivo perfecto para retiros y grupos de meditación. Permite la convivencia ininterrumpida y el trabajo espiritual o grupal, manteniendo intacta nuestra promesa de paz.',
+        lowPrice: '$620.000',
+        highPrice: '$900.000',
+        mainImage: 'https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?q=80&w=2232&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?q=80&w=2232&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Múltiples baños privados', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
+    },
+    {
+        id: 9,
+        slug: 'acomodacion-12-pax',
+        name: 'Acomodación 12 pax',
+        capacity: '12 personas',
+        energy: 'Retiro Colectivo',
+        description: 'Nuestra estancia más majestuosa. Un espacio amplio e iluminado que honra el poder de la comunidad. Ideal para retiros holísticos donde el descanso de todos fluye en un solo ambiente.',
+        lowPrice: '$700.000',
+        highPrice: '$1.000.000',
+        mainImage: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop',
+        gallery: [
+            'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop'
+        ],
+        features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Múltiples baños privados', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
+    }
+];

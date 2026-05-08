@@ -5,6 +5,7 @@ import FeatureGrid from "@/components/sections/home/FeatureGrid";
 import Footer from "@/components/layout/Footer";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import QuoteBanner from "@/components/sections/home/QuoteBanner";
+import MonthlyPromotions from "@/components/sections/shared/MonthlyPromotions";
 
 export default function Home() {
     return (
@@ -33,9 +34,14 @@ export default function Home() {
                     <QuoteBanner/>
                 </ScrollReveal>
 
+                {/* 6. Promociones Mensuales */}
+                <ScrollReveal>
+                    <MonthlyPromotions/>
+                </ScrollReveal>
+
             </div>
 
-            {/* 6. Pie de Página */}
+            {/* 7. Pie de Página */}
             <Footer />
 
         </main>
