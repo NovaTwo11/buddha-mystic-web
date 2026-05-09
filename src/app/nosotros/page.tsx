@@ -8,11 +8,9 @@ import Navbar from "@/components/layout/Navbar";
 
 export default function NosotrosPage() {
     return (
-        <main className="bg-white min-h-screen pt-20">
-            <Navbar />
-            <ScrollReveal>
-                <AboutHero />
-            </ScrollReveal>
+        <main className="min-h-screen bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500">
+            <Navbar/>
+            <AboutHero/>
             <ScrollReveal>
                 <OurStory />
             </ScrollReveal>
@@ -22,9 +20,8 @@ export default function NosotrosPage() {
             <ScrollReveal>
                 <OurTeam />
             </ScrollReveal>
-            <ScrollReveal>
-                <Footer />
-            </ScrollReveal>
+
+            <Footer />
         </main>
     );
 }

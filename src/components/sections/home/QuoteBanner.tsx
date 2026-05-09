@@ -1,5 +1,4 @@
 export default function QuoteBanner() {
-    // Definimos los beneficios para mapearlos fácilmente y mantener el código limpio
     const benefits = [
         {
             text: "Mejor Tarifa Garantizada",
@@ -40,36 +39,30 @@ export default function QuoteBanner() {
     ];
 
     return (
-        /* Fondo color marfil/crema ultra claro para la sección */
-        <section className="relative w-full bg-[#FCFBF9] py-20 lg:py-24 overflow-hidden border-t border-gray-100">
+        <section className="relative w-full bg-[#FCFBF9] dark:bg-[#0A0A0A] py-20 lg:py-24 overflow-hidden border-t border-gray-100 dark:border-white/5 transition-colors duration-500">
 
-            {/* LADO IZQUIERDO: Imagen del Buda con degradado
-                En móviles es una marca de agua (opacity-10). En PC es nítida (opacity-100).
-            */}
+            {/* LADO IZQUIERDO: Imagen del Buda con degradado adaptativo */}
             <div className="absolute inset-y-0 left-0 w-full lg:w-[45%] z-0 opacity-10 lg:opacity-100">
                 <img
                     src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1500&auto=format&fit=crop"
                     alt="Rostro de Buda Sereno"
                     className="w-full h-full object-cover object-left"
                 />
-                {/* Este div es la magia: difumina el borde derecho de la imagen hacia el color crema del fondo */}
-                <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-transparent via-[#FCFBF9]/60 to-[#FCFBF9]"></div>
+                {/* Degradado adaptativo: Funde a crema en claro y a negro en oscuro */}
+                <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-transparent via-[#FCFBF9]/60 to-[#FCFBF9] dark:via-[#0A0A0A]/80 dark:to-[#0A0A0A] transition-colors duration-500"></div>
             </div>
 
-            {/* CONTENIDO PRINCIPAL: Cita y Beneficios */}
+            {/* CONTENIDO PRINCIPAL */}
             <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16 flex justify-center lg:justify-end">
 
-                {/* Contenedor derecho para que no pise la cara del Buda en pantallas grandes */}
                 <div className="w-full lg:w-[65%] xl:w-[55%] flex flex-col md:flex-row items-center md:items-start justify-between gap-12 lg:gap-16">
 
-                    {/* Columna Izquierda (Centro visual): Cita del Buda */}
                     <div className="relative flex-1 text-center md:text-left mt-8 md:mt-0">
-                        {/* Comilla Dorada Flotante */}
                         <span className="text-[#D4AF37] text-7xl lg:text-8xl font-serif absolute -top-8 -left-4 md:-top-10 md:-left-12 opacity-80 select-none">
                             &ldquo;
                         </span>
 
-                        <h3 className="text-2xl md:text-3xl font-serif text-gray-900 font-light leading-relaxed mb-6 relative z-10">
+                        <h3 className="text-2xl md:text-3xl font-serif text-gray-900 dark:text-white font-light leading-relaxed mb-6 relative z-10 transition-colors duration-500">
                             La paz viene de adentro.<br className="hidden md:block" /> No la busques afuera.
                         </h3>
 
@@ -78,18 +71,18 @@ export default function QuoteBanner() {
                         </p>
                     </div>
 
-                    {/* Línea Separadora (Vertical en PC, Horizontal en Móviles) */}
-                    <div className="hidden md:block w-px bg-gray-200 self-stretch min-h-[150px]"></div>
-                    <div className="md:hidden h-px w-2/3 bg-gray-200"></div>
+                    {/* Líneas Separadoras adaptadas al modo oscuro */}
+                    <div className="hidden md:block w-px bg-gray-200 dark:bg-gray-800 self-stretch min-h-[150px] transition-colors duration-500"></div>
+                    <div className="md:hidden h-px w-2/3 bg-gray-200 dark:bg-gray-800 transition-colors duration-500"></div>
 
-                    {/* Columna Derecha: Lista de Beneficios */}
+                    {/* Beneficios adaptados */}
                     <div className="flex-1 w-full max-w-sm flex flex-col gap-6">
                         {benefits.map((item, index) => (
                             <div key={index} className="flex items-center gap-4 group cursor-default">
-                                <div className="text-gray-400 group-hover:text-[#00A896] transition-colors duration-300">
+                                <div className="text-gray-400 dark:text-gray-600 group-hover:text-[#00A896] dark:group-hover:text-[#D4AF37] transition-colors duration-300">
                                     {item.icon}
                                 </div>
-                                <span className="text-sm font-light text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                                <span className="text-sm font-light text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
                                     {item.text}
                                 </span>
                             </div>

@@ -6,7 +6,6 @@ export default function OurTeam() {
     const [visibleItems, setVisibleItems] = useState(3);
     const [isTransitioning, setIsTransitioning] = useState(true);
 
-    // Los 5 representantes principales del equipo con sus SVGs únicos
     const baseTeam = [
         {
             role: "Gerente",
@@ -65,13 +64,9 @@ export default function OurTeam() {
         }
     ];
 
-    // Duplicamos el arreglo para crear el efecto de "bucle infinito" sin saltos bruscos
     const team = [...baseTeam, ...baseTeam, ...baseTeam];
-
-    // Iniciamos en el bloque central para poder ir hacia atrás libremente
     const [currentIndex, setCurrentIndex] = useState(baseTeam.length);
 
-    // Ajuste responsivo de elementos visibles
     useEffect(() => {
         const updateVisible = () => {
             if (window.innerWidth < 768) setVisibleItems(1);
@@ -93,7 +88,6 @@ export default function OurTeam() {
         setCurrentIndex((prev) => prev - 1);
     };
 
-    // Lógica mágica que resetea la posición silenciosamente para el efecto infinito
     const handleTransitionEnd = () => {
         if (currentIndex >= baseTeam.length * 2) {
             setIsTransitioning(false);
@@ -104,7 +98,6 @@ export default function OurTeam() {
         }
     };
 
-    // Auto-reproducción del carrusel cada 5 segundos
     useEffect(() => {
         const timer = setInterval(() => {
             nextSlide();
@@ -113,22 +106,21 @@ export default function OurTeam() {
     }, [nextSlide]);
 
     return (
-        <section className="py-24 bg-white overflow-hidden">
+        <section className="py-24 bg-white dark:bg-[#0A0A0A] overflow-hidden transition-colors duration-500">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16">
 
-                {/* Encabezado de la sección */}
+                {/* Encabezado */}
                 <div className="text-center mb-16 relative">
-                    <h2 className="text-3xl md:text-4xl text-gray-900 font-serif font-light mb-4">
+                    <h2 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-serif font-light mb-4 transition-colors duration-500">
                         El <span className="italic font-medium text-[#D4AF37]">Corazón</span> de Buddha Mystic
                     </h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed transition-colors duration-500">
                         Un equipo formado por hombres y mujeres fuertes, con un gran corazón y una admirable vocación de servicio. Juntos, construyen un ambiente de confianza para brindarte siempre lo mejor.
                     </p>
                 </div>
 
                 {/* Carrusel */}
                 <div className="relative mb-24">
-                    {/* Contenedor con overflow hidden, agregamos padding vertical para que el logo SVG no se corte */}
                     <div className="overflow-hidden px-4 -mx-4 pt-8 pb-4">
                         <div
                             className={`flex ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
@@ -136,33 +128,31 @@ export default function OurTeam() {
                             onTransitionEnd={handleTransitionEnd}
                         >
                             {team.map((member, idx) => (
-                                <div
-                                    key={idx}
-                                    className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4"
-                                >
-                                    {/* Tarjeta del Miembro de Equipo */}
-                                    <div className="group relative bg-[#FAFAFA] border border-gray-100 p-4 transition-all duration-500 hover:shadow-xl hover:shadow-[#00A896]/5 h-full flex flex-col mt-4">
+                                <div key={idx} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                                    {/* Tarjeta modo oscuro adaptada */}
+                                    <div className="group relative bg-[#FAFAFA] dark:bg-[#111111] border border-gray-100 dark:border-white/5 p-4 transition-all duration-500 hover:shadow-xl hover:shadow-[#00A896]/5 dark:hover:shadow-[#00A896]/10 h-full flex flex-col mt-4">
 
-                                        {/* Logo SVG Sobresaliente Dinámico */}
-                                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-white border border-gray-100 rounded-full flex items-center justify-center z-20 shadow-sm group-hover:border-[#00A896] transition-colors duration-500">
+                                        {/* Logo central */}
+                                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-white dark:bg-[#1A1A1A] border border-gray-100 dark:border-gray-800 rounded-full flex items-center justify-center z-20 shadow-sm group-hover:border-[#00A896] dark:group-hover:border-[#D4AF37] transition-colors duration-500">
                                             {member.icon}
                                         </div>
 
                                         <div className="aspect-[3/4] w-full overflow-hidden mb-6 relative rounded-sm">
-                                            <div className="absolute inset-0 bg-[#00A896]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
+                                            <div className="absolute inset-0 bg-[#00A896]/10 dark:bg-[#D4AF37]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay" />
                                             <img
                                                 src={member.image}
                                                 alt={member.role}
-                                                className="object-cover w-full h-full grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                                                className="object-cover w-full h-full grayscale-[30%] dark:grayscale-[50%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                                             />
                                         </div>
+
                                         <div className="text-center px-4 pb-4 flex-grow flex flex-col justify-between">
                                             <div>
-                                                <h3 className="text-lg text-gray-900 font-serif font-medium">{member.role}</h3>
-                                                <span className="text-xs text-[#00A896] uppercase tracking-widest block mb-2">{member.name}</span>
+                                                <h3 className="text-lg text-gray-900 dark:text-white font-serif font-medium transition-colors duration-500">{member.role}</h3>
+                                                <span className="text-xs text-[#00A896] dark:text-[#D4AF37] uppercase tracking-widest block mb-2 transition-colors duration-500">{member.name}</span>
                                                 <div className="w-8 h-[1px] bg-[#D4AF37] mx-auto mb-4 opacity-50 transition-all duration-500 group-hover:w-16 group-hover:opacity-100" />
                                             </div>
-                                            <p className="text-sm text-gray-600 italic font-light">
+                                            <p className="text-sm text-gray-600 dark:text-gray-400 italic font-light transition-colors duration-500">
                                                 &quot;{member.desc}&quot;
                                             </p>
                                         </div>
@@ -172,11 +162,11 @@ export default function OurTeam() {
                         </div>
                     </div>
 
-                    {/* Controles del Carrusel */}
+                    {/* Controles */}
                     <button
                         onClick={prevSlide}
-                        className="absolute top-[35%] -left-2 md:-left-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white border border-gray-200 rounded-full text-gray-400 hover:text-[#D4AF37] hover:border-[#D4AF37] hover:shadow-lg transition-all z-20"
-                        aria-label="Anterior miembro del equipo"
+                        className="absolute top-[35%] -left-2 md:-left-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white dark:bg-[#111111] border border-gray-200 dark:border-gray-800 rounded-full text-gray-400 dark:text-gray-500 hover:text-[#D4AF37] dark:hover:text-[#D4AF37] hover:border-[#D4AF37] dark:hover:border-[#D4AF37] hover:shadow-lg transition-all z-20"
+                        aria-label="Anterior"
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -184,8 +174,8 @@ export default function OurTeam() {
                     </button>
                     <button
                         onClick={nextSlide}
-                        className="absolute top-[35%] -right-2 md:-right-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white border border-gray-200 rounded-full text-gray-400 hover:text-[#D4AF37] hover:border-[#D4AF37] hover:shadow-lg transition-all z-20"
-                        aria-label="Siguiente miembro del equipo"
+                        className="absolute top-[35%] -right-2 md:-right-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white dark:bg-[#111111] border border-gray-200 dark:border-gray-800 rounded-full text-gray-400 dark:text-gray-500 hover:text-[#D4AF37] dark:hover:text-[#D4AF37] hover:border-[#D4AF37] dark:hover:border-[#D4AF37] hover:shadow-lg transition-all z-20"
+                        aria-label="Siguiente"
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -193,24 +183,24 @@ export default function OurTeam() {
                     </button>
                 </div>
 
-                {/* Sección Fotografía Equipo Completo */}
-                <div className="relative w-full rounded-sm overflow-hidden group flex flex-col md:block">
+                {/* Banner de Familia */}
+                <div className="relative w-full rounded-sm overflow-hidden group flex flex-col md:block shadow-lg dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                     <div className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-[21/9] overflow-hidden rounded-t-sm md:rounded-sm">
                         <img
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop"
                             alt="Todo el equipo de Buddha Mystic"
                             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-1000"
                         />
-                        <div className="hidden md:block absolute inset-0 bg-black/20" />
+                        <div className="hidden md:block absolute inset-0 bg-black/20 dark:bg-black/50 transition-colors duration-500" />
                     </div>
 
-                    <div className="w-full md:absolute md:bottom-0 md:left-0 md:p-12 flex justify-center bg-[#FAFAFA] md:bg-transparent p-6 sm:p-8">
-                        <div className="bg-white md:bg-white/80 md:backdrop-blur-md border border-gray-100 md:border-white/50 px-6 py-8 md:px-8 md:py-6 text-center max-w-2xl rounded-b-sm md:rounded-sm shadow-sm md:shadow-lg w-full transition-all duration-500">
-                            <h3 className="text-2xl md:text-3xl text-gray-900 font-serif font-light mb-2">
-                                La <span className="italic font-medium text-[#00A896]">Familia</span> Buddha Mystic
+                    <div className="w-full md:absolute md:bottom-0 md:left-0 md:p-12 flex justify-center bg-[#FAFAFA] dark:bg-[#111111] md:bg-transparent md:dark:bg-transparent p-6 sm:p-8 transition-colors duration-500">
+                        <div className="bg-white dark:bg-[#1A1A1A] md:bg-white/80 md:dark:bg-[#111111]/80 backdrop-blur-md border border-gray-100 dark:border-gray-800 md:border-white/50 md:dark:border-white/10 px-6 py-8 md:px-8 md:py-6 text-center max-w-2xl rounded-b-sm md:rounded-sm shadow-sm md:shadow-lg w-full transition-all duration-500">
+                            <h3 className="text-2xl md:text-3xl text-gray-900 dark:text-white font-serif font-light mb-2 transition-colors duration-500">
+                                La <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">Familia</span> Buddha Mystic
                             </h3>
-                            <p className="text-gray-600 font-light text-sm md:text-base">
-                                Detrás de cada detalle hay un equipo completo de personas maravillosas que asumen su labor con amor y responsabilidad. Todos somos parte de tu experiencia.
+                            <p className="text-gray-600 dark:text-gray-300 font-light text-sm md:text-base transition-colors duration-500">
+                                Detrás de cada detalle hay un equipo de personas maravillosas que asumen su labor con amor y responsabilidad. Todos somos parte de tu experiencia.
                             </p>
                         </div>
                     </div>

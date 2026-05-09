@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 export default function FeatureGrid() {
-    // Definimos la información usando SVGs elegantes en lugar de emojis
     const features = [
         {
             id: 1,
@@ -14,7 +13,7 @@ export default function FeatureGrid() {
             ),
             title: "HABITACIONES Y SUITES",
             subtitle: "Santuario de Descanso",
-            description: "Espacios confortables diseñados para el descanso profundo y la reconexión contigo mismo.",
+            description: "Espacios confortables, diseñados con una estética armoniosa para garantizarte un descanso profundo tras un día de aventura.",
             image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop",
             link: "/alojamiento"
         },
@@ -29,8 +28,8 @@ export default function FeatureGrid() {
                 </svg>
             ),
             title: "RESTAURANTE MÁNDALAS",
-            subtitle: "Nutrición Consciente",
-            description: "Comida tradicional contemporánea que reúne una mezcla de sabores, desde platos antioqueños hasta preparaciones asiáticas.",
+            subtitle: "Explosión de Sabores",
+            description: "Comida tradicional contemporánea que reúne una exótica mezcla, desde platos antioqueños hasta preparaciones asiáticas.",
             image: "https://images.unsplash.com/photo-1544025162-8a15fd996530?q=80&w=1000&auto=format&fit=crop",
             link: "/restaurante"
         },
@@ -43,16 +42,16 @@ export default function FeatureGrid() {
                 </svg>
             ),
             title: "EXPERIENCIAS",
-            subtitle: "Aventura y Serenidad",
-            description: "Desde la tranquilidad de la Reserva Río Claro hasta la aventura del Parque Temático Hacienda Nápoles y los recorridos en Buggies.",
+            subtitle: "Naturaleza y Aventura",
+            description: "Descubre los atractivos turísticos de la región, desde la maravilla del Río Claro hasta el Parque Temático Hacienda Nápoles.",
             image: "https://images.unsplash.com/photo-1533692328991-08159ff19fca?q=80&w=1000&auto=format&fit=crop",
             link: "/experiencias"
         }
     ];
 
     return (
-        /* Fondo ligeramente gris/crema para que el borde blanco de las tarjetas haga contraste */
-        <section className="py-32 bg-gray-50 relative">
+        /* Modo Oscuro: El fondo pasa a un #0A0A0A (Navy) y los textos se adaptan */
+        <section className="py-32 bg-gray-50 dark:bg-[#0A0A0A] relative transition-colors duration-500">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 
                 {/* Título de la sección */}
@@ -60,11 +59,11 @@ export default function FeatureGrid() {
                     <p className="text-[#00A896] text-xs font-bold tracking-[0.4em] mb-4 uppercase">
                         Vive la Experiencia
                     </p>
-                    <h2 className="text-4xl md:text-5xl font-serif text-gray-900 font-light mb-8">
-                        Estancia, Sabor y <span className="italic text-[#D4AF37] font-medium normal-case">Serenidad</span>
+                    <h2 className="text-4xl md:text-5xl font-serif text-gray-900 dark:text-white font-light mb-8 transition-colors duration-500">
+                        Estancia, Sabor y <span className="italic text-[#D4AF37] font-medium normal-case">Confort</span>
                     </h2>
 
-                    {/* Separador elegante con SVG en lugar de Emoji */}
+                    {/* Separador elegante */}
                     <div className="flex justify-center items-center opacity-70">
                         <div className="h-[1px] w-16 bg-gradient-to-r from-transparent to-[#D4AF37]"></div>
                         <span className="mx-6 text-[#D4AF37]">
@@ -84,8 +83,8 @@ export default function FeatureGrid() {
                     {features.map((feature) => (
                         <div
                             key={feature.id}
-                            /* Contenedor principal de la tarjeta: Padding grueso para simular el marco blanco, y sombra suave abajo */
-                            className="group relative bg-white rounded-3xl p-3 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_40px_-15px_rgba(0,168,150,0.2)] transition-all duration-500 flex flex-col"
+                            /* Contenedor de tarjeta para modo oscuro */
+                            className="group relative bg-white dark:bg-[#111111] rounded-3xl p-3 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-15px_rgba(0,168,150,0.2)] transition-all duration-500 flex flex-col"
                         >
                             {/* Imagen de fondo de la tarjeta */}
                             <div className="relative h-72 rounded-2xl overflow-hidden">
@@ -97,11 +96,11 @@ export default function FeatureGrid() {
                                 <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
                             </div>
 
-                            {/* Contenido de la tarjeta (Texto alineado al centro) */}
+                            {/* Contenido de la tarjeta */}
                             <div className="relative pt-14 pb-8 px-6 flex flex-col flex-grow items-center text-center">
 
-                                {/* Ícono Flotante Sobresaliendo (Con borde blanco grueso para el recorte) */}
-                                <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-white rounded-full flex items-center justify-center border-[8px] border-white shadow-sm text-[#00A896] group-hover:text-[#D4AF37] transition-colors duration-500">
+                                {/* Ícono Flotante Adaptado para modo oscuro (Bordes y fondos) */}
+                                <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 bg-white dark:bg-[#111111] rounded-full flex items-center justify-center border-[8px] border-white dark:border-[#111111] shadow-sm text-[#00A896] group-hover:text-[#D4AF37] transition-all duration-500">
                                     {feature.icon}
                                 </div>
 
@@ -109,11 +108,11 @@ export default function FeatureGrid() {
                                     {feature.title}
                                 </h4>
 
-                                <h3 className="text-2xl font-serif text-gray-900 mb-4 font-light">
+                                <h3 className="text-2xl font-serif text-gray-900 dark:text-white mb-4 font-light transition-colors duration-500">
                                     {feature.subtitle}
                                 </h3>
 
-                                <p className="text-base text-gray-600 font-light mb-10 flex-grow leading-relaxed">
+                                <p className="text-base text-gray-600 dark:text-gray-400 font-light mb-10 flex-grow leading-relaxed transition-colors duration-500">
                                     {feature.description}
                                 </p>
 

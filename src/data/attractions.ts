@@ -19,9 +19,9 @@ export const attractionsData = {
             "Parque Jurásico"
         ]
     },
-    "la-aldea": {
-        title: "La Aldea",
-        category: "El Santorini Colombiano",
+    "santorini": {
+        title: "El Santorini Colombiano",
+        category: "La Aldea",
         tagline: "El Mediterráneo en el corazón de Antioquia",
         description: "Un fascinante laberinto de fachadas inmaculadamente blancas y puertas azules que capturan la luz del sol de Doradal, creando una atmósfera mágica de paz que evoca las costas griegas.",
         history: "Esta hermosa urbanización, abierta al público, nació como un capricho arquitectónico inspirado en las islas Cícladas de Grecia. Con el tiempo, se ha convertido en el icono visual de la región, ofreciendo rincones altamente fotogénicos y una serenidad única para quienes recorren sus callejones.",

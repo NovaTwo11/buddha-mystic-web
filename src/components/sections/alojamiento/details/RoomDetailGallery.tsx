@@ -10,23 +10,28 @@ interface RoomDetailGalleryProps {
 export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [mounted, setMounted] = useState(false);
 
-    // Aseguramos que el portal solo se intente renderizar en el cliente (Next.js)
+    // SOLUCIÓN ERROR 2: Mutaciones externas al DOM (body.overflow) aisladas en un useEffect
     useEffect(() => {
-        setMounted(true);
-        return () => setMounted(false);
-    }, []);
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+
+        // Limpieza de seguridad al desmontar
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
 
     const openLightbox = (index: number) => {
         setCurrentIndex(index);
         setIsOpen(true);
-        document.body.style.overflow = 'hidden';
     };
 
     const closeLightbox = () => {
         setIsOpen(false);
-        document.body.style.overflow = 'auto';
     };
 
     const nextImage = useCallback((e?: React.MouseEvent) => {
@@ -53,14 +58,14 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
     if (!images || images.length === 0) return null;
 
     return (
-        <section className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16 pb-24">
-            {/* Encabezado de la Galería */}
+        <section className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16 pb-24 transition-colors duration-500">
+            {/* Encabezado */}
             <div className="flex flex-col items-center mb-12">
-                <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase mb-4 block">
-                    Visualiza tu Descanso
+                <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase mb-4 block text-center">
+                    Visualiza tu Estadía
                 </span>
-                <h3 className="text-3xl md:text-4xl text-gray-900 font-serif font-light italic">
-                    Rincones de Serenidad
+                <h3 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-serif font-light italic transition-colors duration-500 text-center">
+                    Rincones de Confort
                 </h3>
                 <div className="w-12 h-px bg-[#00A896] mt-6" />
             </div>
@@ -74,7 +79,7 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         <div
                             key={index}
                             onClick={() => openLightbox(index)}
-                            className={`relative overflow-hidden group bg-gray-100 shadow-sm cursor-pointer
+                            className={`relative overflow-hidden group bg-gray-100 dark:bg-[#111111] shadow-sm cursor-pointer transition-colors duration-500
                                 ${isFeatured ? 'md:col-span-2 h-[40vh] md:h-[60vh]' : 'col-span-1 h-[40vh] md:h-[50vh]'}
                             `}
                         >
@@ -94,13 +99,12 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                 })}
             </div>
 
-            {/* LIGHTBOX CON PORTAL (Solución al error de posicionamiento) */}
-            {isOpen && mounted && createPortal(
+            {/* LIGHTBOX CON PORTAL (Solución al Error 1: Removido el estado mounted) */}
+            {isOpen && typeof document !== 'undefined' && createPortal(
                 <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl transition-opacity duration-500"
                     onClick={closeLightbox}
                 >
-                    {/* Botón Cerrar */}
                     <button
                         onClick={closeLightbox}
                         className="absolute top-6 right-6 md:top-10 md:right-10 text-white/50 hover:text-[#D4AF37] transition-colors duration-300 z-[110] p-2"
@@ -110,12 +114,10 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         </svg>
                     </button>
 
-                    {/* Contador Editorial */}
                     <div className="absolute top-8 left-1/2 -translate-x-1/2 text-white/50 font-light tracking-[0.3em] text-xs uppercase z-[110]">
                         {currentIndex + 1} <span className="text-[#D4AF37] mx-2">/</span> {images.length}
                     </div>
 
-                    {/* Controles de Navegación */}
                     {images.length > 1 && (
                         <>
                             <button
@@ -138,7 +140,6 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         </>
                     )}
 
-                    {/* Imagen Principal */}
                     <div
                         className="relative w-full h-full max-w-7xl max-h-[85vh] flex items-center justify-center px-12 md:px-24"
                         onClick={(e) => e.stopPropagation()}
@@ -150,7 +151,7 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         />
                     </div>
                 </div>,
-                document.body // Aquí es donde ocurre la magia: se inyecta al final del body
+                document.body
             )}
         </section>
     );

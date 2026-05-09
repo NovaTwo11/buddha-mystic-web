@@ -15,14 +15,12 @@ export const metadata: Metadata = {
 
 export default function AlojamientoPage() {
     return (
-        <main className="min-h-screen bg-[#FAFAFA] flex flex-col w-full relative">
+        <main className="min-h-screen bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500">
 
             <Navbar/>
 
             <div className="w-full">
-                <ScrollReveal>
-                    <RoomsHero/>
-                </ScrollReveal>
+                <RoomsHero/>
             </div>
 
             <div className="w-full">
@@ -50,9 +48,7 @@ export default function AlojamientoPage() {
             </div>
 
             <div className="w-full overflow-hidden">
-                <ScrollReveal>
-                    <Footer/>
-                </ScrollReveal>
+                <Footer/>
             </div>
         </main>
     );

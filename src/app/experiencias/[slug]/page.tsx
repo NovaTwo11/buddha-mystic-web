@@ -21,9 +21,8 @@ export default async function AttractionDetailPage({ params }: PageProps) {
     }
 
     return (
-        <main className="min-h-screen bg-[#FAFAFA]">
+        <main className="min-h-screen bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500">
             <Navbar/>
-
 
             <DetailHero
                 title={attraction.title}

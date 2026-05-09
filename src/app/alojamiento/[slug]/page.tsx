@@ -14,11 +14,11 @@ export default async function RoomPage({ params }: { params: Promise<{ slug: str
     if (!room) notFound();
 
     return (
-        <main className="min-h-screen bg-[#FAFAFA]">
+        <main className="min-h-screen bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500">
             <Navbar/>
-            <RoomDetailHero room={room} />
+            <RoomDetailHero room={room}/>
             <ScrollReveal>
-                <RoomDetailContent room={room} />
+            <RoomDetailContent room={room} />
             </ScrollReveal>
             <ScrollReveal>
                 <RoomDetailGallery images={room.gallery} />

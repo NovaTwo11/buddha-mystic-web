@@ -9,9 +9,9 @@ const attractions = [
         image: "https://images.unsplash.com/photo-1574870111867-089730e5a72b?q=80&w=800&auto=format&fit=crop",
     },
     {
-        title: "La Aldea",
-        slug: "la-aldea",
-        category: "El Santorini Colombiano",
+        title: "Santorini Colombiano",
+        slug: "santorini",
+        category: "Arquitectura Mágica",
         description: "Recorre calles empedradas y fachadas blancas que evocan el mediterráneo, enclavadas en la majestuosidad de la geografía antioqueña.",
         image: "https://images.unsplash.com/photo-1516483638261-f40af5edca87?q=80&w=800&auto=format&fit=crop",
     },
@@ -47,65 +47,60 @@ const attractions = [
 
 export default function TouristAttractions() {
     return (
-        <section className="py-24 px-4 sm:px-8 lg:px-16 max-w-[1600px] mx-auto bg-[#FAFAFA]">
+        <section className="py-24 px-4 sm:px-8 lg:px-16 max-w-[1600px] mx-auto bg-[#FAFAFA] dark:bg-[#0A0A0A] transition-colors duration-500">
             {/* Cabecera de Sección Estilizada */}
             <div className="text-center mb-16 md:mb-24 max-w-3xl mx-auto">
                 <span className="text-[#00A896] tracking-[0.3em] text-xs font-semibold uppercase mb-4 block">
                     Nuestra Región
                 </span>
-                <h2 className="font-serif font-light text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+                <h2 className="font-serif font-light text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-500">
                     Tesoros que <span className="italic font-medium text-[#D4AF37]">aguardan</span> tu llegada
                 </h2>
-                <p className="text-gray-600 font-light leading-relaxed text-base md:text-lg">
-                    Explora los rincones donde la naturaleza y la cultura antioqueña se entrelazan.
-                    Cada destino es una invitación a despertar los sentidos y expandir tu conexión.
+                <p className="text-gray-600 dark:text-gray-400 font-light leading-relaxed text-base md:text-lg transition-colors duration-500">
+                    Explora los rincones donde la imponente naturaleza y la cultura antioqueña se entrelazan.
+                    Cada destino es una invitación a vivir aventuras inolvidables y descubrir la belleza de nuestro entorno.
                 </p>
             </div>
 
-            {/* Grid Equitativo pero Espectacular:
-                - gap-y-16 da un respiro vertical amplio para acomodar el efecto 3D.
-            */}
+            {/* Grid Equitativo pero Espectacular */}
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12 md:gap-x-8 md:gap-y-16">
                 {attractions.map((item, index) => (
                     <div key={index} className="group flex flex-col">
 
-                        {/* Contenedor de Imagen (Proporción de Retrato Elegante) */}
-                        <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden z-0 shadow-sm">
+                        {/* Contenedor de Imagen */}
+                        <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden z-0 shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
                             <img
                                 src={item.image}
                                 alt={item.title}
                                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[10000ms] ease-out"
                             />
 
-                            {/* Velo que desaparece al pasar el ratón para dar luz a la imagen */}
-                            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 pointer-events-none" />
+                            {/* Velo adaptativo */}
+                            <div className="absolute inset-0 bg-black/10 dark:bg-black/30 group-hover:bg-transparent dark:group-hover:bg-black/10 transition-colors duration-700 pointer-events-none" />
 
                             {/* Etiqueta de Categoría Flotante */}
-                            <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-sm shadow-sm">
-                                <span className="text-[9px] sm:text-xs font-semibold tracking-widest text-[#00A896] uppercase">
+                            <div className="absolute top-4 left-4 bg-white/90 dark:bg-[#1A1A1A]/90 backdrop-blur-sm border border-transparent dark:border-white/10 px-3 py-1.5 rounded-sm shadow-sm transition-colors duration-500">
+                                <span className="text-[9px] sm:text-xs font-semibold tracking-widest text-[#00A896] dark:text-[#D4AF37] uppercase transition-colors duration-500">
                                     {item.category}
                                 </span>
                             </div>
                         </div>
 
-                        {/* El Panel de Cristal Superpuesto (Efecto 3D)
-                            - -mt-10 o -mt-16: Sube el panel para que "muerda" la imagen de arriba.
-                            - mx-3: Le da márgenes laterales para que no toque los bordes de la imagen.
-                        */}
-                        <div className="relative z-10 bg-white/85 backdrop-blur-xl p-5 md:p-8 rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.06)] border border-white/60 -mt-12 mx-3 sm:-mt-16 sm:mx-6 flex-grow flex flex-col group-hover:-translate-y-3 transition-transform duration-500">
+                        {/* El Panel de Cristal Superpuesto */}
+                        <div className="relative z-10 bg-white/85 dark:bg-[#111111]/85 backdrop-blur-xl p-5 md:p-8 rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.06)] dark:shadow-[0_15px_35px_rgba(0,0,0,0.5)] border border-white/60 dark:border-white/10 -mt-12 mx-3 sm:-mt-16 sm:mx-6 flex-grow flex flex-col group-hover:-translate-y-3 transition-all duration-500">
 
-                            <h3 className="font-serif font-light text-lg sm:text-2xl text-gray-900 mb-2 sm:mb-3 group-hover:text-[#D4AF37] transition-colors duration-500">
+                            <h3 className="font-serif font-light text-lg sm:text-2xl text-gray-900 dark:text-white mb-2 sm:mb-3 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors duration-500">
                                 {item.title}
                             </h3>
 
-                            <p className="text-gray-600 font-light text-xs sm:text-sm leading-relaxed line-clamp-3 mb-4 sm:mb-6 flex-grow">
+                            <p className="text-gray-600 dark:text-gray-400 font-light text-xs sm:text-sm leading-relaxed line-clamp-3 mb-4 sm:mb-6 flex-grow transition-colors duration-500">
                                 {item.description}
                             </p>
 
                             <div className="mt-auto">
                                 <Link
                                     href={`/experiencias/${item.slug}`}
-                                    className="inline-flex items-center text-[10px] sm:text-xs text-[#00A896] uppercase tracking-[0.2em] font-semibold group-hover:text-[#D4AF37] transition-colors duration-500"
+                                    className="inline-flex items-center text-[10px] sm:text-xs text-[#00A896] dark:text-[#D4AF37] uppercase tracking-[0.2em] font-semibold group-hover:text-[#D4AF37] dark:group-hover:text-[#00A896] transition-colors duration-500"
                                 >
                                     Descubrir
                                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
