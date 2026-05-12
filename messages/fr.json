@@ -1,0 +1,487 @@
+{
+  "Navbar": {
+    "nav_home": "Accueil",
+    "nav_about": "Essence",
+    "nav_rooms": "Chambres",
+    "nav_restaurant": "Restaurant",
+    "nav_experiences": "Expériences",
+    "whatsapp_msg": "Namasté. Je souhaite recevoir des conseils personnalisés pour mon séjour à Buddha Mystic.",
+    "book_now": "RÉSERVER",
+    "book_now_mobile": "RÉSERVER MAINTENANT",
+    "light_mode": "Mode Clair",
+    "dark_mode": "Mode Sombre"
+  },
+  "Footer": {
+    "description": "Une expérience qui transcende. L'endroit parfait pour votre repos physique et mental. Nous vous attendons avec impatience.",
+    "navigation_title": "Navigation",
+    "nav_about": "Notre Histoire",
+    "nav_rooms": "Hébergement et Tarifs",
+    "nav_restaurant": "Restaurant Mandalas",
+    "nav_experiences": "Expériences et Environs",
+    "contact_title": "Contact",
+    "connect_title": "Connectez-vous",
+    "policies": "Politiques et Conditions",
+    "rights": "Tous droits réservés.",
+    "designed_for": "Conçu pour inspirer la tranquillité."
+  },
+  "HomeHero": {
+    "subtitle": "Une expérience qui transcende",
+    "title_p1": "Découvrez un",
+    "title_highlight": "refuge",
+    "title_p2": "exceptionnel.",
+    "description": "Un lieu où le temps semble s'arrêter. Profitez d'une atmosphère inspirée de l'esthétique orientale, conçue pour offrir un confort maximal et un repos inoubliable.",
+    "book_now": "RÉSERVER MAINTENANT",
+    "discover_more": "DÉCOUVRIR PLUS"
+  },
+  "OurPromise": {
+    "badge_line1": "Notre",
+    "badge_line2": "Promesse",
+    "subtitle": "L'essence de notre service",
+    "title_p1": "Notre",
+    "title_highlight": "Promesse",
+    "main_text": "Nous travaillons chaque jour pour transformer votre séjour en une expérience mémorable, alliant un confort exceptionnel, un service impeccable et une esthétique captivante.",
+    "secondary_text": "Notre objectif est d'offrir bien plus qu'un simple hébergement : nous cherchons à créer un refuge où le temps semble s'arrêter, permettant à nos clients de se déconnecter de la routine et de profiter d'un repos vraiment réparateur à Doradal.",
+    "pillar_1": "Confort",
+    "pillar_2": "Service",
+    "pillar_3": "Repos"
+  },
+  "FeatureGrid": {
+    "badge": "Vivez l'Expérience",
+    "title_p1": "Séjour, Saveur et",
+    "title_highlight": "Confort",
+    "rooms_title": "CHAMBRES ET SUITES",
+    "rooms_subtitle": "Sanctuaire de Repos",
+    "rooms_desc": "Des espaces confortables, conçus avec une esthétique harmonieuse pour vous garantir un repos profond après une journée d'aventure.",
+    "restaurant_title": "RESTAURANT MANDALAS",
+    "restaurant_subtitle": "Explosion de Saveurs",
+    "restaurant_desc": "Cuisine traditionnelle contemporaine réunissant un mélange exotique, des plats d'Antioquia aux préparations asiatiques.",
+    "experiences_title": "EXPÉRIENCES",
+    "experiences_subtitle": "Nature et Aventure",
+    "experiences_desc": "Découvrez les attractions touristiques de la région, de la merveille du Río Claro au parc à thème Hacienda Nápoles.",
+    "explore": "EXPLORER"
+  },
+  "QuoteBanner": {
+    "benefit_1": "Meilleur Tarif Garanti",
+    "benefit_2": "Réservation Sécurisée",
+    "benefit_3": "Attention Personnalisée",
+    "benefit_4": "Expériences Uniques",
+    "quote_line1": "La paix vient de l'intérieur.",
+    "quote_line2": "Ne la cherchez pas à l'extérieur.",
+    "author": "BOUDDHA"
+  },
+  "MonthlyPromotions": {
+    "whatsapp_msg": "Bonjour. Je souhaite connaître les promotions spéciales de ce mois pour séjourner à Buddha Mystic.",
+    "title_p1": "Découvrez la Magie de",
+    "title_highlight": "ce Mois",
+    "description": "Chaque mois apporte de nouvelles opportunités pour échapper à la routine et se détendre. Laissez-nous vous surprendre avec nos attentions spéciales, notre charmante esthétique et nos tarifs saisonniers exclusifs.",
+    "button": "Consulter les Promotions"
+  },
+  "AboutHero": {
+    "alt_img": "Esthétique et confort au Buddha Mystic",
+    "badge": "Notre Identité",
+    "title_p1": "Notre",
+    "title_highlight": "Essence",
+    "description": "Un espace méticuleusement conçu où le temps semble s'arrêter. Au Buddha Mystic, nous avons créé le refuge parfait pour échapper à la routine et profiter d'un repos incomparable, entouré d'une esthétique captivante."
+  },
+  "OurStory": {
+    "alt_img": "Esthétique au Buddha Mystic",
+    "badge": "L'Origine",
+    "title_p1": "Un Rêve",
+    "title_highlight": "Révélateur",
+    "p1": "L'Hôtel Buddha Mystic est né d'un concept esthétique inspiré de l'harmonie et de la beauté de la culture orientale. Notre identité, cependant, découle d'une anecdote très spéciale.",
+    "p2": "Son fondateur a fait un rêve dans lequel deux imposantes statues de Bouddha lui apparaissaient, lui indiquant que dans son prochain projet, il devait intégrer une figure identique. Étonnamment, quelques jours plus tard, lors d'un voyage dans la ville de Medellín, il s'est retrouvé face aux mêmes sculptures dont il avait rêvé.",
+    "p3": "Avec un grand étonnement, il a décidé de les emporter avec lui. Quelques mois plus tard, l'opportunité de créer cet hôtel s'est présentée, concrétisant ainsi cette vision et donnant naissance à ce que nous connaissons aujourd'hui comme un refuge exclusif conçu pour le confort et la déconnexion totale."
+  },
+  "OurValues": {
+    "title_p1": "Nos",
+    "title_highlight": "Piliers",
+    "val1_title": "Atmosphère Captivante",
+    "val1_desc": "Une esthétique inspirée de la sérénité orientale, soigneusement conçue pour vous envelopper dans un environnement de confort absolu.",
+    "val2_title": "Excellence du Service",
+    "val2_desc": "Notre vocation est le souci du détail. Nous travaillons sans relâche pour rendre chaque instant de votre séjour impeccable.",
+    "val3_title": "Repos Profond",
+    "val3_desc": "Des installations créées pour garantir un sommeil réparateur et une déconnexion totale, idéales pour des escapades en couple ou en famille."
+  },
+  "OurTeam": {
+    "member1_role": "Directeur",
+    "member1_name": "Leadership et Vision",
+    "member1_desc": "Dirigeant avec sérénité, il s'assure que l'essence de Buddha Mystic se reflète dans chaque détail de votre séjour.",
+    "member2_role": "Directeur Adjoint",
+    "member2_name": "Excellence Opérationnelle",
+    "member2_desc": "Leur engagement et leur charisme garantissent un environnement de confiance et d'excellence opérationnelle dans tout l'hôtel.",
+    "member3_role": "Réceptionniste",
+    "member3_name": "Soin et Hospitalité",
+    "member3_desc": "Avec un grand cœur et le sens du service, c'est le premier sourire qui vous fait vous sentir chez vous.",
+    "member4_role": "Chef de Cuisine",
+    "member4_name": "Gastronomie Mandalas",
+    "member4_desc": "Transforme notre cuisine traditionnelle contemporaine en un art qui nourrit le corps et l'âme.",
+    "member5_role": "Chef de Rang",
+    "member5_name": "Service et Bien-être",
+    "member5_desc": "Fonde son travail sur l'honnêteté et le respect, guidant chaque expérience culinaire avec grâce.",
+    "title_p1": "Le",
+    "title_highlight": "Cœur",
+    "title_p2": "de Buddha Mystic",
+    "description": "Une équipe composée d'hommes et de femmes forts, avec un grand cœur et une admirable vocation de service. Ensemble, ils construisent un environnement de confiance pour toujours vous offrir le meilleur.",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "alt_team": "Toute l'équipe de Buddha Mystic",
+    "banner_p1": "La",
+    "banner_highlight": "Famille",
+    "banner_p2": "Buddha Mystic",
+    "banner_desc": "Derrière chaque détail se cache une équipe de personnes formidables qui assument leur travail avec amour et responsabilité. Nous faisons tous partie de votre expérience."
+  },
+  "ConditionsFooter": {
+    "rates": "Les tarifs",
+    "no_tax": "N'INCLUENT PAS la TVA",
+    "children": "Les enfants de plus de 5 ans paient le plein tarif.",
+    "pets": "Les animaux sont acceptés sous conditions préalables."
+  },
+  "RoomsHero": {
+    "alt_img": "Sanctuaire de Repos - Chambres au Buddha Mystic",
+    "badge": "Refuges Exceptionnels",
+    "title_p1": "Sanctuaire de",
+    "title_highlight": "Repos",
+    "description": "Des chambres modernes et confortables conçues pour garantir un repos inégalé. Des espaces pensés pour des escapades en couple ou des séjours en famille au cœur de Doradal.",
+    "button": "Explorer les Chambres"
+  },
+  "RoomAmenities": {
+    "badge": "Les détails qui comptent",
+    "title_p1": "Équipements",
+    "title_highlight": "Essentiels",
+    "description": "Chaque détail a été soigneusement sélectionné pour vous offrir une expérience de confort absolu, où l'esthétique rencontre un repos inégalé.",
+    "am1_name": "Climatisation",
+    "am1_desc": "Climat idéal",
+    "am2_name": "Télévision",
+    "am2_desc": "Divertissement",
+    "am3_name": "Réseau WiFi",
+    "am3_desc": "Haut débit",
+    "am4_name": "Salle de Bain",
+    "am4_desc": "Confort total",
+    "am5_name": "Réfrigérateur",
+    "am5_desc": "Boissons prêtes",
+    "am6_name": "Confort",
+    "am6_desc": "Conçu pour vous",
+    "note_title": "Note Spéciale :",
+    "note_p1": "Nos",
+    "note_highlight": "chambres familiales",
+    "note_p2": "disposent en outre d'un meuble et d'une table exécutive pour garantir plus d'espace et de confort pendant votre séjour."
+  },
+  "RoomsExperience": {
+    "filter_all": "Tous",
+    "filter_privacy": "Repos et Intimité",
+    "filter_romance": "Romance et Confort",
+    "filter_family": "Repos en Famille",
+    "filter_groups": "Groupes et Événements",
+    "low_season_mobile": "B. SAISON",
+    "low_season_pc": "BASSE SAISON",
+    "high_season_mobile": "H. SAISON",
+    "high_season_pc": "HAUTE SAISON",
+    "discover_pc": "Découvrir",
+    "discover_mobile": "Voir",
+    "alt_img": "Chambre {name} au Buddha Mystic Doradal",
+    "room1_name": "Individuelle",
+    "room1_cap": "1 personne",
+    "room1_en": "Confort Intime",
+    "room2_name": "Couple",
+    "room2_cap": "2 personnes",
+    "room2_en": "Refuge Privé",
+    "room3_name": "Supérieure",
+    "room3_cap": "2 personnes",
+    "room3_en": "Espace et Harmonie",
+    "room4_name": "Triple",
+    "room4_cap": "3 personnes",
+    "room4_en": "Union et Confort",
+    "room5_name": "Quadruple",
+    "room5_cap": "4 personnes",
+    "room5_en": "Espace Partagé",
+    "room6_name": "Sextuple",
+    "room6_cap": "6 personnes",
+    "room6_en": "Famille Élargie",
+    "room7_name": "Octuple",
+    "room7_cap": "8 personnes",
+    "room7_en": "Grand Rassemblement",
+    "room8_name": "Hébergement 10",
+    "room8_cap": "10 personnes",
+    "room8_en": "Grand Hébergement",
+    "room9_name": "Hébergement 12",
+    "room9_cap": "12 personnes",
+    "room9_en": "Séjour Collectif"
+  },
+  "RoomDetail": {
+    "whatsappMessage": "Bonjour. Je souhaite demander une réservation pour la {roomName} et connaître ses disponibilités.",
+    "absoluteComfort": "Confort Absolu",
+    "essenceOf": "L'Essence de",
+    "space": "l'Espace",
+    "amenitiesIncluded": "Commodités Incluses",
+    "bookYourRest": "Réservez Votre Repos",
+    "capacity": "Capacité : {capacity}",
+    "lowSeason": "Basse Saison",
+    "perNight": "/ nuit",
+    "highSeason": "Haute Saison",
+    "requestReservation": "Demander une Réservation",
+    "visualizeStay": "Visualisez Votre Séjour",
+    "cornersOfComfort": "Coins de Confort",
+    "galleryAlt": "Galerie Chambre Buddha Mystic {index}",
+    "expandedAlt": "Chambre Buddha Mystic Agrandie {index}"
+  },
+  "Restaurant": {
+    "heroAlt": "Ambiance du Restaurant Mandalas",
+    "highFusionCuisine": "Haute Cuisine Fusion",
+    "restaurant": "Restaurant",
+    "mandalas": "Mandalas",
+    "heroDescription": "Où l'abondance de la tradition d'Antioquia rencontre la subtilité et l'équilibre de l'âme asiatique.",
+    "ourPhilosophy": "Notre Philosophie",
+    "harmonicFusion": "La fusion harmonieuse de",
+    "twoParallelWorlds": "deux mondes parallèles",
+    "philosophyText": "Chez Mandalas, nous croyons que la gastronomie est une façon de nourrir non seulement l'être, mais aussi l'âme et le cœur. Notre concept naît d'un profond respect pour les ingrédients qui jaillissent de nos terres d'Antioquia, lesquels sont sublimés par la précision, l'équilibre et les techniques millénaires du continent asiatique. Chaque bouchée est conçue non seulement pour nourrir le corps, mais pour ravir l'esprit et vous ancrer dans le moment présent.",
+    "comingSoon": "Prochainement",
+    "newAwakening": "Un nouvel éveil",
+    "sensorial": "Sensoriel",
+    "evolutionText": "Actuellement, notre équipe culinaire est plongée dans la création d'une nouvelle carte. Nous peaufinons chaque recette, explorons de nouveaux ingrédients et concevons des expériences qui surprendront votre palais. Très bientôt, nous dévoilerons notre nouvelle proposition gastronomique.",
+    "whatsappMessage": "Bonjour, je souhaite recevoir des informations lorsque la nouvelle carte du Restaurant Mandalas sera disponible.",
+    "notifyMe": "M'informer du lancement"
+  },
+  "Experiences": {
+    "location": "Doradal, Antioquia",
+    "titlePart1": "Des aventures qui",
+    "titleHighlight": "captivent",
+    "titlePart2": "les sens",
+    "description": "Au-delà de notre sanctuaire de repos, un environnement naturel vibrant vous attend. Découvrez la majesté de la région et profitez d'expériences en plein air inoubliables.",
+    "discover": "Découvrir",
+    "region": "Notre Région",
+    "treasuresPart1": "Des trésors qui",
+    "treasuresHighlight": "attendent",
+    "treasuresPart2": "votre arrivée",
+    "treasuresDesc": "Explorez les recoins où la nature imposante et la culture d'Antioquia s'entrelacent. Chaque destination est une invitation à vivre des aventures inoubliables et à découvrir la beauté de notre environnement.",
+    "discoverBtn": "Découvrir",
+    "attractions": {
+      "haciendaNapoles": {
+        "title": "Hacienda Nápoles",
+        "category": "Parc à Thème",
+        "description": "Une expérience immersive pleine de faune, d'attractions aquatiques et d'un héritage historique transformé en sanctuaire de conservation."
+      },
+      "santorini": {
+        "title": "Santorini Colombien",
+        "category": "Architecture Magique",
+        "description": "Promenez-vous dans les rues pavées et les façades blanches qui évoquent la Méditerranée, nichées dans la majesté de la géographie d'Antioquia."
+      },
+      "rioClaro": {
+        "title": "Réserve Río Claro",
+        "category": "Nature Vierge",
+        "description": "Un canyon de marbre traversé par des eaux cristallines. Le refuge parfait pour admirer la flore et la faune endémiques en toute sérénité."
+      },
+      "cascadaSanJuan": {
+        "title": "Cascade San Juan",
+        "category": "Station Thermale Naturelle",
+        "description": "Laissez-vous envelopper par le son de l'eau qui tombe et plongez dans des piscines naturelles d'eau fraîche, entourées du vert éclatant de la forêt."
+      },
+      "rioMagdalena": {
+        "title": "Fleuve Magdalena",
+        "category": "Couchers de Soleil Magiques",
+        "description": "Naviguez sur la voie navigable la plus importante de Colombie et soyez témoin du soleil peignant le ciel de teintes dorées à la fin de la journée."
+      },
+      "rioLaMiel": {
+        "title": "Rivière La Miel",
+        "category": "Expédition Inoubliable",
+        "description": "Un voyage à travers des courants sereins qui vous mèneront à la découverte de paysages immaculés, idéaux pour la contemplation et la baignade."
+      }
+    },
+    "quotePart1": "Le véritable voyage de découverte ne consiste pas à chercher de nouveaux paysages,",
+    "quoteHighlight": "mais à avoir de nouveaux yeux.",
+    "proverb": "PROVERBE DE VOYAGE",
+    "naturalEnvironment": "Environnement Naturel",
+    "expertOperators": "Opérateurs Experts",
+    "adventureComfort": "Aventure et Confort",
+    "responsibleTourism": "Tourisme Responsable"
+  },
+  "ExtremeActivities": {
+    "beyondLimit": "Au-delà des limites",
+    "adrenalinAnd": "Adrénaline et",
+    "nature": "Nature",
+    "description": "Défiez la routine. Survolez les expériences pour découvrir les paysages vibrants et pleins d'aventures qui vous attendent dans la région.",
+    "receptionNotice": "Consultez notre réception pour coordonner ces aventures avec des voyagistes locaux de confiance.",
+    "activities": {
+      "buggies": { "name": "Tour en Buggies", "location": "Jungle et sentiers locaux" },
+      "atv": { "name": "Tour en Quad", "location": "Routes accidentées de Doradal" },
+      "turtles": { "name": "Libération de Tortues", "location": "Fleuve Magdalena" },
+      "goldWaterfall": { "name": "Cascade El Oro", "location": "Randonnée avancée" },
+      "chorrosAdventure": { "name": "Aventure Los Chorros", "location": "Canyons aquatiques" },
+      "rafting": { "name": "Rafting à Río Claro", "location": "Réserve Río Claro" },
+      "dantaCaves": { "name": "Grottes La Danta", "location": "Commune de La Danta" },
+      "magdalena": { "name": "La Grande Magdalena", "location": "Puerto Triunfo" }
+    }
+  },
+  "DetailHero": {
+    "heroOf": "Hero de {title}"
+  },
+  "DetailContent": {
+    "whatsappMessage": "Bonjour, je voudrais plus d'informations sur le transport et les expériences.",
+    "destinationDetails": "Détails de la Destination",
+    "the": "L'",
+    "experience": "Expérience",
+    "historyAndContext": "Histoire et Contexte",
+    "location": "Emplacement",
+    "viewOnMap": "Voir sur la carte",
+    "whatIsIncluded": "Ce qui est inclus",
+    "bookTransport": "Réserver le Transport"
+  },
+  "DetailBanner": {
+    "totalDisconnection": "Déconnexion Totale",
+    "naturalEnvironment": "Environnement Naturel",
+    "unforgettablePhotography": "Photographie Inoubliable",
+    "adventureAndRest": "Aventure et Repos",
+    "zenNatureAlt": "Détails de nature zen",
+    "quotePart1": "Dans chaque promenade avec la nature, on reçoit bien plus que ce que l'on ",
+    "quoteHighlight": "cherche.",
+    "author": "JOHN MUIR"
+  },
+  "DetailGallery": {
+    "visualMemoryPart1": "Mémoire",
+    "visualMemoryHighlight": "Visuelle",
+    "galleryDescription": "Un aperçu de la beauté et du charme qui vous attendent dans cette aventure. Cliquez sur n'importe quelle image pour l'explorer en détail.",
+    "attractionDetailAlt": "Détail de l'attraction {index}",
+    "expandedVisualMemoryAlt": "Mémoire visuelle agrandie {index}"
+  },
+  "RoomsData": {
+    "individual": {
+      "name": "Chambre Simple",
+      "capacity": "1 personne",
+      "energy": "Idéale pour l'Introspection",
+      "description": "Un refuge conçu pour le voyageur en solo cherchant à se reconnecter avec lui-même. Cet espace minimaliste offre l'équilibre parfait entre confort et silence, permettant à l'esprit de se reposer sans distractions.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif"]
+    },
+    "pareja": {
+      "name": "Chambre Double",
+      "capacity": "2 personnes",
+      "energy": "Refuge de Paix",
+      "description": "Un sanctuaire intime créé pour renforcer les liens et trouver la sérénité en compagnie. Chaque détail, de l'éclairage aux textures, est pensé pour inspirer la tranquillité et un repos profond pour deux âmes.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif"]
+    },
+    "superior": {
+      "name": "Suite Supérieure",
+      "capacity": "2 personnes",
+      "energy": "Espace et Harmonie",
+      "description": "Notre Suite Supérieure élève l'expérience de repos avec des finitions premium et une disposition spatiale qui invite à une paix profonde. L'espace idéal pour un séjour inoubliable, enveloppé dans un luxe subtil.",
+      "features": ["Climatisation", "TV 50\"", "Wi-Fi haut débit", "Salle de bain privée de luxe", "Réfrigérateur exécutif"]
+    },
+    "triple": {
+      "name": "Chambre Triple",
+      "capacity": "3 personnes",
+      "energy": "Union et Confort",
+      "description": "Un espace conçu pour les petites familles ou les groupes intimes souhaitant partager des moments de qualité. Ses dimensions offrent le confort nécessaire pour cohabiter en parfaite harmonie.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+    },
+    "cuadruple": {
+      "name": "Chambre Quadruple",
+      "capacity": "4 personnes",
+      "energy": "Espace Partagé",
+      "description": "Idéale pour la famille moderne. Cette chambre offre l'espace nécessaire pour que chaque invité trouve son propre coin de repos sans perdre la chaleur et la connexion du groupe.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+    },
+    "sextuple": {
+      "name": "Chambre Sextuple",
+      "capacity": "6 personnes",
+      "energy": "Famille Élargie",
+      "description": "Un environnement généreux pensé pour accueillir les grandes familles. Un refuge où la convivialité et les rires s'harmonisent avec le design subtil, épuré et relaxant de l'essence Buddha Mystic.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+    },
+    "octuple": {
+      "name": "Chambre Octuple",
+      "capacity": "8 personnes",
+      "energy": "Grande Rencontre",
+      "description": "Conçue pour accueillir de grands groupes dans un seul espace unifié. Ses dimensions majestueuses assurent un confort absolu à tous les membres, favorisant le repos collectif.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salles de bain multiples", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+    },
+    "acomodacion-10-pax": {
+      "name": "Hébergement 10 pax",
+      "capacity": "10 personnes",
+      "energy": "Cercle de Lumière",
+      "description": "Un sanctuaire collectif parfait pour les retraites et les groupes de méditation. Il permet une coexistence ininterrompue et un travail spirituel ou de groupe, en gardant intacte notre promesse de paix.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Plusieurs salles de bain privées", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+    },
+    "acomodacion-12-pax": {
+      "name": "Hébergement 12 pax",
+      "capacity": "12 personnes",
+      "energy": "Retraite Collective",
+      "description": "Notre séjour le plus majestueux. Un espace vaste et lumineux qui honore le pouvoir de la communauté. Idéal pour les retraites holistiques où le repos de chacun coule dans un seul environnement.",
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Plusieurs salles de bain privées", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+    }
+  },
+  "AttractionsData": {
+    "hacienda-napoles": {
+      "title": "Hacienda Nápoles",
+      "category": "Parc à Thème",
+      "tagline": "Un sanctuaire de vie et de transformation",
+      "description": "Ce qui fut autrefois un symbole d'opulence est aujourd'hui le plus grand parc à thème d'Amérique du Sud, dédié à la conservation des espèces, à la mémoire historique et au plaisir en famille sous le soleil du Magdalena Medio.",
+      "history": "Située au cœur de notre région, l'Hacienda Nápoles a été entièrement transformée en un centre de préservation environnementale. Ses vastes plaines abritent aujourd'hui le plus grand troupeau d'hippopotames hors d'Afrique, ainsi que des autruches, des félins secourus et une flore luxuriante qui a repris ses droits.",
+      "location": "Doradal, Antioquia (à 10 min de Buddha Mystic)",
+      "details": ["Safari photographique guidé", "Accès aux parcs aquatiques (Chutes Victoria, Cobras)", "Visite du Sanctuaire de la Faune", "Musée Mémorial", "Parc Jurassique"]
+    },
+    "santorini": {
+      "title": "Santorini Colombien",
+      "category": "Le Village",
+      "tagline": "La Méditerranée au cœur de l'Antioquia",
+      "description": "Un labyrinthe fascinant de façades d'une blancheur immaculée et de portes bleues qui capturent la lumière du soleil de Doradal, créant une atmosphère magique de paix qui évoque les côtes grecques.",
+      "history": "Cette belle urbanisation, ouverte au public, est née comme un caprice architectural inspiré des îles Cyclades en Grèce. Au fil du temps, elle est devenue l'icône visuelle de la région, offrant des coins hautement photogéniques et une sérénité unique à ceux qui parcourent ses ruelles.",
+      "location": "Doradal, Antioquia (à 5 min de Buddha Mystic)",
+      "details": ["Promenade architecturale libre", "Multiples points de vue photographiques", "Après-midis de café et de gastronomie locale", "Galeries d'artisanat", "Routes pavées pour la marche"]
+    },
+    "rio-claro": {
+      "title": "Réserve Río Claro",
+      "category": "Nature Vierge",
+      "tagline": "Un canyon de marbre sculpté par le temps",
+      "description": "Plongez dans un refuge d'une biodiversité incomparable où l'eau cristalline serpente à travers un majestueux canyon de marbre blanc. L'endroit parfait pour la contemplation silencieuse comme pour l'aventure.",
+      "history": "Cette réserve naturelle privée a été créée pour protéger strictement les écosystèmes karstiques de la région. Ses immenses formations rocheuses sont vieilles de millions d'années et abritent des espèces endémiques fascinantes, comme l'énigmatique oiseau Guácharo.",
+      "location": "Autoroute Medellín - Bogotá (à 40 min de Buddha Mystic)",
+      "details": ["Randonnée guidée dans la forêt tropicale", "Rafting niveau I et II (Adapté aux débutants)", "Exploration de la Grotte des Guácharos", "Via Ferrata et Tyrolienne", "Baignade libre sur des plages de marbre"]
+    },
+    "cascada-san-juan": {
+      "title": "Cascade San Juan",
+      "category": "Station Thermale Naturelle",
+      "tagline": "Purification sous le manteau de la jungle",
+      "description": "Laissez-vous envelopper par le son assourdissant et pourtant relaxant de l'eau tombant des hauteurs. Plongez dans des piscines naturelles d'eau fraîche, entièrement entourées par le vert éclatant de la forêt.",
+      "history": "Un refuge naturel entretenu par les habitants depuis des années. Cette station thermale est alimentée par des affluents purs nés dans les montagnes vierges du Magdalena Medio, offrant des eaux cristallines qui invitent à la relaxation profonde et à la déconnexion totale.",
+      "location": "Hameau San Juan (à 30 min de Buddha Mystic)",
+      "details": ["Baignade dans des piscines naturelles", "Marche écologique de faible difficulté", "Séances de méditation guidée dans la nature", "Zones aménagées pour les pique-niques", "Itinéraires pour la photographie de paysage"]
+    },
+    "rio-magdalena": {
+      "title": "Fleuve Magdalena",
+      "category": "Couchers de Soleil Magiques",
+      "tagline": "Le battement fluvial de la Colombie",
+      "description": "Naviguez sur la voie navigable la plus imposante et importante du pays. Sentez l'immensité de ce plan d'eau tandis que le soleil peint le ciel de teintes dorées et pourpres, créant un spectacle inoubliable.",
+      "history": "Le Grand Fleuve Magdalena a été la voie de communication, de commerce et de culture de la Colombie depuis les temps précolombiens. Naviguer sur ses eaux, c'est se connecter à la mémoire historique de toute une nation, en écoutant les histoires des pêcheurs locaux.",
+      "location": "Puerto Triunfo (à 20 min de Buddha Mystic)",
+      "details": ["Promenade en bateau traditionnel au coucher du soleil", "Observation des oiseaux et de la faune riveraine", "Libération de tortues (Selon la saison)", "Récits d'histoire locale avec des pêcheurs autochtones", "Itinéraires de pêche traditionnelle (Optionnel)"]
+    },
+    "rio-la-miel": {
+      "title": "Rivière La Miel",
+      "category": "Expédition Inoubliable",
+      "tagline": "Sérénité et fluidité dans des eaux émeraude",
+      "description": "Un voyage à travers des courants sereins et des eaux d'un vert émeraude hypnotique. Un cadre immaculé qui vous invite à la contemplation silencieuse ainsi qu'à la baignade revitalisante dans un environnement sauvage.",
+      "history": "Descendant des hautes montagnes de la cordillère centrale, la rivière La Miel sculpte des paysages exubérants sur son passage. Elle est reconnue à l'échelle nationale comme l'une des rivières les plus propres et les plus belles de la région, protégée par de denses murs de végétation.",
+      "location": "La Dorada / Norcasia (à 1h 20 min de Buddha Mystic)",
+      "details": ["Navigation prolongée en bateau à moteur", "Tubing (descente sereine en bouées)", "Visite de cascades cachées", "Observation des singes hurleurs", "Déjeuner typique préparé au bord de la rivière"]
+    }
+  },
+  "TermsContent": {
+    "transparencyAndTrust": "Transparence et Confiance",
+    "termsAnd": "Termes et",
+    "conditions": "Conditions",
+    "section1Title": "1. Tarifs et Mineurs",
+    "vatLabel": "TVA :",
+    "vatText": "Le tarif d'hébergement n'inclut PAS la Taxe sur la Valeur Ajoutée (TVA).",
+    "minorsLabel": "Mineurs :",
+    "minorsText": "Les enfants de plus de 5 ans paient le même tarif d'hébergement, quel que soit leur âge.",
+    "section2Title": "2. Politiques de Reprogrammation",
+    "conditionsLabel": "Conditions :",
+    "conditionsText": "Lors d'une reprogrammation, le client doit conserver le même nombre de nuits ou en choisir un nombre supérieur.",
+    "deadlineLabel": "Délai :",
+    "deadlineText": "Une fois la reprogrammation approuvée, le client dispose d'un délai maximum de trente (30) jours ouvrables pour la rendre effective.",
+    "section3Title": "3. Cession de Réservations",
+    "transferabilityLabel": "Transférabilité :",
+    "transferabilityText": "La réservation peut être transférée à des tiers à condition que sa valeur initiale soit conservée.",
+    "ownershipLabel": "Propriété :",
+    "ownershipText": "Toute demande de reprogrammation ou de cession ne sera acceptée que si elle est effectuée par le titulaire initial de la réservation.",
+    "finalNote": "Pour toute demande officielle, notre équipe dévouée est à votre disposition :"
+  }
+}

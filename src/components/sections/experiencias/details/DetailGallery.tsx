@@ -3,12 +3,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import MysticImage from "@/components/ui/MysticImage";
+import { useTranslations } from 'next-intl';
 
 interface DetailGalleryProps {
     images: string[];
 }
 
 export default function DetailGallery({ images }: DetailGalleryProps) {
+    const t = useTranslations('DetailGallery');
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -59,17 +61,14 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
         <section className="py-20 px-4 sm:px-8 lg:px-16 max-w-[1600px] mx-auto transition-colors duration-500">
             <div className="mb-12 text-center md:text-left">
                 <h2 className="font-serif font-light text-3xl md:text-4xl text-gray-900 dark:text-white mb-4 transition-colors duration-500">
-                    Memoria <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">Visual</span>
+                    {t('visualMemoryPart1')} <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">{t('visualMemoryHighlight')}</span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 font-light max-w-xl transition-colors duration-500">
-                    Un destello de la belleza y el encanto que te esperan en esta aventura.
-                    Haz clic sobre cualquier imagen para explorarla en detalle.
+                    {t('galleryDescription')}
                 </p>
             </div>
 
-            {/* Mosaico Artístico Dinámico */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
-
                 {images.map((src, index) => {
                     const isFirst = index === 0;
 
@@ -77,14 +76,11 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                         <div
                             key={index}
                             onClick={() => openLightbox(index)}
-                            // Eliminamos el h-[350px] que rompía la grilla en móvil y forzamos w-full h-full
-                            className={`relative group overflow-hidden rounded-sm cursor-pointer shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-xl transition-all duration-500 bg-gray-100 dark:bg-[#111111] w-full h-full
-                                ${isFirst ? 'md:col-span-2 md:row-span-2' : 'col-span-1'}
-                            `}
+                            className={`relative group overflow-hidden rounded-sm cursor-pointer shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-xl transition-all duration-500 bg-gray-100 dark:bg-[#111111] w-full h-full ${isFirst ? 'md:col-span-2 md:row-span-2' : 'col-span-1'}`}
                         >
                             <MysticImage
                                 src={src}
-                                alt={`Detalle del atractivo ${index + 1}`}
+                                alt={t('attractionDetailAlt', { index: index + 1 })}
                                 width={isFirst ? 1200 : 800}
                                 height={isFirst ? 1080 : 800}
                                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[10s] ease-out"
@@ -102,14 +98,12 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                         </div>
                     );
                 })}
-
             </div>
 
             <div className="mt-16 flex justify-center">
                 <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
             </div>
 
-            {/* LIGHTBOX INMERSIVO */}
             {isOpen && typeof document !== 'undefined' && createPortal(
                 <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl transition-opacity duration-500"
@@ -156,7 +150,7 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                     >
                         <MysticImage
                             src={images[currentIndex]}
-                            alt={`Memoria visual ampliada ${currentIndex + 1}`}
+                            alt={t('expandedVisualMemoryAlt', { index: currentIndex + 1 })}
                             width={1920}
                             height={1080}
                             className="max-w-full max-h-full object-contain shadow-2xl transition-opacity duration-500"

@@ -1,6 +1,9 @@
 import MysticImage from "@/components/ui/MysticImage";
+import { useTranslations } from 'next-intl';
 
 export default function OurPromise() {
+    const t = useTranslations('OurPromise');
+
     return (
         <section className="bg-[#FCFBF9] dark:bg-[#0A0A0A] py-24 lg:py-32 px-5 sm:px-12 lg:px-16 relative overflow-hidden flex items-center justify-center transition-colors duration-500">
 
@@ -42,7 +45,7 @@ export default function OurPromise() {
                                 <path d="M20 14c-2 0-4-1.5-5-3" />
                             </svg>
                             <span className="text-[#00A896] text-[9px] font-bold tracking-[0.2em] uppercase text-center">
-                                Nuestra <br/> Promesa
+                                {t('badge_line1')} <br/> {t('badge_line2')}
                             </span>
                         </div>
                     </div>
@@ -57,14 +60,14 @@ export default function OurPromise() {
                     <div className="flex items-center justify-center lg:justify-start mb-6">
                         <span className="w-10 h-[1px] bg-[#00A896] mr-4 hidden lg:block"></span>
                         <p className="text-[#00A896] text-xs md:text-sm font-bold tracking-[0.4em] uppercase">
-                            La esencia de nuestro servicio
+                            {t('subtitle')}
                         </p>
                     </div>
 
                     {/* Título de la sección */}
                     <h2 className="text-gray-900 dark:text-white text-5xl md:text-6xl lg:text-7xl font-serif mb-12 font-light leading-tight transition-colors duration-500">
-                        Nuestra <br className="hidden lg:block" />
-                        <span className="text-[#D4AF37] italic font-medium">Promesa</span>
+                        {t('title_p1')} <br className="hidden lg:block" />
+                        <span className="text-[#D4AF37] italic font-medium">{t('title_highlight')}</span>
                     </h2>
 
                     {/* Contenedor del texto con tipografía refinada (Textos actualizados) */}
@@ -73,26 +76,26 @@ export default function OurPromise() {
                         <span className="absolute -top-12 -left-4 lg:-left-12 text-[8rem] text-[#D4AF37]/10 font-serif leading-none select-none">&quot;</span>
 
                         <p className="text-gray-900 dark:text-white font-serif text-2xl lg:text-3xl leading-relaxed mb-6 relative z-10 font-light transition-colors duration-500">
-                            Trabajamos cada día para convertir su estadía en una experiencia memorable, combinando confort excepcional, un servicio impecable y una estética cautivadora.
+                            {t('main_text')}
                         </p>
 
                         <p className="text-gray-600 dark:text-gray-300 font-light text-base md:text-lg leading-relaxed relative z-10 lg:pr-10 transition-colors duration-500">
-                            Nuestro propósito es ofrecer mucho más que un simple alojamiento: buscamos crear un refugio donde el tiempo parece detenerse, permitiendo a nuestros huéspedes desconectar de la rutina y disfrutar de un descanso verdaderamente reparador en Doradal.
+                            {t('secondary_text')}
                         </p>
                     </div>
 
                     {/* Pilares de la promesa */}
                     <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 lg:gap-8 mt-12 lg:mt-16 pt-8 border-t border-gray-200/60 dark:border-white/10 w-full max-w-2xl mx-auto lg:mx-0 transition-colors duration-500">
                         <span className="text-[#00A896] font-bold text-xs uppercase tracking-[0.3em] hover:text-[#D4AF37] transition-colors duration-500 cursor-default">
-                            Comodidad
+                            {t('pillar_1')}
                         </span>
                         <div className="w-1.5 h-1.5 bg-[#D4AF37] rotate-45 opacity-60"></div>
                         <span className="text-[#00A896] font-bold text-xs uppercase tracking-[0.3em] hover:text-[#D4AF37] transition-colors duration-500 cursor-default">
-                            Servicio
+                            {t('pillar_2')}
                         </span>
                         <div className="w-1.5 h-1.5 bg-[#D4AF37] rotate-45 opacity-60"></div>
                         <span className="text-[#00A896] font-bold text-xs uppercase tracking-[0.3em] hover:text-[#D4AF37] transition-colors duration-500 cursor-default">
-                            Descanso
+                            {t('pillar_3')}
                         </span>
                     </div>
 

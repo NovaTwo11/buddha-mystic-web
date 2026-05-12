@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 interface DetailContentProps {
     description: string;
@@ -9,27 +10,24 @@ interface DetailContentProps {
 }
 
 export default function DetailContent({ description, history, location, mapLink, details }: DetailContentProps) {
-    // Generación segura del enlace de WhatsApp para evitar errores en móviles
+    const t = useTranslations('DetailContent');
     const whatsappNumber = "573135431537";
-    const message = "Hola, quisiera más información sobre el transporte y las experiencias.";
+    const message = t('whatsappMessage');
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     return (
         <section className="py-20 px-4 sm:px-8 lg:px-16 max-w-[1600px] mx-auto transition-colors duration-500">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
-
-                {/* Texto Principal - Diseño Editorial */}
                 <div className="lg:col-span-7 flex flex-col pt-4">
-
                     <div className="mb-6 flex items-center">
                         <div className="w-8 h-[1px] bg-[#D4AF37] mr-4"></div>
                         <span className="text-[#00A896] dark:text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.3em] transition-colors duration-500">
-                            Detalles del Destino
+                            {t('destinationDetails')}
                         </span>
                     </div>
 
                     <h2 className="font-serif font-light text-4xl lg:text-5xl text-gray-900 dark:text-white mb-8 leading-tight transition-colors duration-500">
-                        La <span className="italic font-medium text-[#D4AF37]">Experiencia</span>
+                        {t('the')} <span className="italic font-medium text-[#D4AF37]">{t('experience')}</span>
                     </h2>
 
                     <p className="text-gray-600 dark:text-gray-300 font-light text-base md:text-lg leading-relaxed mb-12 text-justify transition-colors duration-500">
@@ -37,7 +35,7 @@ export default function DetailContent({ description, history, location, mapLink,
                     </p>
 
                     <h3 className="font-serif font-light text-2xl lg:text-3xl text-gray-900 dark:text-white mb-6 transition-colors duration-500">
-                        Historia y Contexto
+                        {t('historyAndContext')}
                     </h3>
 
                     <p className="text-gray-600 dark:text-gray-400 font-light leading-relaxed text-justify transition-colors duration-500">
@@ -45,23 +43,19 @@ export default function DetailContent({ description, history, location, mapLink,
                     </p>
                 </div>
 
-                {/* Ficha Técnica (Glassmorphism Inteligente y Asimétrico) */}
                 <div className="lg:col-span-5 relative">
                     <div className="sticky top-32 bg-white/80 dark:bg-[#111111]/80 backdrop-blur-xl p-10 lg:p-14 rounded-sm shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.6)] border border-white/50 dark:border-white/5 transition-all duration-500">
-
-                        {/* Acento superior de la tarjeta */}
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#00A896]/50 dark:via-[#D4AF37]/50 to-transparent" />
 
                         <div className="mb-10">
                             <span className="text-[#00A896] dark:text-[#D4AF37] text-[10px] font-bold uppercase tracking-[0.2em] block mb-3 transition-colors duration-500">
-                                Ubicación
+                                {t('location')}
                             </span>
                             <div className="flex flex-col items-start gap-3">
                                 <p className="text-gray-900 dark:text-white font-medium text-sm md:text-base transition-colors duration-500">
                                     {location}
                                 </p>
 
-                                {/* Botón de Google Maps estético, minimalista y funcional */}
                                 <a
                                     href={mapLink}
                                     target="_blank"
@@ -72,14 +66,14 @@ export default function DetailContent({ description, history, location, mapLink,
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                                     </svg>
-                                    Ver en el mapa
+                                    {t('viewOnMap')}
                                 </a>
                             </div>
                         </div>
 
                         <div className="mb-12">
                             <span className="text-[#D4AF37] dark:text-[#00A896] text-[10px] font-bold uppercase tracking-[0.2em] block mb-5 transition-colors duration-500">
-                                Lo que incluye
+                                {t('whatIsIncluded')}
                             </span>
                             <ul className="space-y-4">
                                 {details.map((detail, index) => (
@@ -99,7 +93,7 @@ export default function DetailContent({ description, history, location, mapLink,
                             rel="noopener noreferrer"
                             className="w-full py-4 bg-[#D4AF37] text-white uppercase tracking-[0.2em] text-xs font-bold rounded-sm hover:bg-[#00A896] transition-colors duration-500 shadow-xl shadow-[#D4AF37]/20 flex justify-center items-center text-center"
                         >
-                            Reservar Transporte
+                            {t('bookTransport')}
                         </Link>
                     </div>
                 </div>

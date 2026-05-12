@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import MysticImage from "@/components/ui/MysticImage";
+import { useTranslations } from 'next-intl';
 
 export default function HomeHero() {
+    const t = useTranslations('HomeHero');
+
     return (
         <section className="relative w-full min-h-screen bg-white dark:bg-[#0A0A0A] flex items-center overflow-hidden transition-colors duration-500">
 
@@ -28,19 +31,19 @@ export default function HomeHero() {
 
                     {/* Subtítulo en Aquamarina (Se mantiene por ser buen hook comercial) */}
                     <p className="text-[#00A896] text-xs md:text-sm font-bold tracking-[0.5em] mb-6 uppercase drop-shadow-sm lg:drop-shadow-none">
-                        Una experiencia que trasciende
+                        {t('subtitle')}
                     </p>
 
                     {/* Título Principal Rediseñado (Enfoque en Estética/Descanso) */}
                     <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light text-gray-900 dark:text-white leading-[1.1] mb-6 md:mb-8 transition-colors duration-500">
-                        Descubre un <br className="hidden sm:block" />
-                        <span className="text-[#D4AF37] italic font-medium">refugio</span> <br className="hidden sm:block" />
-                        excepcional.
+                        {t('title_p1')} <br className="hidden sm:block" />
+                        <span className="text-[#D4AF37] italic font-medium">{t('title_highlight')}</span> <br className="hidden sm:block" />
+                        {t('title_p2')}
                     </h1>
 
                     {/* Descripción Rediseñada */}
                     <p className="text-gray-800 dark:text-gray-300 lg:text-gray-600 dark:lg:text-gray-300 mb-10 md:mb-12 max-w-lg mx-auto md:mx-0 text-base md:text-xl font-light leading-relaxed transition-colors duration-500">
-                        Un lugar donde el tiempo parece detenerse. Disfruta de un ambiente inspirado en la estética oriental, diseñado para ofrecerte máxima comodidad y un descanso inolvidable.
+                        {t('description')}
                     </p>
 
                     {/* Botones Rediseñados */}
@@ -52,7 +55,7 @@ export default function HomeHero() {
                             rel="noopener noreferrer"
                             className="w-full sm:w-auto bg-[#D4AF37] text-white px-10 py-4 tracking-widest text-xs font-bold uppercase hover:bg-[#00A896] transition-all duration-500 shadow-xl shadow-[#D4AF37]/30 flex justify-center text-center"
                         >
-                            RESERVAR AHORA
+                            {t('book_now')}
                         </a>
 
                         {/* Botón Secundario (Outline) - Adaptado para modo oscuro */}
@@ -60,7 +63,7 @@ export default function HomeHero() {
                             href="/nosotros"
                             className="group w-full sm:w-auto flex items-center justify-center px-10 py-4 border border-gray-400 dark:border-gray-600 lg:border-gray-300 text-gray-900 dark:text-white lg:text-gray-800 bg-white/50 dark:bg-[#111111]/50 lg:bg-transparent dark:lg:bg-transparent tracking-widest text-xs font-bold uppercase hover:border-[#00A896] dark:hover:border-[#00A896] hover:text-[#00A896] dark:hover:text-[#00A896] transition-all duration-500"
                         >
-                            <span>DESCUBRIR MÁS</span>
+                            <span>{t('discover_more')}</span>
                             <svg className="ml-3 w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>

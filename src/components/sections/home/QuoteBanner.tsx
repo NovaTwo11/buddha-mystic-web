@@ -1,7 +1,11 @@
+import { useTranslations } from 'next-intl';
+
 export default function QuoteBanner() {
+    const t = useTranslations('QuoteBanner');
+
     const benefits = [
         {
-            text: "Mejor Tarifa Garantizada",
+            text: t('benefit_1'),
             icon: (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
@@ -10,7 +14,7 @@ export default function QuoteBanner() {
             )
         },
         {
-            text: "Reserva Segura",
+            text: t('benefit_2'),
             icon: (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
@@ -19,7 +23,7 @@ export default function QuoteBanner() {
             )
         },
         {
-            text: "Atención Personalizada",
+            text: t('benefit_3'),
             icon: (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
@@ -29,7 +33,7 @@ export default function QuoteBanner() {
             )
         },
         {
-            text: "Experiencias Únicas",
+            text: t('benefit_4'),
             icon: (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
@@ -63,11 +67,11 @@ export default function QuoteBanner() {
                         </span>
 
                         <h3 className="text-2xl md:text-3xl font-serif text-gray-900 dark:text-white font-light leading-relaxed mb-6 relative z-10 transition-colors duration-500">
-                            La paz viene de adentro.<br className="hidden md:block" /> No la busques afuera.
+                            {t('quote_line1')}<br className="hidden md:block" /> {t('quote_line2')}
                         </h3>
 
                         <p className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase">
-                            &mdash; BUDDHA
+                            &mdash; {t('author')}
                         </p>
                     </div>
 

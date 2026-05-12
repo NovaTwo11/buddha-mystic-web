@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "../../../node_modules/tailwindcss";
 
 /* 1. La clave maestra: Le decimos a Tailwind v4 que el modo oscuro se activa por la clase .dark */
 @custom-variant dark (&:where(.dark, .dark *));

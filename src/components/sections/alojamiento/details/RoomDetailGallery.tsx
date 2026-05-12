@@ -3,12 +3,14 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import MysticImage from "@/components/ui/MysticImage";
+import { useTranslations } from 'next-intl';
 
 interface RoomDetailGalleryProps {
     images: string[];
 }
 
 export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
+    const t = useTranslations('RoomDetail');
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -58,18 +60,16 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
 
     return (
         <section className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16 pb-24 transition-colors duration-500">
-            {/* Encabezado */}
             <div className="flex flex-col items-center mb-12">
                 <span className="text-[#D4AF37] text-xs font-bold tracking-[0.3em] uppercase mb-4 block text-center">
-                    Visualiza tu Estadía
+                    {t('visualizeStay')}
                 </span>
                 <h3 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-serif font-light italic transition-colors duration-500 text-center">
-                    Rincones de Confort
+                    {t('cornersOfComfort')}
                 </h3>
                 <div className="w-12 h-px bg-[#00A896] mt-6" />
             </div>
 
-            {/* Mosaico Fotográfico */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 {images.map((srcId, index) => {
                     const isFeatured = index === 0 && images.length % 2 !== 0;
@@ -78,14 +78,11 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         <div
                             key={index}
                             onClick={() => openLightbox(index)}
-                            className={`relative overflow-hidden group bg-gray-100 dark:bg-[#111111] shadow-sm cursor-pointer transition-colors duration-500
-                                ${isFeatured ? 'md:col-span-2 h-[40vh] md:h-[60vh]' : 'col-span-1 h-[40vh] md:h-[50vh]'}
-                            `}
+                            className={`relative overflow-hidden group bg-gray-100 dark:bg-[#111111] shadow-sm cursor-pointer transition-colors duration-500 ${isFeatured ? 'md:col-span-2 h-[40vh] md:h-[60vh]' : 'col-span-1 h-[40vh] md:h-[50vh]'}`}
                         >
-                            {/* Reemplazamos background-image por MysticImage (resolución 800 para cuadrícula) */}
                             <MysticImage
                                 src={srcId}
-                                alt={`Galería Habitación Buddha Mystic ${index + 1}`}
+                                alt={t('galleryAlt', { index: index + 1 })}
                                 width={800}
                                 height={600}
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
@@ -103,7 +100,6 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                 })}
             </div>
 
-            {/* LIGHTBOX CON PORTAL */}
             {isOpen && typeof document !== 'undefined' && createPortal(
                 <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl transition-opacity duration-500"
@@ -148,10 +144,9 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         className="relative w-full h-full max-w-7xl max-h-[85vh] flex items-center justify-center px-12 md:px-24"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Reemplazamos la etiqueta <img> genérica por MysticImage en alta resolución */}
                         <MysticImage
                             src={images[currentIndex]}
-                            alt={`Habitación Buddha Mystic ampliada ${currentIndex + 1}`}
+                            alt={t('expandedAlt', { index: currentIndex + 1 })}
                             width={1920}
                             height={1080}
                             className="max-w-full max-h-full object-contain shadow-2xl transition-opacity duration-500"

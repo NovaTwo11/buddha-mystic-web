@@ -1,16 +1,19 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function OurTeam() {
+    const t = useTranslations('OurTeam');
+
     const [visibleItems, setVisibleItems] = useState(3);
     const [isTransitioning, setIsTransitioning] = useState(true);
 
     const baseTeam = [
         {
-            role: "Gerente",
-            name: "Liderazgo y Visión",
-            desc: "Liderando con serenidad, asegura que la esencia de Buddha Mystic se refleje en cada detalle de tu estadía.",
+            role: t('member1_role'),
+            name: t('member1_name'),
+            desc: t('member1_desc'),
             image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
             icon: (
                 <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -19,9 +22,9 @@ export default function OurTeam() {
             )
         },
         {
-            role: "Subgerente",
-            name: "Excelencia Operativa",
-            desc: "Su compromiso y carisma garantizan un ambiente de confianza y excelencia operativa en todo el hotel.",
+            role: t('member2_role'),
+            name: t('member2_name'),
+            desc: t('member2_desc'),
             image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
             icon: (
                 <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -30,9 +33,9 @@ export default function OurTeam() {
             )
         },
         {
-            role: "Recepcionista",
-            name: "Atención y Hospitalidad",
-            desc: "Con un gran corazón y vocación de servicio, es la primera sonrisa que te hace sentir en casa.",
+            role: t('member3_role'),
+            name: t('member3_name'),
+            desc: t('member3_desc'),
             image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
             icon: (
                 <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -41,9 +44,9 @@ export default function OurTeam() {
             )
         },
         {
-            role: "Jefa de Cocina",
-            name: "Gastronomía Mándalas",
-            desc: "Transforma nuestra comida tradicional contemporánea en un arte que nutre el cuerpo y el alma.",
+            role: t('member4_role'),
+            name: t('member4_name'),
+            desc: t('member4_desc'),
             image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop",
             icon: (
                 <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -52,9 +55,9 @@ export default function OurTeam() {
             )
         },
         {
-            role: "Jefa de Meseros",
-            name: "Servicio y Bienestar",
-            desc: "Basa su trabajo en la honestidad y el respeto, guiando cada experiencia culinaria con gracia.",
+            role: t('member5_role'),
+            name: t('member5_name'),
+            desc: t('member5_desc'),
             image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop",
             icon: (
                 <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -109,17 +112,15 @@ export default function OurTeam() {
         <section className="py-24 bg-white dark:bg-[#0A0A0A] overflow-hidden transition-colors duration-500">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16">
 
-                {/* Encabezado */}
                 <div className="text-center mb-16 relative">
                     <h2 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-serif font-light mb-4 transition-colors duration-500">
-                        El <span className="italic font-medium text-[#D4AF37]">Corazón</span> de Buddha Mystic
+                        {t('title_p1')} <span className="italic font-medium text-[#D4AF37]">{t('title_highlight')}</span> {t('title_p2')}
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed transition-colors duration-500">
-                        Un equipo formado por hombres y mujeres fuertes, con un gran corazón y una admirable vocación de servicio. Juntos, construyen un ambiente de confianza para brindarte siempre lo mejor.
+                        {t('description')}
                     </p>
                 </div>
 
-                {/* Carrusel */}
                 <div className="relative mb-24">
                     <div className="overflow-hidden px-4 -mx-4 pt-8 pb-4">
                         <div
@@ -129,10 +130,8 @@ export default function OurTeam() {
                         >
                             {team.map((member, idx) => (
                                 <div key={idx} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
-                                    {/* Tarjeta modo oscuro adaptada */}
                                     <div className="group relative bg-[#FAFAFA] dark:bg-[#111111] border border-gray-100 dark:border-white/5 p-4 transition-all duration-500 hover:shadow-xl hover:shadow-[#00A896]/5 dark:hover:shadow-[#00A896]/10 h-full flex flex-col mt-4">
 
-                                        {/* Logo central */}
                                         <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-white dark:bg-[#1A1A1A] border border-gray-100 dark:border-gray-800 rounded-full flex items-center justify-center z-20 shadow-sm group-hover:border-[#00A896] dark:group-hover:border-[#D4AF37] transition-colors duration-500">
                                             {member.icon}
                                         </div>
@@ -162,11 +161,10 @@ export default function OurTeam() {
                         </div>
                     </div>
 
-                    {/* Controles */}
                     <button
                         onClick={prevSlide}
                         className="absolute top-[35%] -left-2 md:-left-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white dark:bg-[#111111] border border-gray-200 dark:border-gray-800 rounded-full text-gray-400 dark:text-gray-500 hover:text-[#D4AF37] dark:hover:text-[#D4AF37] hover:border-[#D4AF37] dark:hover:border-[#D4AF37] hover:shadow-lg transition-all z-20"
-                        aria-label="Anterior"
+                        aria-label={t('prev')}
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -175,7 +173,7 @@ export default function OurTeam() {
                     <button
                         onClick={nextSlide}
                         className="absolute top-[35%] -right-2 md:-right-6 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white dark:bg-[#111111] border border-gray-200 dark:border-gray-800 rounded-full text-gray-400 dark:text-gray-500 hover:text-[#D4AF37] dark:hover:text-[#D4AF37] hover:border-[#D4AF37] dark:hover:border-[#D4AF37] hover:shadow-lg transition-all z-20"
-                        aria-label="Siguiente"
+                        aria-label={t('next')}
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -183,12 +181,11 @@ export default function OurTeam() {
                     </button>
                 </div>
 
-                {/* Banner de Familia */}
                 <div className="relative w-full rounded-sm overflow-hidden group flex flex-col md:block shadow-lg dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
                     <div className="relative w-full aspect-[4/3] sm:aspect-video md:aspect-[21/9] overflow-hidden rounded-t-sm md:rounded-sm">
                         <img
                             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop"
-                            alt="Todo el equipo de Buddha Mystic"
+                            alt={t('alt_team')}
                             className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-1000"
                         />
                         <div className="hidden md:block absolute inset-0 bg-black/20 dark:bg-black/50 transition-colors duration-500" />
@@ -197,10 +194,10 @@ export default function OurTeam() {
                     <div className="w-full md:absolute md:bottom-0 md:left-0 md:p-12 flex justify-center bg-[#FAFAFA] dark:bg-[#111111] md:bg-transparent md:dark:bg-transparent p-6 sm:p-8 transition-colors duration-500">
                         <div className="bg-white dark:bg-[#1A1A1A] md:bg-white/80 md:dark:bg-[#111111]/80 backdrop-blur-md border border-gray-100 dark:border-gray-800 md:border-white/50 md:dark:border-white/10 px-6 py-8 md:px-8 md:py-6 text-center max-w-2xl rounded-b-sm md:rounded-sm shadow-sm md:shadow-lg w-full transition-all duration-500">
                             <h3 className="text-2xl md:text-3xl text-gray-900 dark:text-white font-serif font-light mb-2 transition-colors duration-500">
-                                La <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">Familia</span> Buddha Mystic
+                                {t('banner_p1')} <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">{t('banner_highlight')}</span> {t('banner_p2')}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-300 font-light text-sm md:text-base transition-colors duration-500">
-                                Detrás de cada detalle hay un equipo de personas maravillosas que asumen su labor con amor y responsabilidad. Todos somos parte de tu experiencia.
+                                {t('banner_desc')}
                             </p>
                         </div>
                     </div>

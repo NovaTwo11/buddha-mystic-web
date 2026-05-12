@@ -1,8 +1,12 @@
+import { useTranslations } from 'next-intl';
+
 export default function OurValues() {
+    const t = useTranslations('OurValues');
+
     const values = [
         {
-            title: "Atmósfera Cautivadora",
-            desc: "Una estética inspirada en la serenidad oriental, diseñada cuidadosamente para envolverte en un ambiente de absoluto confort.",
+            title: t('val1_title'),
+            desc: t('val1_desc'),
             icon: (
                 <svg className="w-8 h-8 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -10,8 +14,8 @@ export default function OurValues() {
             )
         },
         {
-            title: "Servicio de Excelencia",
-            desc: "Nuestra vocación es la atención al detalle. Trabajamos incansablemente para que cada instante de tu estadía sea impecable.",
+            title: t('val2_title'),
+            desc: t('val2_desc'),
             icon: (
                 <svg className="w-8 h-8 text-[#00A896]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -19,10 +23,9 @@ export default function OurValues() {
             )
         },
         {
-            title: "Descanso Pleno",
-            desc: "Instalaciones creadas para garantizar un sueño reparador y una desconexión total, ideales para escapadas en pareja o familia.",
+            title: t('val3_title'),
+            desc: t('val3_desc'),
             icon: (
-                // SVG purificado: Luna creciente minimalista
                 <svg className="w-8 h-8 text-[#D4AF37]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                 </svg>
@@ -32,21 +35,17 @@ export default function OurValues() {
 
     return (
         <section className="relative py-24 border-y border-gray-100 dark:border-white/5 overflow-hidden transition-colors duration-500">
-            {/* Imagen de fondo budista */}
             <div
                 className="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1539680964273-ae13f8a44e22?q=80&w=1074&auto=format&fit=crop')" }}
             />
 
-            {/* Overlay Inteligente: Blanco en claro, negro en oscuro para asegurar legibilidad */}
             <div className="absolute inset-0 z-0 bg-white/40 dark:bg-[#0A0A0A]/80 backdrop-blur-[3px] transition-colors duration-500" />
 
             <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16">
-
-                {/* Título opcional para dar contexto a los valores */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-serif font-light transition-colors duration-500">
-                        Nuestros <span className="italic font-medium text-[#D4AF37]">Pilares</span>
+                        {t('title_p1')} <span className="italic font-medium text-[#D4AF37]">{t('title_highlight')}</span>
                     </h2>
                 </div>
 

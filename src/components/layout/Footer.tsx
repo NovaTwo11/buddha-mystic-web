@@ -1,6 +1,9 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+    const t = useTranslations('Footer');
+
     return (
         <footer className="bg-white dark:bg-[#0A0A0A] border-t border-gray-100 dark:border-white/5 pt-20 pb-10 transition-colors duration-500">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-16">
@@ -14,7 +17,7 @@ export default function Footer() {
                             </h3>
                         </Link>
                         <p className="text-gray-500 dark:text-gray-400 font-light leading-relaxed mb-6 transition-colors duration-500">
-                            Una experiencia que trasciende. El lugar perfecto para tu descanso físico y mental. Te esperamos con ansias.
+                            {t('description')}
                         </p>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-[#00A896]/50 dark:text-[#00A896]/70">
                             <path d="M12 22c-4.4 0-8-3.6-8-8 0-5 8-12 8-12s8 7 8 12c0 4.4-3.6 8-8 8z" />
@@ -27,31 +30,31 @@ export default function Footer() {
                     {/* Columna 2: Enlaces Rápidos */}
                     <div className="flex flex-col items-center md:items-start">
                         <h4 className="text-gray-900 dark:text-white font-bold tracking-[0.2em] mb-8 text-xs uppercase transition-colors duration-500">
-                            Navegación
+                            {t('navigation_title')}
                         </h4>
                         <ul className="space-y-4 text-sm text-gray-500 dark:text-gray-400 font-light flex flex-col items-center md:items-start transition-colors duration-500">
                             <li>
                                 <Link href="/nosotros" className="hover:text-[#00A896] dark:hover:text-[#D4AF37] transition-colors duration-300 inline-flex items-center group">
                                     <span className="w-0 h-[1px] bg-[#00A896] dark:bg-[#D4AF37] mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300 hidden md:inline-block"></span>
-                                    Nuestra Historia
+                                    {t('nav_about')}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/alojamiento" className="hover:text-[#00A896] dark:hover:text-[#D4AF37] transition-colors duration-300 inline-flex items-center group">
                                     <span className="w-0 h-[1px] bg-[#00A896] dark:bg-[#D4AF37] mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300 hidden md:inline-block"></span>
-                                    Alojamiento y Tarifas
+                                    {t('nav_rooms')}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/restaurante" className="hover:text-[#00A896] dark:hover:text-[#D4AF37] transition-colors duration-300 inline-flex items-center group">
                                     <span className="w-0 h-[1px] bg-[#00A896] dark:bg-[#D4AF37] mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300 hidden md:inline-block"></span>
-                                    Restaurante Mándalas
+                                    {t('nav_restaurant')}
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/experiencias" className="hover:text-[#00A896] dark:hover:text-[#D4AF37] transition-colors duration-300 inline-flex items-center group">
                                     <span className="w-0 h-[1px] bg-[#00A896] dark:bg-[#D4AF37] mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300 hidden md:inline-block"></span>
-                                    Experiencias y Entorno
+                                    {t('nav_experiences')}
                                 </Link>
                             </li>
                         </ul>
@@ -60,7 +63,7 @@ export default function Footer() {
                     {/* Columna 3: Contacto */}
                     <div className="flex flex-col items-center md:items-start">
                         <h4 className="text-gray-900 dark:text-white font-bold tracking-[0.2em] mb-8 text-xs uppercase transition-colors duration-500">
-                            Contacto
+                            {t('contact_title')}
                         </h4>
                         <ul className="space-y-4 text-sm text-gray-500 dark:text-gray-400 font-light flex flex-col items-center md:items-start transition-colors duration-500">
                             <li>Doradal, Puerto Triunfo (Antioquia)</li>
@@ -81,7 +84,7 @@ export default function Footer() {
                     {/* Columna 4: Redes y Legal */}
                     <div className="flex flex-col items-center md:items-start">
                         <h4 className="text-gray-900 dark:text-white font-bold tracking-[0.2em] mb-8 text-xs uppercase transition-colors duration-500">
-                            Conéctate
+                            {t('connect_title')}
                         </h4>
 
                         {/* Redes Sociales centradas en móvil */}
@@ -98,15 +101,11 @@ export default function Footer() {
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                                 </svg>
                             </a>
-                            <a href="https://tiktok.com/@buddhamystic" target="_blank" rel="noopener noreferrer" className="text-gray-400 dark:text-gray-500 hover:text-[#00A896] dark:hover:text-[#D4AF37] transition-colors duration-300" aria-label="TikTok">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
-                                </svg>
-                            </a>
+                            {/* Eliminado el icono de TikTok */}
                         </div>
 
                         <Link href="/terminos" className="text-xs text-gray-400 dark:text-gray-500 hover:text-[#D4AF37] dark:hover:text-[#00A896] transition-colors duration-300 underline underline-offset-4 decoration-gray-200 dark:decoration-gray-800 hover:decoration-[#D4AF37] dark:hover:decoration-[#00A896]">
-                            Políticas y Condiciones
+                            {t('policies')}
                         </Link>
                     </div>
 
@@ -114,8 +113,8 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="border-t border-gray-100 dark:border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-gray-400 dark:text-gray-500 font-light transition-colors duration-500">
-                    <p className="mb-4 md:mb-0">&copy; {new Date().getFullYear()} Hotel Buddha Mystic. Todos los derechos reservados.</p>
-                    <p>Diseñado para inspirar tranquilidad.</p>
+                    <p className="mb-4 md:mb-0">&copy; {new Date().getFullYear()} Hotel Buddha Mystic. {t('rights')}</p>
+                    <p>{t('designed_for')}</p>
                 </div>
             </div>
         </footer>

@@ -1,11 +1,16 @@
-export const attractionsData = {
+type Translator = {
+    (key: string): string;
+    raw: (key: string) => string[];
+};
+
+export const getAttractionsData = (t: Translator) => ({
     "hacienda-napoles": {
-        title: "Hacienda Nápoles",
-        category: "Parque Temático",
-        tagline: "Un santuario de vida y transformación",
-        description: "Lo que alguna vez fue un símbolo de opulencia, hoy es el parque temático más grande de Sudamérica, dedicado a la conservación de especies, la memoria histórica y el disfrute en familia bajo el sol del Magdalena Medio.",
-        history: "Ubicada en el corazón de nuestra región, la Hacienda Nápoles ha sido transformada por completo en un centro de preservación ambiental. Sus extensas llanuras albergan hoy la manada de hipopótamos más grande fuera de África, además de avestruces, felinos rescatados y una flora exuberante que ha reclamado su territorio.",
-        location: "Doradal, Antioquia (A 10 min de Buddha Mystic)",
+        title: t('hacienda-napoles.title'),
+        category: t('hacienda-napoles.category'),
+        tagline: t('hacienda-napoles.tagline'),
+        description: t('hacienda-napoles.description'),
+        history: t('hacienda-napoles.history'),
+        location: t('hacienda-napoles.location'),
         mapLink: "https://www.google.com/maps/search/?api=1&query=Parque+Tematico+Hacienda+Napoles+Doradal",
         images: [
             "IMG_2922_mjlzdu",
@@ -16,21 +21,15 @@ export const attractionsData = {
             "IMG_7314_wwc6zn",
             "Medellin-Hacienda-Napoles-Foto-14-con-Aventureros360-1_s0oxln"
         ],
-        details: [
-            "Safari fotográfico guiado",
-            "Acceso a parques acuáticos (Cataratas Victoria, Cobras)",
-            "Visita al Santuario de Fauna",
-            "Museo Memorial",
-            "Parque Jurásico"
-        ]
+        details: t.raw('hacienda-napoles.details')
     },
     "santorini": {
-        title: "El Santorini Colombiano",
-        category: "La Aldea",
-        tagline: "El Mediterráneo en el corazón de Antioquia",
-        description: "Un fascinante laberinto de fachadas inmaculadamente blancas y puertas azules que capturan la luz del sol de Doradal, creando una atmósfera mágica de paz que evoca las costas griegas.",
-        history: "Esta hermosa urbanización, abierta al público, nació como un capricho arquitectónico inspirado en las islas Cícladas de Grecia. Con el tiempo, se ha convertido en el icono visual de la región, ofreciendo rincones altamente fotogénicos y una serenidad única para quienes recorren sus callejones.",
-        location: "Doradal, Antioquia (A 5 min de Buddha Mystic)",
+        title: t('santorini.title'),
+        category: t('santorini.category'),
+        tagline: t('santorini.tagline'),
+        description: t('santorini.description'),
+        history: t('santorini.history'),
+        location: t('santorini.location'),
         mapLink: "https://www.google.com/maps/search/?api=1&query=Aldea+Doradal+Santorini+Colombiano",
         images: [
             "IMG_4491_gebqxo",
@@ -43,21 +42,15 @@ export const attractionsData = {
             "IMG_3071_tkdfmj",
             "IMG_3070_tp8rsf"
         ],
-        details: [
-            "Paseo arquitectónico libre",
-            "Múltiples miradores fotográficos",
-            "Tardes de café y gastronomía local",
-            "Galerías de artesanías",
-            "Rutas empedradas para caminar"
-        ]
+        details: t.raw('santorini.details')
     },
     "rio-claro": {
-        title: "Reserva Río Claro",
-        category: "Naturaleza Virgen",
-        tagline: "Un cañón de mármol esculpido por el tiempo",
-        description: "Sumérgete en un refugio de biodiversidad incomparable donde el agua cristalina serpentea a través de un majestuoso cañón de mármol blanco. El lugar perfecto tanto para la contemplación silenciosa como para la aventura.",
-        history: "Esta reserva natural de carácter privado fue creada para proteger de forma estricta los ecosistemas cársticos de la región. Sus inmensas formaciones rocosas tienen millones de años de antigüedad y albergan especies endémicas fascinantes, como la enigmática ave Guácharo.",
-        location: "Autopista Medellín - Bogotá (A 40 min de Buddha Mystic)",
+        title: t('rio-claro.title'),
+        category: t('rio-claro.category'),
+        tagline: t('rio-claro.tagline'),
+        description: t('rio-claro.description'),
+        history: t('rio-claro.history'),
+        location: t('rio-claro.location'),
         mapLink: "https://www.google.com/maps/search/?api=1&query=Reserva+Natural+Rio+Claro+Antioquia",
         images: [
             "image00065_l844m8",
@@ -66,21 +59,15 @@ export const attractionsData = {
             "DJI_0112_os6yuv",
             "DJI_0110_jkiibw"
         ],
-        details: [
-            "Senderismo guiado por la selva húmeda",
-            "Rafting nivel I y II (Apto para principiantes)",
-            "Exploración de la Cueva de los Guácharos",
-            "Vía Ferrata y Canopy",
-            "Nado libre en playas de mármol"
-        ]
+        details: t.raw('rio-claro.details')
     },
     "cascada-san-juan": {
-        title: "Cascada San Juan",
-        category: "Balneario Natural",
-        tagline: "Purificación bajo el manto de la selva",
-        description: "Déjate envolver por el sonido ensordecedor y a la vez relajante del agua cayendo desde las alturas. Sumérgete en pozos naturales de agua fresca, completamente rodeado del verde vibrante del bosque.",
-        history: "Un refugio natural mantenido por los locales durante años. Este balneario es alimentado por afluentes puros que nacen en las montañas vírgenes del Magdalena Medio, ofreciendo aguas cristalinas que invitan a la relajación profunda y la desconexión total.",
-        location: "Vereda San Juan (A 30 min de Buddha Mystic)",
+        title: t('cascada-san-juan.title'),
+        category: t('cascada-san-juan.category'),
+        tagline: t('cascada-san-juan.tagline'),
+        description: t('cascada-san-juan.description'),
+        history: t('cascada-san-juan.history'),
+        location: t('cascada-san-juan.location'),
         mapLink: "https://www.google.com/maps/search/?api=1&query=Cascada+San+Juan+Puerto+Triunfo",
         images: [
             "608653108_1688237502504707_8729437822250448478_n_ftej8b",
@@ -89,21 +76,15 @@ export const attractionsData = {
             "604810167_1688237582504699_5711515220725373089_n_ssxke6",
             "96082275_1307383116131870_3558750063981232128_n_myl7tp"
         ],
-        details: [
-            "Nado en piscinas naturales",
-            "Caminata ecológica de baja dificultad",
-            "Sesiones de meditación guiada en la naturaleza",
-            "Zonas adaptadas para picnic",
-            "Rutas para fotografía de paisaje"
-        ]
+        details: t.raw('cascada-san-juan.details')
     },
     "rio-magdalena": {
-        title: "Río Magdalena",
-        category: "Atardeceres Mágicos",
-        tagline: "El latido fluvial de Colombia",
-        description: "Navega por la arteria fluvial más imponente e importante del país. Siente la inmensidad de este cuerpo de agua mientras el sol pinta el cielo de tonos dorados y púrpuras, creando un espectáculo inolvidable.",
-        history: "El Río Grande de la Magdalena ha sido la vía de comunicación, comercio y cultura de Colombia desde tiempos precolombinos. Navegar sus aguas es conectar con la memoria histórica de toda una nación, escuchando las historias de los pescadores locales.",
-        location: "Puerto Triunfo (A 20 min de Buddha Mystic)",
+        title: t('rio-magdalena.title'),
+        category: t('rio-magdalena.category'),
+        tagline: t('rio-magdalena.tagline'),
+        description: t('rio-magdalena.description'),
+        history: t('rio-magdalena.history'),
+        location: t('rio-magdalena.location'),
         mapLink: "https://www.google.com/maps/search/?api=1&query=Malecon+Puerto+Triunfo+Rio+Magdalena",
         images: [
             "DJI_0223_f9lnq7",
@@ -111,21 +92,15 @@ export const attractionsData = {
             "IMG_4174_lau1rn",
             "IMG_4205_pus9tv"
         ],
-        details: [
-            "Paseo en lancha tradicional al atardecer",
-            "Avistamiento de aves y fauna ribereña",
-            "Liberación de tortugas (Según temporada)",
-            "Relatos de historia local con pescadores nativos",
-            "Rutas de pesca tradicional (Opcional)"
-        ]
+        details: t.raw('rio-magdalena.details')
     },
     "rio-la-miel": {
-        title: "Río La Miel",
-        category: "Expedición Inolvidable",
-        tagline: "Serenidad y fluir en aguas esmeraldas",
-        description: "Una travesía por corrientes serenas y aguas de un verde esmeralda hipnótico. Un escenario prístino que te invita tanto a la contemplación silenciosa como al nado revitalizante en un entorno salvaje.",
-        history: "Descendiendo desde la alta montaña de la cordillera central, el Río La Miel talla a su paso paisajes exuberantes. Es reconocido a nivel nacional por ser uno de los ríos más limpios y hermosos de la región, resguardado por densas paredes de vegetación.",
-        location: "La Dorada / Norcasia (A 1h 20 min de Buddha Mystic)",
+        title: t('rio-la-miel.title'),
+        category: t('rio-la-miel.category'),
+        tagline: t('rio-la-miel.tagline'),
+        description: t('rio-la-miel.description'),
+        history: t('rio-la-miel.history'),
+        location: t('rio-la-miel.location'),
         mapLink: "https://www.google.com/maps/search/?api=1&query=Rio+La+Miel+Norcasia+Caldas",
         images: [
             "rio-la-miel-dorada-caldas-9_idj7xp",
@@ -134,14 +109,8 @@ export const attractionsData = {
             "inmersion-en-un-paraiso-natural-a-orillas-del-rio-la-miel-1200-d4092be_rlirhs",
             "191069696_216852443370430_6641700777784027213_n_rutdoy"
         ],
-        details: [
-            "Navegación extendida en bote a motor",
-            "Tubing (descenso sereno en neumáticos)",
-            "Visita a cascadas ocultas",
-            "Avistamiento de monos aulladores",
-            "Almuerzo típico preparado a la orilla del río"
-        ]
+        details: t.raw('rio-la-miel.details')
     }
-};
+});
 
-export type AttractionSlug = keyof typeof attractionsData;
+export type AttractionSlug = "hacienda-napoles" | "santorini" | "rio-claro" | "cascada-san-juan" | "rio-magdalena" | "rio-la-miel";
