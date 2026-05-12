@@ -12,14 +12,12 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Evitar que la página haga scroll cuando el Lightbox está abierto
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'unset';
         }
-
         return () => {
             document.body.style.overflow = 'unset';
         };
@@ -44,7 +42,6 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
         setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     }, [images.length]);
 
-    // Navegación fluida por teclado
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (!isOpen) return;
@@ -60,7 +57,6 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
 
     return (
         <section className="py-20 px-4 sm:px-8 lg:px-16 max-w-[1600px] mx-auto transition-colors duration-500">
-            {/* Título de la sección */}
             <div className="mb-12 text-center md:text-left">
                 <h2 className="font-serif font-light text-3xl md:text-4xl text-gray-900 dark:text-white mb-4 transition-colors duration-500">
                     Memoria <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">Visual</span>
@@ -72,19 +68,18 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
             </div>
 
             {/* Mosaico Artístico Dinámico */}
-            {/* Usamos auto-rows para que las filas se generen automáticamente según la cantidad de imágenes */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
 
                 {images.map((src, index) => {
-                    // La primera imagen siempre será la protagonista
                     const isFirst = index === 0;
 
                     return (
                         <div
                             key={index}
                             onClick={() => openLightbox(index)}
-                            className={`relative group overflow-hidden rounded-2xl cursor-pointer shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-xl transition-all duration-500 bg-gray-100 dark:bg-[#111111]
-                                ${isFirst ? 'md:col-span-2 md:row-span-2 h-[350px] md:h-full' : 'col-span-1 h-full'}
+                            // Eliminamos el h-[350px] que rompía la grilla en móvil y forzamos w-full h-full
+                            className={`relative group overflow-hidden rounded-sm cursor-pointer shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-xl transition-all duration-500 bg-gray-100 dark:bg-[#111111] w-full h-full
+                                ${isFirst ? 'md:col-span-2 md:row-span-2' : 'col-span-1'}
                             `}
                         >
                             <MysticImage
@@ -95,10 +90,8 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[10s] ease-out"
                             />
 
-                            {/* Velo protector general */}
                             <div className="absolute inset-0 bg-black/10 dark:bg-black/30 group-hover:bg-transparent dark:group-hover:bg-black/10 transition-colors duration-500" />
 
-                            {/* Ícono de ampliación al hacer hover (Glassmorphism) */}
                             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                                 <div className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center transform scale-75 group-hover:scale-100 transition-all duration-500">
                                     <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
@@ -112,18 +105,16 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
 
             </div>
 
-            {/* Pie de Galería decorativo */}
             <div className="mt-16 flex justify-center">
                 <div className="w-12 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
             </div>
 
-            {/* LIGHTBOX INMERSIVO (Renderizado a nivel de Body mediante Portal) */}
+            {/* LIGHTBOX INMERSIVO */}
             {isOpen && typeof document !== 'undefined' && createPortal(
                 <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl transition-opacity duration-500"
                     onClick={closeLightbox}
                 >
-                    {/* Botón Cerrar */}
                     <button
                         onClick={closeLightbox}
                         className="absolute top-6 right-6 md:top-10 md:right-10 text-white/50 hover:text-[#D4AF37] transition-colors duration-300 z-[110] p-2"
@@ -133,12 +124,10 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                         </svg>
                     </button>
 
-                    {/* Contador */}
                     <div className="absolute top-8 left-1/2 -translate-x-1/2 text-white/50 font-light tracking-[0.3em] text-xs uppercase z-[110]">
                         {currentIndex + 1} <span className="text-[#D4AF37] mx-2">/</span> {images.length}
                     </div>
 
-                    {/* Controles de Navegación (Sólo si hay más de 1 imagen) */}
                     {images.length > 1 && (
                         <>
                             <button
@@ -161,7 +150,6 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                         </>
                     )}
 
-                    {/* Contenedor de la Imagen Ampliada */}
                     <div
                         className="relative w-full h-full max-w-7xl max-h-[85vh] flex items-center justify-center px-12 md:px-24"
                         onClick={(e) => e.stopPropagation()}
