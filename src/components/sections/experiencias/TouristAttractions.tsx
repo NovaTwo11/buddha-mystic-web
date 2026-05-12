@@ -1,4 +1,6 @@
 import Link from 'next/link';
+// Importamos nuestro componente de imagen optimizado
+import MysticImage from "@/components/ui/MysticImage";
 
 const attractions = [
     {
@@ -6,42 +8,42 @@ const attractions = [
         slug: "hacienda-napoles",
         category: "Parque Temático",
         description: "Una experiencia inmersiva llena de vida silvestre, atracciones acuáticas y un legado histórico transformado en un santuario de conservación.",
-        image: "https://images.unsplash.com/photo-1574870111867-089730e5a72b?q=80&w=800&auto=format&fit=crop",
+        imageId: "IMG_2924_cbv9lu",
     },
     {
         title: "Santorini Colombiano",
         slug: "santorini",
         category: "Arquitectura Mágica",
         description: "Recorre calles empedradas y fachadas blancas que evocan el mediterráneo, enclavadas en la majestuosidad de la geografía antioqueña.",
-        image: "https://images.unsplash.com/photo-1516483638261-f40af5edca87?q=80&w=800&auto=format&fit=crop",
+        imageId: "IMG_3071_tkdfmj",
     },
     {
         title: "Reserva Río Claro",
         slug: "rio-claro",
         category: "Naturaleza Virgen",
         description: "Un cañón de mármol atravesado por aguas cristalinas. El refugio perfecto para admirar la flora y fauna endémica en absoluta serenidad.",
-        image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=800&auto=format&fit=crop",
+        imageId: "image00065_l844m8",
     },
     {
         title: "Cascada San Juan",
         slug: "cascada-san-juan",
         category: "Balneario Natural",
         description: "Déjate envolver por el sonido del agua cayendo y sumérgete en pozos naturales de agua fresca, rodeado del verde vibrante del bosque.",
-        image: "https://images.unsplash.com/photo-1543086927-536c4b9015c9?q=80&w=800&auto=format&fit=crop",
+        imageId: "IMG_4049_a0kibm",
     },
     {
         title: "Río Magdalena",
         slug: "rio-magdalena",
         category: "Atardeceres Mágicos",
         description: "Navega por la arteria fluvial más importante de Colombia y sé testigo de cómo el sol pinta el cielo de tonos dorados al finalizar el día.",
-        image: "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?q=80&w=800&auto=format&fit=crop",
+        imageId: "DJI_0223_f9lnq7",
     },
     {
         title: "Río La Miel",
         slug: "rio-la-miel",
         category: "Expedición Inolvidable",
         description: "Una travesía por corrientes serenas que te llevarán a descubrir paisajes prístinos, ideales para la contemplación y el nado.",
-        image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800&auto=format&fit=crop",
+        imageId: "191069696_216852443370430_6641700777784027213_n_rutdoy",
     },
 ];
 
@@ -67,11 +69,16 @@ export default function TouristAttractions() {
                 {attractions.map((item, index) => (
                     <div key={index} className="group flex flex-col">
 
-                        {/* Contenedor de Imagen */}
-                        <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden z-0 shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
-                            <img
-                                src={item.image}
+                        {/* Contenedor de Imagen convertido en Link */}
+                        <Link
+                            href={`/experiencias/${item.slug}`}
+                            className="relative w-full aspect-[4/5] sm:aspect-[3/4] rounded-2xl overflow-hidden z-0 shadow-sm dark:shadow-[0_10px_30px_rgba(0,0,0,0.8)] block cursor-pointer"
+                        >
+                            <MysticImage
+                                src={item.imageId}
                                 alt={item.title}
+                                width={600}
+                                height={800}
                                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[10000ms] ease-out"
                             />
 
@@ -84,7 +91,7 @@ export default function TouristAttractions() {
                                     {item.category}
                                 </span>
                             </div>
-                        </div>
+                        </Link>
 
                         {/* El Panel de Cristal Superpuesto */}
                         <div className="relative z-10 bg-white/85 dark:bg-[#111111]/85 backdrop-blur-xl p-5 md:p-8 rounded-2xl shadow-[0_15px_35px_rgba(0,0,0,0.06)] dark:shadow-[0_15px_35px_rgba(0,0,0,0.5)] border border-white/60 dark:border-white/10 -mt-12 mx-3 sm:-mt-16 sm:mx-6 flex-grow flex flex-col group-hover:-translate-y-3 transition-all duration-500">

@@ -1,47 +1,49 @@
 "use client";
 
 import { useState } from "react";
+import MysticImage from "@/components/ui/MysticImage";
 
 const extremeActivities = [
     {
         name: "Tour Buggies",
         location: "Selva y trochas locales",
-        image: "https://images.unsplash.com/photo-1559553156-2e97137af16f?q=80&w=1000&auto=format&fit=crop"
+        // Mantenemos la URL temporalmente al no haber un ID en la lista
+        imageId: "376251399_282320264652725_2542536003869655726_n_h8ylkp"
     },
     {
         name: "Tour Cuatrimoto",
         location: "Rutas agrestes de Doradal",
-        image: "https://images.unsplash.com/photo-1596324143435-081831c26b58?q=80&w=1000&auto=format&fit=crop"
+        imageId: "2d6dd5b6-d8e7-45de-9f24-919f48b00c02_gkt5ka"
     },
     {
         name: "Liberación de Tortugas",
         location: "Río Magdalena",
-        image: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=1000&auto=format&fit=crop"
+        imageId: "IMG_0769_umjkgj"
     },
     {
         name: "Cascada El Oro",
         location: "Senderismo avanzado",
-        image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1000&auto=format&fit=crop"
+        imageId: "YJQK1081_knah4c"
     },
     {
         name: "Aventura a Los Chorros",
         location: "Cañones acuáticos",
-        image: "https://images.unsplash.com/photo-1533568024501-81f181f7f259?q=80&w=1000&auto=format&fit=crop"
+        imageId: "DJI_0350_1_gjhrof"
     },
     {
         name: "Rafting en Río Claro",
         location: "Reserva Río Claro",
-        image: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?q=80&w=1000&auto=format&fit=crop"
+        imageId: "image00065_l844m8"
     },
     {
         name: "Cavernas La Danta",
         location: "Corregimiento La Danta",
-        image: "https://images.unsplash.com/photo-1534068305413-585a973d88b4?q=80&w=1000&auto=format&fit=crop"
+        imageId: "DJI_20220223_170748_509_fqt1gq"
     },
     {
         name: "La Gran Magdalena",
         location: "Puerto Triunfo",
-        image: "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?q=80&w=1000&auto=format&fit=crop"
+        imageId: "IMG_4174_lau1rn"
     },
 ];
 
@@ -85,10 +87,14 @@ export default function ExtremeActivities() {
                                         : "opacity-0 z-0 scale-105"
                                 }`}
                             >
-                                <img
-                                    src={activity.image}
+                                {/* Implementación de MysticImage para óptima resolución y rendimiento */}
+                                <MysticImage
+                                    src={activity.imageId}
                                     alt={activity.name}
-                                    className="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-[15000ms] ease-out"
+                                    width={1080}
+                                    height={1080}
+                                    priority={index === 0}
+                                    className="absolute inset-0 w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-[15000ms] ease-out"
                                 />
                                 {/* Velo degradado inferior */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />

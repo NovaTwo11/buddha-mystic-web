@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import MysticImage from "@/components/ui/MysticImage";
 
 interface RoomDetailGalleryProps {
     images: string[];
@@ -11,7 +12,6 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // SOLUCIÓN ERROR 2: Mutaciones externas al DOM (body.overflow) aisladas en un useEffect
     useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
@@ -19,7 +19,6 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
             document.body.style.overflow = 'unset';
         }
 
-        // Limpieza de seguridad al desmontar
         return () => {
             document.body.style.overflow = 'unset';
         };
@@ -72,7 +71,7 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
 
             {/* Mosaico Fotográfico */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                {images.map((src, index) => {
+                {images.map((srcId, index) => {
                     const isFeatured = index === 0 && images.length % 2 !== 0;
 
                     return (
@@ -83,10 +82,15 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                                 ${isFeatured ? 'md:col-span-2 h-[40vh] md:h-[60vh]' : 'col-span-1 h-[40vh] md:h-[50vh]'}
                             `}
                         >
-                            <div
-                                className="absolute inset-0 bg-cover bg-center transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-                                style={{ backgroundImage: `url(${src})` }}
+                            {/* Reemplazamos background-image por MysticImage (resolución 800 para cuadrícula) */}
+                            <MysticImage
+                                src={srcId}
+                                alt={`Galería Habitación Buddha Mystic ${index + 1}`}
+                                width={800}
+                                height={600}
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                             />
+
                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 flex items-center justify-center">
                                 <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-500">
                                     <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -99,7 +103,7 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                 })}
             </div>
 
-            {/* LIGHTBOX CON PORTAL (Solución al Error 1: Removido el estado mounted) */}
+            {/* LIGHTBOX CON PORTAL */}
             {isOpen && typeof document !== 'undefined' && createPortal(
                 <div
                     className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl transition-opacity duration-500"
@@ -144,9 +148,12 @@ export default function RoomDetailGallery({ images }: RoomDetailGalleryProps) {
                         className="relative w-full h-full max-w-7xl max-h-[85vh] flex items-center justify-center px-12 md:px-24"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <img
+                        {/* Reemplazamos la etiqueta <img> genérica por MysticImage en alta resolución */}
+                        <MysticImage
                             src={images[currentIndex]}
-                            alt={`Habitación Buddha Mystic ${currentIndex + 1}`}
+                            alt={`Habitación Buddha Mystic ampliada ${currentIndex + 1}`}
+                            width={1920}
+                            height={1080}
                             className="max-w-full max-h-full object-contain shadow-2xl transition-opacity duration-500"
                         />
                     </div>

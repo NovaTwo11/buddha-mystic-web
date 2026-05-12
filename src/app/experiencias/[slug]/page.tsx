@@ -36,6 +36,7 @@ export default async function AttractionDetailPage({ params }: PageProps) {
                     description={attraction.description}
                     history={attraction.history}
                     location={attraction.location}
+                    mapLink={attraction.mapLink} // Propiedad añadida para hacer funcionar el mapa
                     details={attraction.details}
                 />
             </ScrollReveal>

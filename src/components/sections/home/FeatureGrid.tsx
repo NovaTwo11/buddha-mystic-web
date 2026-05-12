@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MysticImage from "@/components/ui/MysticImage";
 
 export default function FeatureGrid() {
     const features = [
@@ -14,7 +15,7 @@ export default function FeatureGrid() {
             title: "HABITACIONES Y SUITES",
             subtitle: "Santuario de Descanso",
             description: "Espacios confortables, diseñados con una estética armoniosa para garantizarte un descanso profundo tras un día de aventura.",
-            image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop",
+            image: "Foto_habitacion_1.1_gympjb",
             link: "/alojamiento"
         },
         {
@@ -30,7 +31,7 @@ export default function FeatureGrid() {
             title: "RESTAURANTE MÁNDALAS",
             subtitle: "Explosión de Sabores",
             description: "Comida tradicional contemporánea que reúne una exótica mezcla, desde platos antioqueños hasta preparaciones asiáticas.",
-            image: "https://images.unsplash.com/photo-1544025162-8a15fd996530?q=80&w=1000&auto=format&fit=crop",
+            image: "w5490h3655x0y8-6c8660c8_aulakn",
             link: "/restaurante"
         },
         {
@@ -44,7 +45,7 @@ export default function FeatureGrid() {
             title: "EXPERIENCIAS",
             subtitle: "Naturaleza y Aventura",
             description: "Descubre los atractivos turísticos de la región, desde la maravilla del Río Claro hasta el Parque Temático Hacienda Nápoles.",
-            image: "https://images.unsplash.com/photo-1533692328991-08159ff19fca?q=80&w=1000&auto=format&fit=crop",
+            image: "IMG_3075_ybzzyf",
             link: "/experiencias"
         }
     ];
@@ -88,9 +89,12 @@ export default function FeatureGrid() {
                         >
                             {/* Imagen de fondo de la tarjeta */}
                             <div className="relative h-72 rounded-2xl overflow-hidden">
-                                <img
+                                <MysticImage
                                     src={feature.image}
                                     alt={feature.title}
+                                    height={1200}
+                                    width={800}
+                                    priority={true}
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-in-out"
                                 />
                                 <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-500"></div>

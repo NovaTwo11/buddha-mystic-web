@@ -1,3 +1,5 @@
+import MysticImage from "@/components/ui/MysticImage";
+
 export default function OurPromise() {
     return (
         <section className="bg-[#FCFBF9] dark:bg-[#0A0A0A] py-24 lg:py-32 px-5 sm:px-12 lg:px-16 relative overflow-hidden flex items-center justify-center transition-colors duration-500">
@@ -19,9 +21,12 @@ export default function OurPromise() {
 
                     {/* Contenedor en forma de Arco */}
                     <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-t-full rounded-b-2xl overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.08)] dark:shadow-none border-8 border-white dark:border-[#111111] group z-10 transition-colors duration-500">
-                        <img
-                            src="https://images.unsplash.com/photo-1560297971-f26c8ba85802?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <MysticImage
+                            src="DJI_20260228_142644_504_e3btak"
                             alt="Confort en Buddha Mystic"
+                            height={1200}
+                            width={800}
+                            priority={true}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[10000ms] ease-out"
                         />
                         <div className="absolute inset-0 bg-[#00A896]/10 mix-blend-multiply transition-colors group-hover:bg-transparent duration-700" />

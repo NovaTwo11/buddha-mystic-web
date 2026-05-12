@@ -22,11 +22,12 @@ export const rooms: Room[] = [
         description: 'Un refugio diseñado para el viajero solitario que busca reconectar consigo mismo. Este espacio minimalista ofrece el equilibrio perfecto entre confort y silencio, permitiendo que la mente descanse sin distracciones.',
         lowPrice: '$150.000',
         highPrice: '$250.000',
-        mainImage: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop',
+        mainImage: 'IMG_Hab_4_vglkuy',
         gallery: [
-            'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1522771731470-ee1dd154e285?q=80&w=2070&auto=format&fit=crop'
+            'IMG_Hab_4_vglkuy',
+            'IMG_Hab2_3_da6esg',
+            'IMG_Hab2_2_xshtaq',
+            'IMG_Hab2_1_olnlc0'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva']
     },
@@ -39,11 +40,12 @@ export const rooms: Room[] = [
         description: 'Un santuario íntimo creado para fortalecer vínculos y encontrar la serenidad en compañía. Cada detalle, desde la iluminación hasta las texturas, está pensado para inspirar tranquilidad y un descanso profundo a dos almas.',
         lowPrice: '$150.000',
         highPrice: '$250.000',
-        mainImage: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop',
+        mainImage: 'IMG_Hab2_2_pxnwvq',
         gallery: [
-            'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1974&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop'
+            'IMG_Hab2_2_pxnwvq',
+            'IMG_Hab_4_nomkuy',
+            'IMG_Hab2_3_pnjjty',
+            'IMG_Hab2_1_ryjogo'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva']
     },
@@ -56,11 +58,11 @@ export const rooms: Room[] = [
         description: 'Nuestra Suite Superior eleva la experiencia de descanso con acabados premium y una disposición espacial que invita a la paz profunda. El espacio ideal para una estadía inolvidable, envuelta en lujo sutil.',
         lowPrice: '$170.000',
         highPrice: '$270.000',
-        mainImage: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop',
+        mainImage: 'IMG_9708_k2ffjv',
         gallery: [
-            'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1560067174-c5a3a8f37060?q=80&w=2069&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop'
+            'IMG_9708_k2ffjv',
+            'DJI_20260227_172125_092_pd1rom',
+            'DJI_20260227_121456_396_ibudob'
         ],
         features: ['Aire acondicionado', 'TV 50"', 'Wifi de alta velocidad', 'Baño privado de lujo', 'Nevera ejecutiva']
     },
@@ -73,10 +75,10 @@ export const rooms: Room[] = [
         description: 'Un espacio diseñado para familias pequeñas o grupos íntimos que buscan compartir momentos de calidad. Sus dimensiones ofrecen la comodidad necesaria para convivir en completa armonía.',
         lowPrice: '$225.000',
         highPrice: '$290.000',
-        mainImage: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop',
+        mainImage: 'DJI_20260227_171323_141_dpqare',
         gallery: [
-            'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1925&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=2070&auto=format&fit=crop'
+            'DJI_20260227_171323_141_dpqare',
+            'DJI_20260227_171256_514_rj1iqy'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
     },
@@ -89,10 +91,9 @@ export const rooms: Room[] = [
         description: 'Ideal para la familia moderna. Esta habitación ofrece la amplitud necesaria para que cada huésped encuentre su propio rincón de descanso sin perder la calidez y conexión del grupo.',
         lowPrice: '$280.000',
         highPrice: '$420.000',
-        mainImage: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop',
+        mainImage: 'WhatsApp_Image_2026-05-11_at_1.40.08_PM_cqpb5v',
         gallery: [
-            'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop'
+            'WhatsApp_Image_2026-05-11_at_1.40.08_PM_cqpb5v'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
     },
@@ -105,10 +106,12 @@ export const rooms: Room[] = [
         description: 'Un ambiente generoso pensado para acoger grandes familias. Un refugio donde la convivencia y la risa se armonizan con el diseño sutil, limpio y relajante de la esencia Buddha Mystic.',
         lowPrice: '$480.000',
         highPrice: '$550.000',
-        mainImage: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop',
+        mainImage: 'DJI_20260227_163805_968_lrb40n',
         gallery: [
-            'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1522771731470-ee1dd154e285?q=80&w=2070&auto=format&fit=crop'
+            'DJI_20260227_163805_968_lrb40n',
+            'DJI_20260227_163413_632_advhzh',
+            'DJI_20260227_163458_437_wkhz45',
+            'DJI_20260227_163442_734_z7vlum'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Baño privado', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
     },
@@ -121,10 +124,12 @@ export const rooms: Room[] = [
         description: 'Diseñada para albergar a grupos extensos en un solo espacio unificado. Sus dimensiones majestuosas aseguran un confort absoluto para todos los integrantes, promoviendo el descanso colectivo.',
         lowPrice: '$550.000',
         highPrice: '$720.000',
-        mainImage: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop',
+        mainImage: 'DJI_20260227_122657_989_w6blks',
         gallery: [
-            'https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1974&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=2070&auto=format&fit=crop'
+            'DJI_20260227_122657_989_w6blks',
+            'DJI_20260227_124155_806_hqo9bk',
+            'DJI_20260227_122801_801_ueqoue',
+            'DJI_20260227_122812_991_v7kvxv'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Múltiples baños', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
     },
@@ -137,10 +142,10 @@ export const rooms: Room[] = [
         description: 'Un santuario colectivo perfecto para retiros y grupos de meditación. Permite la convivencia ininterrumpida y el trabajo espiritual o grupal, manteniendo intacta nuestra promesa de paz.',
         lowPrice: '$620.000',
         highPrice: '$900.000',
-        mainImage: 'https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?q=80&w=2232&auto=format&fit=crop',
+        mainImage: 'IMG_0642_jrbdft',
         gallery: [
-            'https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?q=80&w=2232&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop'
+            'IMG_0642_jrbdft',
+            'IMG_0647_dejw7i'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Múltiples baños privados', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
     },
@@ -153,10 +158,9 @@ export const rooms: Room[] = [
         description: 'Nuestra estancia más majestuosa. Un espacio amplio e iluminado que honra el poder de la comunidad. Ideal para retiros holísticos donde el descanso de todos fluye en un solo ambiente.',
         lowPrice: '$700.000',
         highPrice: '$1.000.000',
-        mainImage: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop',
+        mainImage: 'DJI_20260227_164109_343_izxhjz',
         gallery: [
-            'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=2070&auto=format&fit=crop',
-            'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2070&auto=format&fit=crop'
+            'DJI_20260227_164109_343_izxhjz'
         ],
         features: ['Aire acondicionado', 'TV Satelital', 'Wifi de alta velocidad', 'Múltiples baños privados', 'Nevera ejecutiva', 'Mueble y mesa ejecutiva']
     }

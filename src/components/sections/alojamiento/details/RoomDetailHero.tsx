@@ -1,12 +1,17 @@
 import { Room } from '@/data/rooms';
+import MysticImage from "@/components/ui/MysticImage";
 
 export default function RoomDetailHero({ room }: { room: Room }) {
     return (
         <section className="relative h-[80vh] w-full overflow-hidden transition-colors duration-500">
             {/* Animación sutil de escala para dar sensación de inmersión */}
-            <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-[10000ms] scale-105"
-                style={{ backgroundImage: `url(${room.mainImage})` }}
+            <MysticImage
+                src={room.mainImage}
+                alt={room.name}
+                width={1920}
+                height={1080}
+                priority={true}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[10000ms] scale-105"
             />
 
             {/* Overlay adaptativo: Más profundo en modo oscuro */}

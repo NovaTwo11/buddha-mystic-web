@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MysticImage from "@/components/ui/MysticImage";
 
 export default function HomeHero() {
     return (
@@ -6,9 +7,12 @@ export default function HomeHero() {
 
             {/* CONTENEDOR DE IMAGEN */}
             <div className="absolute inset-y-0 left-0 right-0 lg:left-auto w-full lg:w-[65%] z-0">
-                <img
-                    src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2500&auto=format&fit=crop"
+                <MysticImage
+                    src="dji_fly_20260227_155846_986_1772226768716_photo_mcygcd"
                     alt="Hotel Buddha Mystic"
+                    width={1200}
+                    height={800}
+                    priority={true}
                     className="w-full h-full object-cover object-center lg:object-right"
                 />
 

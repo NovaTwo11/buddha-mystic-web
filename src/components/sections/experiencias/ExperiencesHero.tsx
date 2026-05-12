@@ -1,13 +1,18 @@
 import React from 'react';
+import MysticImage from "@/components/ui/MysticImage";
 
 export default function ExperiencesHero() {
     return (
         <section className="relative min-h-[100dvh] w-full flex flex-col justify-center lg:justify-end overflow-hidden bg-[#FAFAFA] dark:bg-[#0A0A0A] transition-colors duration-500">
 
             {/* Capa de Imagen de Fondo */}
-            <div
+            <MysticImage
+                src={"image00052_y9jctq"}
+                alt={"BG_Balsa"}
+                width={1920}
+                height={1080}
+                priority={true}
                 className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10000ms] scale-105"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542259009477-d625272157b7?q=80&w=2000&auto=format&fit=crop')" }}
             />
 
             {/* Velos de Degradado (Overlays adaptativos) */}
