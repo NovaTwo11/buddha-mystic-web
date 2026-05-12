@@ -87,8 +87,11 @@ export default function FeatureGrid() {
                             /* Contenedor de tarjeta para modo oscuro */
                             className="group relative bg-white dark:bg-[#111111] rounded-3xl p-3 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] hover:shadow-[0_20px_40px_-15px_rgba(0,168,150,0.2)] transition-all duration-500 flex flex-col"
                         >
-                            {/* Imagen de fondo de la tarjeta */}
-                            <div className="relative h-72 rounded-2xl overflow-hidden">
+                            {/* Imagen de fondo de la tarjeta convertida en Link */}
+                            <Link
+                                href={feature.link}
+                                className="relative h-72 rounded-2xl overflow-hidden block cursor-pointer"
+                            >
                                 <MysticImage
                                     src={feature.image}
                                     alt={feature.title}
@@ -98,7 +101,7 @@ export default function FeatureGrid() {
                                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-in-out"
                                 />
                                 <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                            </div>
+                            </Link>
 
                             {/* Contenido de la tarjeta */}
                             <div className="relative pt-14 pb-8 px-6 flex flex-col flex-grow items-center text-center">
