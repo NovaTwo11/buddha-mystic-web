@@ -23,7 +23,7 @@ export default function TouristAttractions() {
                 <h2 className="font-serif font-light text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white mb-6 leading-tight transition-colors duration-500">
                     {t('treasuresPart1')} <span className="italic font-medium text-[#D4AF37]">{t('treasuresHighlight')}</span> {t('treasuresPart2')}
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400 font-light leading-relaxed text-base md:text-lg transition-colors duration-500">
+                <p className="text-gray-900 dark:text-gray-400 font-light leading-relaxed text-base md:text-lg transition-colors duration-500">
                     {t('treasuresDesc')}
                 </p>
             </div>
@@ -54,7 +54,7 @@ export default function TouristAttractions() {
                             <h3 className="font-serif font-light text-lg sm:text-2xl text-gray-900 dark:text-white mb-2 sm:mb-3 group-hover:text-[#D4AF37] dark:group-hover:text-[#D4AF37] transition-colors duration-500">
                                 {t(`attractions.${item.key}.title`)}
                             </h3>
-                            <p className="text-gray-600 dark:text-gray-400 font-light text-xs sm:text-sm leading-relaxed line-clamp-3 mb-4 sm:mb-6 flex-grow transition-colors duration-500">
+                            <p className="text-gray-900 dark:text-gray-400 font-light text-xs sm:text-sm leading-relaxed line-clamp-3 mb-4 sm:mb-6 flex-grow transition-colors duration-500">
                                 {t(`attractions.${item.key}.description`)}
                             </p>
                             <div className="mt-auto">

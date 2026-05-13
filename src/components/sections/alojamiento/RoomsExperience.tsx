@@ -64,7 +64,7 @@ export default function RoomsExperience() {
                         className={`px-3 py-1.5 md:px-5 md:py-2 text-[10px] md:text-sm font-light tracking-wide rounded-sm transition-all duration-300 border
                             ${activeFilter === key
                             ? 'bg-[#00A896] text-white border-[#00A896]'
-                            : 'bg-transparent text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-800 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] hover:text-[#D4AF37] dark:hover:text-[#D4AF37]'}`}
+                            : 'bg-transparent text-gray-900 dark:text-gray-400 border-gray-200 dark:border-gray-800 hover:border-[#D4AF37] dark:hover:border-[#D4AF37] hover:text-[#D4AF37] dark:hover:text-[#D4AF37]'}`}
                     >
                         {t(`filter_${key}`)}
                     </button>

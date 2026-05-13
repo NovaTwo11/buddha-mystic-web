@@ -21,7 +21,7 @@ export default function TermsContent() {
                         <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
                             {t('section1Title')}
                         </h2>
-                        <ul className="space-y-4 text-gray-600 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
+                        <ul className="space-y-4 text-gray-900 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
                             <li className="flex items-start">
                                 <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
                                 <span><strong>{t('vatLabel')}</strong> {t('vatText')}</span>
@@ -37,7 +37,7 @@ export default function TermsContent() {
                         <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
                             {t('section2Title')}
                         </h2>
-                        <ul className="space-y-4 text-gray-600 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
+                        <ul className="space-y-4 text-gray-900 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
                             <li className="flex items-start">
                                 <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
                                 <span><strong>{t('conditionsLabel')}</strong> {t('conditionsText')}</span>
@@ -53,7 +53,7 @@ export default function TermsContent() {
                         <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
                             {t('section3Title')}
                         </h2>
-                        <ul className="space-y-4 text-gray-600 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
+                        <ul className="space-y-4 text-gray-900 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
                             <li className="flex items-start">
                                 <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
                                 <span><strong>{t('transferabilityLabel')}</strong> {t('transferabilityText')}</span>

@@ -83,7 +83,7 @@ export default function QuoteBanner() {
                     <div className="flex-1 w-full max-w-sm flex flex-col gap-6">
                         {benefits.map((item, index) => (
                             <div key={index} className="flex items-center gap-4 group cursor-default">
-                                <div className="text-gray-400 dark:text-gray-600 group-hover:text-[#00A896] dark:group-hover:text-[#D4AF37] transition-colors duration-300">
+                                <div className="text-gray-400 dark:text-gray-900 group-hover:text-[#00A896] dark:group-hover:text-[#D4AF37] transition-colors duration-300">
                                     {item.icon}
                                 </div>
                                 <span className="text-sm font-light text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">

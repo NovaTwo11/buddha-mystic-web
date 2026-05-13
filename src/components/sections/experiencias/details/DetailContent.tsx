@@ -30,7 +30,7 @@ export default function DetailContent({ description, history, location, mapLink,
                         {t('the')} <span className="italic font-medium text-[#D4AF37]">{t('experience')}</span>
                     </h2>
 
-                    <p className="text-gray-600 dark:text-gray-300 font-light text-base md:text-lg leading-relaxed mb-12 text-justify transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-300 font-light text-base md:text-lg leading-relaxed mb-12 text-justify transition-colors duration-500">
                         {description}
                     </p>
 
@@ -38,7 +38,7 @@ export default function DetailContent({ description, history, location, mapLink,
                         {t('historyAndContext')}
                     </h3>
 
-                    <p className="text-gray-600 dark:text-gray-400 font-light leading-relaxed text-justify transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-400 font-light leading-relaxed text-justify transition-colors duration-500">
                         {history}
                     </p>
                 </div>
@@ -77,7 +77,7 @@ export default function DetailContent({ description, history, location, mapLink,
                             </span>
                             <ul className="space-y-4">
                                 {details.map((detail, index) => (
-                                    <li key={index} className="flex items-start text-gray-600 dark:text-gray-300 font-light text-sm transition-colors duration-500 group">
+                                    <li key={index} className="flex items-start text-gray-900 dark:text-gray-300 font-light text-sm transition-colors duration-500 group">
                                         <svg className="w-4 h-4 mr-4 mt-0.5 text-[#00A896] dark:text-[#D4AF37] flex-shrink-0 transform group-hover:scale-110 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                                         </svg>

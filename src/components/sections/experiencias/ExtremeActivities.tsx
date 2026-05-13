@@ -33,7 +33,7 @@ export default function ExtremeActivities() {
                             {t('adrenalinAnd')} <span className="italic font-medium text-[#D4AF37]">{t('nature')}</span>
                         </h2>
                     </div>
-                    <p className="text-gray-600 dark:text-gray-400 font-light max-w-lg text-base md:text-lg transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-400 font-light max-w-lg text-base md:text-lg transition-colors duration-500">
                         {t('description')}
                     </p>
                 </div>
@@ -101,12 +101,12 @@ export default function ExtremeActivities() {
                                         </div>
                                         <div className="relative z-10 ml-4 flex flex-col justify-center">
                                             <h4 className={`text-base sm:text-lg font-medium transition-colors duration-500 ${
-                                                isActive ? "text-gray-900 dark:text-white" : "text-gray-600 dark:text-gray-400 group-hover:text-[#D4AF37] dark:group-hover:text-[#00A896]"
+                                                isActive ? "text-gray-900 dark:text-white" : "text-gray-900 dark:text-gray-400 group-hover:text-[#D4AF37] dark:group-hover:text-[#00A896]"
                                             }`}>
                                                 {t(`activities.${activity.key}.name`)}
                                             </h4>
                                             <span className={`text-[10px] sm:text-xs tracking-wide uppercase transition-colors duration-500 ${
-                                                isActive ? "text-[#00A896] dark:text-[#D4AF37] font-semibold" : "text-gray-400 dark:text-gray-600 font-light"
+                                                isActive ? "text-[#00A896] dark:text-[#D4AF37] font-semibold" : "text-gray-400 dark:text-gray-900 font-light"
                                             }`}>
                                                 {t(`activities.${activity.key}.location`)}
                                             </span>

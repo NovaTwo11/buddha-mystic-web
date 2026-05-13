@@ -109,7 +109,7 @@ export default function RoomAmenities() {
                         <path d="M12 16V12" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M12 8H12.01" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 font-light leading-relaxed transition-colors duration-500">
+                    <p className="text-sm md:text-base text-gray-900 dark:text-gray-300 font-light leading-relaxed transition-colors duration-500">
                         <span className="text-[#D4AF37] font-medium block md:inline mb-2 md:mb-0 md:mr-2">{t('note_title')}</span>
                         {t('note_p1')} <span className="text-gray-900 dark:text-white font-medium transition-colors duration-500">{t('note_highlight')}</span> {t('note_p2')}
                     </p>

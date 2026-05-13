@@ -25,7 +25,7 @@ export default function MonthlyPromotions() {
                         {t('title_p1')} <span className="italic font-medium text-[#D4AF37]">{t('title_highlight')}</span>
                     </h2>
 
-                    <p className="text-gray-600 dark:text-gray-300 text-lg font-light leading-relaxed mb-10 max-w-2xl mx-auto transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-300 text-lg font-light leading-relaxed mb-10 max-w-2xl mx-auto transition-colors duration-500">
                         {t('description')}
                     </p>
 

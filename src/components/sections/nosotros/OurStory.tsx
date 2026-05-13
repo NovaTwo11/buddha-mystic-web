@@ -27,7 +27,7 @@ export default function OurStory() {
                         {t('title_p1')} <span className="italic font-medium text-[#00A896]">{t('title_highlight')}</span>
                     </h2>
 
-                    <div className="space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed font-light text-base lg:text-lg transition-colors duration-500">
+                    <div className="space-y-6 text-gray-900 dark:text-gray-400 leading-relaxed font-light text-base lg:text-lg transition-colors duration-500">
                         <p>{t('p1')}</p>
                         <p>{t('p2')}</p>
                         <p>{t('p3')}</p>

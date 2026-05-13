@@ -31,7 +31,7 @@ export default function ExperiencesHero() {
                         <span className="italic font-medium text-[#D4AF37]">{t('titleHighlight')}</span> {t('titlePart2')}
                     </h1>
 
-                    <p className="text-gray-600 dark:text-gray-300 font-light text-sm sm:text-base lg:text-lg leading-relaxed pl-3 sm:pl-4 transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-300 font-light text-sm sm:text-base lg:text-lg leading-relaxed pl-3 sm:pl-4 transition-colors duration-500">
                         {t('description')}
                     </p>
                 </div>

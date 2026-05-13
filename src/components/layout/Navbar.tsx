@@ -108,7 +108,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Enlaces de Navegación (Desktop) */}
-                    <div className="hidden md:flex space-x-10 items-center text-[11px] tracking-[0.2em] font-medium text-gray-600 dark:text-gray-300 uppercase">
+                    <div className="hidden md:flex space-x-10 items-center text-[11px] tracking-[0.2em] font-medium text-gray-900 dark:text-gray-300 uppercase">
                         {navLinks.map((item) => (
                             <Link key={item.name} href={item.path} className="relative group py-2 flex items-center">
                                 <span className="group-hover:text-[#D4AF37] transition-colors duration-500">{item.name}</span>
@@ -253,7 +253,7 @@ export default function Navbar() {
                             key={item.name}
                             href={item.path}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="text-sm tracking-[0.2em] font-medium text-gray-600 dark:text-gray-300 uppercase hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors duration-300"
+                            className="text-sm tracking-[0.2em] font-medium text-gray-900 dark:text-gray-300 uppercase hover:text-[#D4AF37] dark:hover:text-[#D4AF37] transition-colors duration-300"
                         >
                             {item.name}
                         </Link>
@@ -262,7 +262,7 @@ export default function Navbar() {
                     <div className="pt-6 border-t border-gray-100 dark:border-gray-800 flex flex-col space-y-6">
                         <button
                             onClick={toggleTheme}
-                            className="flex items-center text-sm tracking-[0.2em] font-medium text-gray-600 dark:text-gray-300 uppercase hover:text-[#00A896] dark:hover:text-[#00A896] transition-colors duration-300"
+                            className="flex items-center text-sm tracking-[0.2em] font-medium text-gray-900 dark:text-gray-300 uppercase hover:text-[#00A896] dark:hover:text-[#00A896] transition-colors duration-300"
                         >
                             <span className="hidden dark:flex items-center">
                                 <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">

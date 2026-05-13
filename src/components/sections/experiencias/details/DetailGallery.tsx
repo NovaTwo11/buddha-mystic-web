@@ -63,7 +63,7 @@ export default function DetailGallery({ images }: DetailGalleryProps) {
                 <h2 className="font-serif font-light text-3xl md:text-4xl text-gray-900 dark:text-white mb-4 transition-colors duration-500">
                     {t('visualMemoryPart1')} <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">{t('visualMemoryHighlight')}</span>
                 </h2>
-                <p className="text-gray-600 dark:text-gray-400 font-light max-w-xl transition-colors duration-500">
+                <p className="text-gray-900 dark:text-gray-400 font-light max-w-xl transition-colors duration-500">
                     {t('galleryDescription')}
                 </p>
             </div>

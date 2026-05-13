@@ -54,11 +54,11 @@ export default function FeatureGrid() {
     ];
 
     return (
-        <section className="py-32 bg-gray-50 dark:bg-[#0A0A0A] relative transition-colors duration-500">
+        <section className="py-12 lg:py-16 bg-gray-50 dark:bg-[#0A0A0A] relative transition-colors duration-500">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 
-                {/* Título de la sección */}
-                <div className="text-center mb-24 flex flex-col items-center">
+                {/* Título de la sección (Márgenes ajustados para mayor fluidez) */}
+                <div className="text-center mb-12 lg:mb-16 flex flex-col items-center">
                     <p className="text-[#00A896] text-xs font-bold tracking-[0.4em] mb-4 uppercase">
                         {t('badge')}
                     </p>
@@ -81,7 +81,7 @@ export default function FeatureGrid() {
                     </div>
                 </div>
 
-                {/* Tarjetas Dinámicas */}
+                {/* Tarjetas Dinámicas (Sin modificaciones, tal como solicitaste) */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
                     {features.map((feature) => (
                         <div
@@ -116,7 +116,7 @@ export default function FeatureGrid() {
                                     {feature.subtitle}
                                 </h3>
 
-                                <p className="text-base text-gray-600 dark:text-gray-400 font-light mb-10 flex-grow leading-relaxed transition-colors duration-500">
+                                <p className="text-base text-gray-900 dark:text-gray-400 font-light mb-10 flex-grow leading-relaxed transition-colors duration-500">
                                     {feature.description}
                                 </p>
 
@@ -125,7 +125,7 @@ export default function FeatureGrid() {
                                     className="inline-flex items-center text-xs tracking-widest text-[#D4AF37] hover:text-[#00A896] transition-colors font-bold uppercase relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[1px] after:bg-[#D4AF37]/30 hover:after:bg-[#00A896] after:transition-colors"
                                 >
                                     {t('explore')}
-                                    <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                     </svg>
                                 </Link>

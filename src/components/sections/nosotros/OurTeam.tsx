@@ -116,7 +116,7 @@ export default function OurTeam() {
                     <h2 className="text-3xl md:text-4xl text-gray-900 dark:text-white font-serif font-light mb-4 transition-colors duration-500">
                         {t('title_p1')} <span className="italic font-medium text-[#D4AF37]">{t('title_highlight')}</span> {t('title_p2')}
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed transition-colors duration-500">
                         {t('description')}
                     </p>
                 </div>
@@ -151,7 +151,7 @@ export default function OurTeam() {
                                                 <span className="text-xs text-[#00A896] dark:text-[#D4AF37] uppercase tracking-widest block mb-2 transition-colors duration-500">{member.name}</span>
                                                 <div className="w-8 h-[1px] bg-[#D4AF37] mx-auto mb-4 opacity-50 transition-all duration-500 group-hover:w-16 group-hover:opacity-100" />
                                             </div>
-                                            <p className="text-sm text-gray-600 dark:text-gray-400 italic font-light transition-colors duration-500">
+                                            <p className="text-sm text-gray-900 dark:text-gray-400 italic font-light transition-colors duration-500">
                                                 &quot;{member.desc}&quot;
                                             </p>
                                         </div>
@@ -196,7 +196,7 @@ export default function OurTeam() {
                             <h3 className="text-2xl md:text-3xl text-gray-900 dark:text-white font-serif font-light mb-2 transition-colors duration-500">
                                 {t('banner_p1')} <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">{t('banner_highlight')}</span> {t('banner_p2')}
                             </h3>
-                            <p className="text-gray-600 dark:text-gray-300 font-light text-sm md:text-base transition-colors duration-500">
+                            <p className="text-gray-900 dark:text-gray-300 font-light text-sm md:text-base transition-colors duration-500">
                                 {t('banner_desc')}
                             </p>
                         </div>

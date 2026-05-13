@@ -8,7 +8,7 @@ export default function AboutHero() {
         <section className="relative w-full h-screen min-h-[700px] flex items-center overflow-hidden transition-colors duration-500 bg-[#FCFBF9] dark:bg-[#0A0A0A]">
             <div className="absolute inset-0 w-full h-full z-0">
                 <MysticImage
-                    src="IMG_4491_m17z2i"
+                    src="763052f4-0411-4e6c-ae2a-3f4d1ce6548d"
                     alt={t('alt_img')}
                     width={1920}
                     height={1080}

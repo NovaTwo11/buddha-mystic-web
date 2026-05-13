@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import MysticImage from "@/components/ui/MysticImage";
 
 export default function OurValues() {
     const t = useTranslations('OurValues');
@@ -35,9 +36,13 @@ export default function OurValues() {
 
     return (
         <section className="relative py-24 border-y border-gray-100 dark:border-white/5 overflow-hidden transition-colors duration-500">
-            <div
+            <MysticImage
+                src={"c1f7b37e-d8bc-4ed3-a8bb-6699c58b5056"}
+                alt={"Fondo_Atardecer"}
+                height={1920}
+                width={1920}
+                priority={true}
                 className="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1539680964273-ae13f8a44e22?q=80&w=1074&auto=format&fit=crop')" }}
             />
 
             <div className="absolute inset-0 z-0 bg-white/40 dark:bg-[#0A0A0A]/80 backdrop-blur-[3px] transition-colors duration-500" />
@@ -59,7 +64,7 @@ export default function OurValues() {
                                 {val.icon}
                             </div>
                             <h3 className="text-xl text-gray-900 dark:text-white font-serif mb-4 transition-colors duration-500">{val.title}</h3>
-                            <p className="text-gray-600 dark:text-gray-400 font-light leading-relaxed transition-colors duration-500">{val.desc}</p>
+                            <p className="text-gray-900 dark:text-gray-400 font-light leading-relaxed transition-colors duration-500">{val.desc}</p>
                         </div>
                     ))}
                 </div>

@@ -23,7 +23,7 @@ export default function CulinaryEvolution() {
                             {t('newAwakening')} <br />
                             <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">{t('sensorial')}</span>
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-400 font-light text-sm md:text-base leading-relaxed mb-10 transition-colors duration-500">
+                        <p className="text-gray-900 dark:text-gray-400 font-light text-sm md:text-base leading-relaxed mb-10 transition-colors duration-500">
                             {t('evolutionText')}
                         </p>
                         <a

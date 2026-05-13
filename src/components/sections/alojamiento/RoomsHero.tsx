@@ -42,7 +42,7 @@ export default function RoomsHero() {
 
                     <div className="w-16 h-px bg-[#D4AF37] mb-6"></div>
 
-                    <p className="text-gray-600 dark:text-gray-300 font-light leading-relaxed text-base md:text-xl mb-8 transition-colors duration-500">
+                    <p className="text-gray-900 dark:text-gray-300 font-light leading-relaxed text-base md:text-xl mb-8 transition-colors duration-500">
                         {t('description')}
                     </p>
 

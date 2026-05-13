@@ -22,7 +22,7 @@ export default function RoomDetailContent({ room }: { room: Room }) {
                     {t('essenceOf')} <span className="italic font-medium text-[#00A896] dark:text-[#D4AF37]">{t('space')}</span>
                 </h2>
 
-                <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed font-light mb-14 md:text-justify transition-colors duration-500">
+                <p className="text-gray-900 dark:text-gray-300 text-lg leading-relaxed font-light mb-14 md:text-justify transition-colors duration-500">
                     {room.description}
                 </p>
 
@@ -37,7 +37,7 @@ export default function RoomDetailContent({ room }: { room: Room }) {
                                 <div className="w-8 h-8 flex-shrink-0 rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center transition-all duration-500 group-hover:border-[#00A896] dark:group-hover:border-[#D4AF37] group-hover:bg-[#00A896]/5 dark:group-hover:bg-[#D4AF37]/5">
                                     <div className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] transition-all duration-500 group-hover:bg-[#00A896] dark:group-hover:bg-[#D4AF37] group-hover:scale-150" />
                                 </div>
-                                <span className="text-sm text-gray-600 dark:text-gray-300 font-light group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
+                                <span className="text-sm text-gray-900 dark:text-gray-300 font-light group-hover:text-gray-900 dark:group-hover:text-white transition-colors duration-300">
                                     {feature}
                                 </span>
                             </div>
