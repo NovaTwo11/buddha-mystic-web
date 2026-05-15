@@ -71,54 +71,61 @@ export default function RoomsExperience() {
                 ))}
             </div>
 
-            <div className="grid grid-cols-3 gap-2 sm:gap-6 lg:gap-10">
+            {/* Transformamos el Grid en un Flexbox centrado. Las tarjetas calcularán su 50% automáticamente */}
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-6 lg:gap-10">
                 {filteredRooms.map((room) => (
-                    <div key={room.id} className="group relative flex flex-col bg-white dark:bg-[#111111] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl dark:hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 rounded-sm overflow-hidden">
-                        <Link href={`/alojamiento/${room.slug}`} className="relative h-28 sm:h-48 md:h-64 w-full overflow-hidden block cursor-pointer">
+                    <div
+                        key={room.id}
+                        // El ancho (w) de cada tarjeta se calcula restando el margen exacto para que encajen dos por fila
+                        className="w-[calc(50%-0.25rem)] sm:w-[calc(50%-0.75rem)] lg:w-[calc(50%-1.25rem)] group relative flex flex-col bg-white dark:bg-[#111111] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl dark:hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 rounded-sm overflow-hidden"
+                    >
+                        {/* Se elevó la altura de la imagen (h-36, h-64, h-80) para darles el protagonismo solicitado */}
+                        <Link href={`/alojamiento/${room.slug}`} className="relative h-36 sm:h-64 md:h-80 w-full overflow-hidden block cursor-pointer">
                             <MysticImage
                                 src={room.imgId}
                                 alt={t('alt_img', { name: room.name })}
-                                width={800}
-                                height={600}
+                                width={1000} // Elevamos la resolución solicitada al optimizador por el nuevo ancho
+                                height={800}
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
 
-                            <div className="hidden md:block absolute top-4 left-4 bg-white/90 dark:bg-[#1A1A1A]/90 backdrop-blur-md border border-white/40 dark:border-white/10 px-3 py-1.5 rounded-sm transition-colors duration-500">
-                                <span className="text-[10px] text-gray-900 dark:text-white font-medium tracking-wider uppercase">{room.energy}</span>
+                            <div className="hidden md:block absolute top-4 left-4 bg-white/90 dark:bg-[#1A1A1A]/90 backdrop-blur-md border border-white/40 dark:border-white/10 px-4 py-2 rounded-sm transition-colors duration-500">
+                                <span className="text-xs text-gray-900 dark:text-white font-medium tracking-wider uppercase">{room.energy}</span>
                             </div>
                         </Link>
 
-                        <div className="p-3 sm:p-4 md:p-8 flex flex-col flex-grow">
-                            <div className="mb-3 md:mb-6">
-                                <h3 className="text-[11px] leading-tight sm:text-lg md:text-2xl text-gray-900 dark:text-white font-serif font-light transition-colors duration-500">
+                        <div className="p-3 sm:p-6 md:p-10 flex flex-col flex-grow">
+                            <div className="mb-4 md:mb-8">
+                                {/* Tipografías proporcionales a las nuevas tarjetas más anchas */}
+                                <h3 className="text-sm leading-tight sm:text-2xl md:text-3xl lg:text-4xl text-gray-900 dark:text-white font-serif font-light transition-colors duration-500">
                                     {room.name}
                                 </h3>
-                                <p className="text-[8px] sm:text-xs md:text-sm text-gray-500 dark:text-gray-400 font-light mt-1 transition-colors duration-500">
+                                <p className="text-[10px] sm:text-sm md:text-base text-gray-500 dark:text-gray-400 font-light mt-2 transition-colors duration-500">
                                     {room.capacity}
                                 </p>
                             </div>
 
-                            <div className="mt-auto border-t border-gray-100 dark:border-white/5 pt-3 md:pt-5 flex flex-col space-y-2 md:space-y-3 mb-4 md:mb-8 transition-colors duration-500">
+                            <div className="mt-auto border-t border-gray-100 dark:border-white/5 pt-4 md:pt-6 flex flex-col space-y-3 md:space-y-4 mb-5 md:mb-10 transition-colors duration-500">
                                 <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center text-sm">
-                                    <span className="text-gray-500 dark:text-gray-400 font-light uppercase tracking-wider text-[7px] md:text-[9px] transition-colors duration-500">
+                                    <span className="text-gray-500 dark:text-gray-400 font-light uppercase tracking-wider text-[9px] md:text-xs transition-colors duration-500">
                                         <span className="md:hidden">{t('low_season_mobile')}</span>
                                         <span className="hidden md:inline">{t('low_season_pc')}</span>
                                     </span>
-                                    <span className="text-gray-900 dark:text-white font-medium text-[10px] sm:text-sm md:text-base transition-colors duration-500">{room.lowPrice}</span>
+                                    <span className="text-gray-900 dark:text-white font-medium text-xs sm:text-base md:text-xl transition-colors duration-500">{room.lowPrice}</span>
                                 </div>
                                 <div className="flex flex-col xl:flex-row xl:justify-between xl:items-center text-sm">
-                                    <span className="text-gray-500 dark:text-gray-400 font-light uppercase tracking-wider text-[7px] md:text-[9px] transition-colors duration-500">
+                                    <span className="text-gray-500 dark:text-gray-400 font-light uppercase tracking-wider text-[9px] md:text-xs transition-colors duration-500">
                                         <span className="md:hidden">{t('high_season_mobile')}</span>
                                         <span className="hidden md:inline">{t('high_season_pc')}</span>
                                     </span>
-                                    <span className="text-[#D4AF37] font-medium text-[10px] sm:text-sm md:text-base">{room.highPrice}</span>
+                                    <span className="text-[#D4AF37] font-medium text-xs sm:text-base md:text-xl">{room.highPrice}</span>
                                 </div>
                             </div>
 
                             <Link
                                 href={`/alojamiento/${room.slug}`}
-                                className="w-full py-2 md:py-3.5 px-1 md:px-4 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-white transition-colors duration-500 font-light tracking-[0.1em] md:tracking-[0.2em] text-[7px] sm:text-[9px] md:text-xs uppercase rounded-sm text-center block"
+                                className="w-full py-2.5 md:py-4 px-2 md:px-6 bg-transparent border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-white transition-colors duration-500 font-light tracking-[0.1em] md:tracking-[0.2em] text-[9px] sm:text-xs md:text-sm uppercase rounded-sm text-center block"
                             >
                                 <span className="hidden sm:inline">{t('discover_pc')}</span>
                                 <span className="sm:hidden">{t('discover_mobile')}</span>

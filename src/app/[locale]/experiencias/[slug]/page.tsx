@@ -31,6 +31,14 @@ export default async function AttractionDetailPage({ params }: PageProps) {
         notFound();
     }
 
+    // AÑADIMOS LA ASERCIÓN DE TIPO AQUÍ (as "image" | "video")
+    const formattedGallery = attraction.gallery.map((media, index) => ({
+        id: index,
+        type: media.type as "image" | "video",
+        src: media.src,
+        alt: `${attraction.title} - Vista ${index + 1}`
+    }));
+
     return (
         <main className="min-h-screen bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500">
             <Navbar/>
@@ -38,7 +46,7 @@ export default async function AttractionDetailPage({ params }: PageProps) {
                 title={attraction.title}
                 category={attraction.category}
                 tagline={attraction.tagline}
-                image={attraction.images[0]}
+                image={attraction.gallery[0].src}
             />
             <ScrollReveal>
                 <DetailContent
@@ -53,7 +61,7 @@ export default async function AttractionDetailPage({ params }: PageProps) {
                 <DetailBanner />
             </ScrollReveal>
             <ScrollReveal>
-                <DetailGallery images={attraction.images} />
+                <DetailGallery mediaList={formattedGallery} />
             </ScrollReveal>
             <Footer/>
         </main>

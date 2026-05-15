@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 
 const attractionsData = [
     { key: "haciendaNapoles", slug: "hacienda-napoles", imageId: "IMG_2924_cbv9lu" },
-    { key: "santorini", slug: "santorini", imageId: "IMG_3071_tkdfmj" },
+    { key: "santorini", slug: "santorini", imageId: "IMG_3075_nzxoly" },
     { key: "rioClaro", slug: "rio-claro", imageId: "image00065_l844m8" },
     { key: "cascadaSanJuan", slug: "cascada-san-juan", imageId: "IMG_4049_a0kibm" },
     { key: "rioMagdalena", slug: "rio-magdalena", imageId: "DJI_0223_f9lnq7" },

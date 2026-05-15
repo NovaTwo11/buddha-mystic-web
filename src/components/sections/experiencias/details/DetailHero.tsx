@@ -15,7 +15,7 @@ export default function DetailHero({ title, category, tagline, image }: DetailHe
     const restOfTitle = titleParts.slice(1).join(' ');
 
     return (
-        <section className="relative h-[85vh] min-h-[600px] lg:min-h-[700px] w-full flex flex-col justify-end overflow-hidden bg-gray-900 transition-colors duration-500 pt-24 md:pt-32">
+        <section className="relative h-[85vh] min-h-[500px] sm:min-h-[600px] lg:min-h-[700px] w-full flex flex-col justify-end overflow-hidden bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500 pt-24 md:pt-32">
             <MysticImage
                 src={image}
                 alt={t('heroOf', { title })}
@@ -24,27 +24,32 @@ export default function DetailHero({ title, category, tagline, image }: DetailHe
                 priority={true}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-[20s] scale-105 z-0"
             />
-            <div className="absolute inset-0 z-10 bg-black/20 dark:bg-black/50 transition-colors duration-500" />
-            <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-90" />
 
-            <div className="relative z-20 max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-16 pb-16 sm:pb-24 md:pb-32">
-                <div className="max-w-2xl bg-white/10 dark:bg-[#111111]/30 backdrop-blur-md border border-white/20 dark:border-white/10 p-6 sm:p-8 md:p-12 rounded-sm shadow-2xl animate-fade-in-up transition-colors duration-500">
-                    <div className="flex items-center mb-4 sm:mb-6">
-                        <div className="w-6 sm:w-8 h-[1px] bg-[#D4AF37] mr-3 sm:mr-4"></div>
-                        <span className="text-[#00A896] dark:text-[#D4AF37] tracking-[0.3em] text-[9px] sm:text-[10px] md:text-xs font-bold uppercase drop-shadow-md transition-colors duration-500">
+            {/* Degradado responsivo y reforzado: Efecto de luz sólido en modo claro para proteger la legibilidad */}
+            <div className="absolute inset-0 z-10 bg-gradient-to-t md:bg-gradient-to-r from-white/85 via-white/30 to-white/20 md:from-white/70 md:via-white/10 md:to-transparent dark:from-black/95 dark:via-black/80 dark:to-black/20 md:dark:from-black/80 md:dark:via-black/40 md:dark:to-transparent transition-all duration-500" />
+
+            <div className="relative z-20 max-w-[1600px] w-full mx-auto px-4 sm:px-8 lg:px-16 pb-12 sm:pb-24 md:pb-32">
+
+                {/* Contenedor con alineación centrada en móviles (items-center text-center) y a la izquierda en PC */}
+                <div className="max-w-2xl animate-fade-in-up transition-colors duration-500 flex flex-col items-center md:items-start text-center md:text-left mx-auto md:mx-0">
+
+                    <div className="mb-4 sm:mb-6">
+                        <span className="inline-block px-4 sm:px-5 py-1.5 sm:py-2 rounded-full bg-white/70 dark:bg-black/70 md:bg-white/40 md:dark:bg-black/40 backdrop-blur-md border border-white/50 dark:border-white/10 text-[#00A896] dark:text-[#4DD0C1] tracking-[0.3em] text-[9px] sm:text-[10px] md:text-xs font-medium shadow-sm transition-colors duration-500 uppercase">
                             {category}
                         </span>
                     </div>
-                    <h1 className="font-serif font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-[1.1] drop-shadow-lg transition-colors duration-500">
-                        {firstWord} <br className="hidden sm:block" />
+
+                    <h1 className="font-serif font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-900 dark:text-white mb-4 sm:mb-6 leading-[1.15] md:leading-[1.1] break-words drop-shadow-sm md:drop-shadow-none transition-colors duration-500">
+                        {firstWord} <br />
                         <span className="italic font-medium text-[#D4AF37]">{restOfTitle}</span>
                     </h1>
-                    <p className="text-gray-100 dark:text-gray-300 font-light text-sm sm:text-base md:text-lg leading-relaxed border-l border-[#D4AF37]/50 pl-4 sm:pl-6 drop-shadow-md transition-colors duration-500">
+
+                    {/* Descripción centrada: en móvil usa borde superior, en PC vuelve al borde lateral */}
+                    <p className="text-gray-900 dark:text-white font-light text-sm sm:text-base md:text-lg leading-relaxed border-t-2 md:border-t-0 md:border-l-2 border-[#D4AF37] pt-4 md:pt-0 pl-0 md:pl-6 max-w-[95%] sm:max-w-full drop-shadow-sm md:drop-shadow-none transition-colors duration-500">
                         {tagline}
                     </p>
                 </div>
             </div>
-            <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-[#FAFAFA] dark:from-[#0A0A0A] to-transparent z-10 pointer-events-none transition-colors duration-500" />
         </section>
     );
 }

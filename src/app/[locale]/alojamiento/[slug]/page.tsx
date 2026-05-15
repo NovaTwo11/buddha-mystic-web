@@ -21,12 +21,18 @@ export default async function RoomPage({ params }: PageProps) {
 
     const t = await getTranslations("RoomsData");
 
-    // Extracción estricta del tipo usando Parameters (cero 'any')
     const rooms = getRooms(t as unknown as Parameters<typeof getRooms>[0]);
-
     const room = rooms.find((r) => r.slug === slug);
 
     if (!room) notFound();
+
+    // Mapeamos la galería de la habitación para soportar videos e imágenes
+    const formattedGallery = room.gallery.map((media, index) => ({
+        id: index,
+        type: media.type,
+        src: media.src,
+        alt: `${room.name} - Vista ${index + 1}`
+    }));
 
     return (
         <main className="min-h-screen bg-[#FCFBF9] dark:bg-[#0A0A0A] transition-colors duration-500">
@@ -36,7 +42,8 @@ export default async function RoomPage({ params }: PageProps) {
                 <RoomDetailContent room={room} />
             </ScrollReveal>
             <ScrollReveal>
-                <RoomDetailGallery images={room.gallery} />
+                {/* Enviamos la nueva propiedad mediaList */}
+                <RoomDetailGallery mediaList={formattedGallery} />
             </ScrollReveal>
             <Footer/>
         </main>

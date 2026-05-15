@@ -482,6 +482,18 @@
     "transferabilityText": "La reserva puede ser transferible a terceros siempre que se conserve su valor original.",
     "ownershipLabel": "Titularidad:",
     "ownershipText": "Toda solicitud de reprogramación o cesión será aceptada únicamente si es realizada por el titular original de la reserva.",
-    "finalNote": "Para consultas oficiales, nuestro equipo con vocación de servicio está a tu disposición:"
+    "finalNote": "Para consultas oficiales, nuestro equipo con vocación de servicio está a tu disposición:",
+    "roomChangeLabel": "Cambio de Habitación:",
+    "roomChangeText": "El hotel podrá efectuar un cambio de habitación si el huésped lo acepta y se trata de una de iguales o mejores condiciones, o ante situaciones de fuerza mayor.",
+    "section4Title": "Horarios y Estadía",
+    "checkInLabel": "Ingreso (Check-in):",
+    "checkInText": "A partir de las 15:00 (3:00 p.m.) del día de llegada. El ingreso anticipado estará sujeto a disponibilidad y el huésped deberá pagar el valor correspondiente.",
+    "checkOutLabel": "Salida (Check-out):",
+    "checkOutText": "Hasta las 12:00 (12:00 m.) del día de salida. La salida posterior a esta hora estará sujeta a disponibilidad y conlleva un recargo.",
+    "roomUseLabel": "Uso de la Habitación:",
+    "roomUseText": "El alojamiento se prestará con independencia del tiempo que efectivamente permanezca el huésped en la habitación. El uso parcial causa el pago de la tarifa plena.",
+    "section5Title": "Tratamiento de Datos y Privacidad",
+    "dataPrivacyLabel": "Ley 1581 de 2012 (Habeas Data):",
+    "dataPrivacyText": "El huésped autoriza de manera voluntaria al Hotel Buddha Mystic para recolectar, almacenar y tratar sus datos personales con el propósito de realizar actividades de fidelización, encuestas de servicio, y envío de promociones u ofertas, garantizando en todo momento su derecho a conocer, actualizar, rectificar o eliminar dicha información."
   }
 }

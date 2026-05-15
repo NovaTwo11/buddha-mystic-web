@@ -1,3 +1,8 @@
+export interface MediaItem {
+    type: 'image' | 'video';
+    src: string;
+}
+
 export interface Room {
     id: number;
     slug: string;
@@ -8,7 +13,7 @@ export interface Room {
     lowPrice: string;
     highPrice: string;
     mainImage: string;
-    gallery: string[];
+    gallery: MediaItem[];
     features: string[];
 }
 
@@ -30,10 +35,10 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$250.000',
         mainImage: 'IMG_Hab_4_vglkuy',
         gallery: [
-            'IMG_Hab_4_vglkuy',
-            'IMG_Hab2_3_da6esg',
-            'IMG_Hab2_2_xshtaq',
-            'IMG_Hab2_1_olnlc0'
+            {type: 'image', src: 'IMG_Hab_4_vglkuy'},
+            {type: 'image', src: 'IMG_Hab2_3_da6esg'},
+            {type: 'image', src: 'IMG_Hab2_2_xshtaq'},
+            {type: 'image', src: 'IMG_Hab2_1_olnlc0'}
         ],
         features: t.raw('individual.features')
     },
@@ -48,10 +53,10 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$250.000',
         mainImage: 'IMG_Hab2_2_pxnwvq',
         gallery: [
-            'IMG_Hab2_2_pxnwvq',
-            'IMG_Hab_4_nomkuy',
-            'IMG_Hab2_3_pnjjty',
-            'IMG_Hab2_1_ryjogo'
+            {type: 'image', src: 'IMG_Hab2_2_pxnwvq'},
+            {type: 'image', src: 'IMG_Hab_4_nomkuy'},
+            {type: 'image', src: 'IMG_Hab2_3_pnjjty'},
+            {type: 'image', src: 'IMG_Hab2_1_ryjogo'}
         ],
         features: t.raw('pareja.features')
     },
@@ -66,9 +71,9 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$270.000',
         mainImage: 'IMG_9708_k2ffjv',
         gallery: [
-            'IMG_9708_k2ffjv',
-            'DJI_20260227_172125_092_pd1rom',
-            'DJI_20260227_121456_396_ibudob'
+            {type: 'image', src: 'IMG_9708_k2ffjv'},
+            {type: 'image', src: 'DJI_20260227_172125_092_pd1rom'},
+            {type: 'image', src: 'DJI_20260227_121456_396_ibudob'}
         ],
         features: t.raw('superior.features')
     },
@@ -83,8 +88,8 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$290.000',
         mainImage: 'DJI_20260227_171323_141_dpqare',
         gallery: [
-            'DJI_20260227_171323_141_dpqare',
-            'DJI_20260227_171256_514_rj1iqy'
+            {type: 'image', src: 'DJI_20260227_171323_141_dpqare'},
+            {type: 'image', src: 'DJI_20260227_171256_514_rj1iqy'}
         ],
         features: t.raw('triple.features')
     },
@@ -99,7 +104,7 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$420.000',
         mainImage: 'WhatsApp_Image_2026-05-11_at_1.40.08_PM_cqpb5v',
         gallery: [
-            'WhatsApp_Image_2026-05-11_at_1.40.08_PM_cqpb5v'
+            {type: 'image', src: 'WhatsApp_Image_2026-05-11_at_1.40.08_PM_cqpb5v'}
         ],
         features: t.raw('cuadruple.features')
     },
@@ -114,10 +119,10 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$550.000',
         mainImage: 'DJI_20260227_163805_968_lrb40n',
         gallery: [
-            'DJI_20260227_163805_968_lrb40n',
-            'DJI_20260227_163413_632_advhzh',
-            'DJI_20260227_163458_437_wkhz45',
-            'DJI_20260227_163442_734_z7vlum'
+            {type: 'image', src: 'DJI_20260227_163805_968_lrb40n'},
+            {type: 'image', src: 'DJI_20260227_163413_632_advhzh'},
+            {type: 'image', src: 'DJI_20260227_163458_437_wkhz45'},
+            {type: 'image', src: 'DJI_20260227_163442_734_z7vlum'}
         ],
         features: t.raw('sextuple.features')
     },
@@ -132,10 +137,10 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$720.000',
         mainImage: 'DJI_20260227_122657_989_w6blks',
         gallery: [
-            'DJI_20260227_122657_989_w6blks',
-            'DJI_20260227_124155_806_hqo9bk',
-            'DJI_20260227_122801_801_ueqoue',
-            'DJI_20260227_122812_991_v7kvxv'
+            {type: 'image', src: 'DJI_20260227_122657_989_w6blks'},
+            {type: 'image', src: 'DJI_20260227_124155_806_hqo9bk'},
+            {type: 'image', src: 'DJI_20260227_122801_801_ueqoue'},
+            {type: 'image', src: 'DJI_20260227_122812_991_v7kvxv'}
         ],
         features: t.raw('octuple.features')
     },
@@ -150,8 +155,8 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$900.000',
         mainImage: 'IMG_0642_jrbdft',
         gallery: [
-            'IMG_0642_jrbdft',
-            'IMG_0647_dejw7i'
+            {type: 'image', src: 'IMG_0642_jrbdft'},
+            {type: 'image', src: 'IMG_0647_dejw7i'}
         ],
         features: t.raw('acomodacion-10-pax.features')
     },
@@ -166,7 +171,7 @@ export const getRooms = (t: Translator): Room[] => [
         highPrice: '$1.000.000',
         mainImage: 'DJI_20260227_164109_343_izxhjz',
         gallery: [
-            'DJI_20260227_164109_343_izxhjz'
+            {type: 'image', src: 'DJI_20260227_164109_343_izxhjz'}
         ],
         features: t.raw('acomodacion-12-pax.features')
     }

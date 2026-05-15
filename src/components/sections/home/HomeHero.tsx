@@ -28,9 +28,10 @@ export default function HomeHero() {
 
                 <div className="max-w-2xl text-center md:text-left mx-auto md:mx-0 relative transition-all duration-500">
 
-                    <p className="relative text-[#00A896] text-xs md:text-sm font-bold tracking-[0.5em] mb-6 uppercase drop-shadow-sm z-10">
-                        {t('subtitle')}
-                    </p>
+                    {/* Subtítulo encapsulado en cristal responsivo y adaptativo a dark/light mode */}
+                    <span className="relative inline-block px-5 md:px-6 py-2 md:py-2.5 rounded-full bg-white/60 dark:bg-black/50 md:bg-white/40 md:dark:bg-black/40 backdrop-blur-md border border-white/50 dark:border-white/10 text-[#00A896] dark:text-[#4DD0C1] text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.5em] mb-6 sm:mb-8 uppercase shadow-sm transition-colors duration-500 z-10">
+            {t('subtitle')}
+        </span>
 
                     <h1 className="relative text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-light text-gray-900 dark:text-white leading-[1.1] mb-6 md:mb-8 transition-colors duration-500 z-10">
                         {t('title_p1')} <br className="hidden sm:block" />

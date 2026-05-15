@@ -17,6 +17,8 @@ export default function TermsContent() {
                 </div>
 
                 <div className="bg-white dark:bg-[#111111] p-8 md:p-14 rounded-sm shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.4)] border border-gray-100 dark:border-white/5 transition-all duration-500">
+
+                    {/* SECCIÓN 1: GENERALES */}
                     <div className="mb-12">
                         <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
                             {t('section1Title')}
@@ -33,6 +35,7 @@ export default function TermsContent() {
                         </ul>
                     </div>
 
+                    {/* SECCIÓN 2: CONDICIONES DE RESERVA */}
                     <div className="mb-12">
                         <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
                             {t('section2Title')}
@@ -49,6 +52,7 @@ export default function TermsContent() {
                         </ul>
                     </div>
 
+                    {/* SECCIÓN 3: MODIFICACIONES */}
                     <div className="mb-12">
                         <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
                             {t('section3Title')}
@@ -61,6 +65,44 @@ export default function TermsContent() {
                             <li className="flex items-start">
                                 <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
                                 <span><strong>{t('ownershipLabel')}</strong> {t('ownershipText')}</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
+                                <span><strong>{t('roomChangeLabel')}</strong> {t('roomChangeText')}</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* SECCIÓN 4: HORARIOS Y ESTADÍA (NUEVO) */}
+                    <div className="mb-12">
+                        <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
+                            {t('section4Title')}
+                        </h2>
+                        <ul className="space-y-4 text-gray-900 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
+                            <li className="flex items-start">
+                                <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
+                                <span><strong>{t('checkInLabel')}</strong> {t('checkInText')}</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
+                                <span><strong>{t('checkOutLabel')}</strong> {t('checkOutText')}</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
+                                <span><strong>{t('roomUseLabel')}</strong> {t('roomUseText')}</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* SECCIÓN 5: TRATAMIENTO DE DATOS (NUEVO) */}
+                    <div className="mb-12">
+                        <h2 className="font-serif text-2xl text-gray-900 dark:text-white mb-6 border-b border-gray-50 dark:border-white/5 pb-4">
+                            {t('section5Title')}
+                        </h2>
+                        <ul className="space-y-4 text-gray-900 dark:text-gray-300 font-light text-sm md:text-base leading-relaxed">
+                            <li className="flex items-start">
+                                <span className="text-[#D4AF37] mr-4 mt-1">✦</span>
+                                <span><strong>{t('dataPrivacyLabel')}</strong> {t('dataPrivacyText')}</span>
                             </li>
                         </ul>
                     </div>
