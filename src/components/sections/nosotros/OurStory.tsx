@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import MysticImage from "@/components/ui/MysticImage";
 
 export default function OurStory() {
     const t = useTranslations('OurStory');
@@ -9,9 +10,12 @@ export default function OurStory() {
 
                 <div className="w-full lg:w-1/2 relative group">
                     <div className="aspect-[4/5] w-full relative overflow-hidden rounded-sm shadow-2xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.7)]">
-                        <img
-                            src="https://plus.unsplash.com/premium_photo-1697730412085-6f10bddf58c7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <MysticImage
+                            src="62eebfdf-9504-4b83-8bb7-480b58e4d266"
                             alt={t('alt_img')}
+                            height={1920}
+                            width={1020}
+                            priority={true}
                             className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-[7000ms] ease-out"
                         />
                         <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-700"></div>

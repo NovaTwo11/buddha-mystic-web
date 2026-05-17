@@ -7,6 +7,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import MonthlyPromotions from "@/components/sections/shared/MonthlyPromotions";
+import CorporatePackages from "@/components/sections/alojamiento/CorporatePackages";
 
 export const metadata: Metadata = {
     title: 'Santuario de Descanso | Alojamiento | Buddha Mystic',
@@ -32,6 +33,12 @@ export default function AlojamientoPage() {
             <div className="w-full">
                 <ScrollReveal>
                     <RoomsExperience/>
+                </ScrollReveal>
+            </div>
+
+            <div className="w-full overflow-hidden">
+                <ScrollReveal>
+                    <CorporatePackages/>
                 </ScrollReveal>
             </div>
 

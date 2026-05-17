@@ -81,7 +81,7 @@
     "badge": "Notre Identité",
     "title_p1": "Notre",
     "title_highlight": "Essence",
-    "description": "Un espace méticuleusement conçu où le temps semble s'arrêter. Au Buddha Mystic, nous avons créé le refuge parfait pour échapper à la routine et profiter d'un repos incomparable, entouré de la sérénité de la philosophie bouddhiste."
+    "description": "L'Hôtel Buddha Mystic est né comme une inspiration à la paix, à l'harmonie et à l'équilibre de la philosophie bouddhiste."
   },
   "OurStory": {
     "alt_img": "Philosophie bouddhiste au Buddha Mystic",
@@ -95,8 +95,8 @@
   "OurValues": {
     "title_p1": "Nos",
     "title_highlight": "Piliers",
-    "val1_title": "Atmosphère Captivante",
-    "val1_desc": "Une atmosphère inspirée de la philosophie bouddhiste, soigneusement conçue pour vous envelopper dans un environnement de confort absolu.",
+    "val1_title": "Identité et raison d'être de la marque",
+    "val1_desc": "Une identité unique qui fusionne le charme visuel du bouddhisme avec l'excellence du service et un confort absolu.",
     "val2_title": "Excellence du Service",
     "val2_desc": "Notre vocation est le souci du détail. Nous travaillons sans relâche pour rendre chaque instant de votre séjour impeccable.",
     "val3_title": "Repos Profond",
@@ -224,6 +224,49 @@
     "galleryAlt": "Galerie Chambre Buddha Mystic {index}",
     "expandedAlt": "Chambre Buddha Mystic Agrandie {index}"
   },
+  "CorporatePackage": {
+    "header": {
+      "title": "Forfaits",
+      "highlight": "D'entreprise",
+      "description": "Tarifs conçus exclusivement pour les groupes d'entreprise, les voyagistes et les agences de voyage."
+    },
+    "packages": {
+      "lowSeason": {
+        "title": "Basse Saison",
+        "accommodation": "Hébergement # 1",
+        "description": "Sous réserve de disponibilité de l'hôtel."
+      },
+      "highSeason": {
+        "title": "Haute Saison",
+        "accommodation": "Hébergement # 2",
+        "description": "Chambres Triples, Quadruples, Sextuples et Octuples."
+      },
+      "couples": {
+        "title": "Chambres pour Couples",
+        "accommodation": "Hébergement # 3",
+        "description": "Exclusif pour un hébergement double."
+      }
+    },
+    "options": {
+      "basic": "Avec calentado, œufs, arepa, pain au fromage et boisson",
+      "meat": "Avec calentado, viande, arepa, pain au fromage et boisson",
+      "ribBroth": "Avec bouillon de côtes, riz, arepa et boisson",
+      "lunch": "Déjeuner : Plat traditionnel d'Antioquia (le lendemain)",
+      "dinner": "Dîner : Menu spécial de la soirée"
+    },
+    "card": {
+      "basePriceLabel": "Valeur par personne à partir de :",
+      "groupTariff": "Tarif groupe (15+ personnes)",
+      "groupDisclaimer": "Plus TVA. Comprend un petit-déjeuner de base (œufs, arepa, pain, fromage, boisson)."
+    },
+    "important": {
+      "title": "Information Importante",
+      "part1": "Ce plan est conçu uniquement pour les",
+      "highlight": "Agences de voyages, Voyagistes et Entreprises",
+      "part2": "Il est indispensable de justifier de cette représentation pour accéder à ces tarifs.",
+      "quote": "Nous sommes une expérience qui transcende"
+    }
+  },
   "Restaurant": {
     "heroAlt": "Ambiance du Restaurant Mandalas",
     "highFusionCuisine": "Haute Cuisine Fusion",
@@ -348,63 +391,63 @@
       "capacity": "1 personne",
       "energy": "Idéale pour l'Introspection",
       "description": "Un refuge conçu pour le voyageur en solo cherchant à se reconnecter avec lui-même. Cet espace minimaliste offre l'équilibre parfait entre confort et silence, permettant à l'esprit de se reposer sans distractions.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Petit-déjeuner inclus"]
     },
     "pareja": {
       "name": "Chambre Double",
       "capacity": "2 personnes",
       "energy": "Refuge de Paix",
       "description": "Un sanctuaire intime créé pour renforcer les liens et trouver la sérénité en compagnie. Chaque détail, de l'éclairage aux textures, est pensé pour inspirer la tranquillité et un repos profond pour deux âmes.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Petit-déjeuner inclus"]
     },
     "superior": {
       "name": "Suite Supérieure",
       "capacity": "2 personnes",
       "energy": "Espace et Harmonie",
       "description": "Notre Suite Supérieure élève l'expérience de repos avec des finitions premium et une disposition spatiale qui invite à une paix profonde. L'espace idéal pour un séjour inoubliable, enveloppé dans un luxe subtil.",
-      "features": ["Climatisation", "TV 50\"", "Wi-Fi haut débit", "Salle de bain privée de luxe", "Réfrigérateur exécutif"]
+      "features": ["Climatisation", "TV 50\"", "Wi-Fi haut débit", "Salle de bain privée de luxe", "Réfrigérateur exécutif", "Petit-déjeuner inclus"]
     },
     "triple": {
       "name": "Chambre Triple",
       "capacity": "3 personnes",
       "energy": "Union et Confort",
       "description": "Un espace conçu pour les petites familles ou les groupes intimes souhaitant partager des moments de qualité. Ses dimensions offrent le confort nécessaire pour cohabiter en parfaite harmonie.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif", "Petit-déjeuner inclus"]
     },
     "cuadruple": {
       "name": "Chambre Quadruple",
       "capacity": "4 personnes",
       "energy": "Espace Partagé",
       "description": "Idéale pour la famille moderne. Cette chambre offre l'espace nécessaire pour que chaque invité trouve son propre coin de repos sans perdre la chaleur et la connexion du groupe.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif", "Petit-déjeuner inclus"]
     },
     "sextuple": {
       "name": "Chambre Sextuple",
       "capacity": "6 personnes",
       "energy": "Famille Élargie",
       "description": "Un environnement généreux pensé pour accueillir les grandes familles. Un refuge où la convivialité et les rires s'harmonisent avec le design subtil, épuré et relaxant de l'essence Buddha Mystic.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salle de bain privée", "Réfrigérateur exécutif", "Bureau et mobilier exécutif", "Petit-déjeuner inclus"]
     },
     "octuple": {
       "name": "Chambre Octuple",
       "capacity": "8 personnes",
       "energy": "Grande Rencontre",
       "description": "Conçue pour accueillir de grands groupes dans un seul espace unifié. Ses dimensions majestueuses assurent un confort absolu à tous les membres, favorisant le repos collectif.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salles de bain multiples", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Salles de bain multiples", "Réfrigérateur exécutif", "Bureau et mobilier exécutif", "Petit-déjeuner inclus"]
     },
     "acomodacion-10-pax": {
       "name": "Hébergement 10 pax",
       "capacity": "10 personnes",
       "energy": "Cercle de Lumière",
       "description": "Un sanctuaire collectif parfait pour les retraites et les groupes de méditation. Il permet une coexistence ininterrompue et un travail spirituel ou de groupe, en gardant intacte notre promesse de paix.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Plusieurs salles de bain privées", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Plusieurs salles de bain privées", "Réfrigérateur exécutif", "Bureau et mobilier exécutif", "Petit-déjeuner inclus"]
     },
     "acomodacion-12-pax": {
       "name": "Hébergement 12 pax",
       "capacity": "12 personnes",
       "energy": "Retraite Collective",
       "description": "Notre séjour le plus majestueux. Un espace vaste et lumineux qui honore le pouvoir de la communauté. Idéal pour les retraites holistiques où le repos de chacun coule dans un seul environnement.",
-      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Plusieurs salles de bain privées", "Réfrigérateur exécutif", "Bureau et mobilier exécutif"]
+      "features": ["Climatisation", "TV Satellite", "Wi-Fi haut débit", "Plusieurs salles de bain privées", "Réfrigérateur exécutif", "Bureau et mobilier exécutif", "Petit-déjeuner inclus"]
     }
   },
   "AttractionsData": {

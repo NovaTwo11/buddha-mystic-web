@@ -81,7 +81,7 @@
     "badge": "Our Identity",
     "title_p1": "Our",
     "title_highlight": "Essence",
-    "description": "A meticulously designed space where time seems to stand still. At Buddha Mystic, we have created the perfect refuge for you to escape the routine and enjoy an incomparable rest, surrounded by the serenity of Buddhist philosophy."
+    "description": "Hotel Buddha Mystic was born as an inspiration to the peace, harmony, and balance of Buddhist philosophy."
   },
   "OurStory": {
     "alt_img": "Buddhist philosophy at Buddha Mystic",
@@ -95,8 +95,8 @@
   "OurValues": {
     "title_p1": "Our",
     "title_highlight": "Pillars",
-    "val1_title": "Captivating Atmosphere",
-    "val1_desc": "An atmosphere inspired by Buddhist philosophy, carefully designed to envelop you in absolute comfort.",
+    "val1_title": "Atmósfera Cautivadora",
+    "val1_desc": "A unique identity that fuses the visual charm of Buddhism with excellence in service and absolute comfort.",
     "val2_title": "Excellence in Service",
     "val2_desc": "Our vocation is attention to detail. We work tirelessly to make every moment of your stay impeccable.",
     "val3_title": "Deep Rest",
@@ -224,6 +224,49 @@
     "galleryAlt": "Buddha Mystic Room Gallery {index}",
     "expandedAlt": "Expanded Buddha Mystic Room {index}"
   },
+  "CorporatePackage": {
+    "header": {
+      "title": "Corporate",
+      "highlight": "Packages",
+      "description": "Rates exclusively designed for corporate groups, tour operators, and travel agencies."
+    },
+    "packages": {
+      "lowSeason": {
+        "title": "Low Season",
+        "accommodation": "Accommodation # 1",
+        "description": "Subject to hotel availability."
+      },
+      "highSeason": {
+        "title": "High Season",
+        "accommodation": "Accommodation # 2",
+        "description": "Triple, Quadruple, Sextuple, and Octuple Rooms."
+      },
+      "couples": {
+        "title": "Couples' Rooms",
+        "accommodation": "Accommodation # 3",
+        "description": "Exclusive for double accommodation."
+      }
+    },
+    "options": {
+      "basic": "With calentado, eggs, arepa, cheese bread, and beverage",
+      "meat": "With calentado, meat, arepa, cheese bread, and beverage",
+      "ribBroth": "With rib broth, rice, arepa, and beverage",
+      "lunch": "Lunch: Traditional Antioquian dish (next day)",
+      "dinner": "Dinner: Special evening menu"
+    },
+    "card": {
+      "basePriceLabel": "Value per person from:",
+      "groupTariff": "Group rate (15+ people)",
+      "groupDisclaimer": "Plus VAT. Includes basic breakfast (eggs, arepa, bread, cheese, beverage)."
+    },
+    "important": {
+      "title": "Important Information",
+      "part1": "This plan is designed solely for",
+      "highlight": "Travel Agencies, Tour Operators, and Companies",
+      "part2": "It is essential to prove such representation to access these rates.",
+      "quote": "We are an experience that transcends"
+    }
+  },
   "Restaurant": {
     "heroAlt": "Mandalas Restaurant Ambiance",
     "highFusionCuisine": "High Fusion Cuisine",
@@ -348,63 +391,63 @@
       "capacity": "1 person",
       "energy": "Ideal for Introspection",
       "description": "A refuge designed for the solo traveler seeking to reconnect with themselves. This minimalist space offers the perfect balance between comfort and silence, allowing the mind to rest without distractions.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Breakfast included"]
     },
     "pareja": {
       "name": "Couple Room",
       "capacity": "2 people",
       "energy": "Peaceful Refuge",
       "description": "An intimate sanctuary created to strengthen bonds and find serenity in company. Every detail, from the lighting to the textures, is designed to inspire tranquility and profound rest for two souls.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Breakfast included"]
     },
     "superior": {
       "name": "Superior Suite",
       "capacity": "2 people",
       "energy": "Spaciousness and Harmony",
       "description": "Our Superior Suite elevates the resting experience with premium finishes and a spatial arrangement that invites deep peace. The ideal space for an unforgettable stay, enveloped in subtle luxury.",
-      "features": ["Air conditioning", "50\" TV", "High-speed Wi-Fi", "Luxury private bathroom", "Executive fridge"]
+      "features": ["Air conditioning", "50\" TV", "High-speed Wi-Fi", "Luxury private bathroom", "Executive fridge", "Breakfast included"]
     },
     "triple": {
       "name": "Triple Room",
       "capacity": "3 people",
       "energy": "Union and Comfort",
       "description": "A space designed for small families or intimate groups looking to share quality moments. Its dimensions offer the necessary comfort to coexist in complete harmony.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Executive desk and furniture"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Executive desk and furniture", "Breakfast included"]
     },
     "cuadruple": {
       "name": "Quadruple Room",
       "capacity": "4 people",
       "energy": "Shared Space",
       "description": "Ideal for the modern family. This room offers the necessary spaciousness so that each guest finds their own corner of rest without losing the warmth and connection of the group.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Executive desk and furniture"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Executive desk and furniture", "Breakfast included"]
     },
     "sextuple": {
       "name": "Sextuple Room",
       "capacity": "6 people",
       "energy": "Extended Family",
       "description": "A generous environment designed to accommodate large families. A refuge where coexistence and laughter harmonize with the subtle, clean, and relaxing design of the Buddha Mystic essence.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Executive desk and furniture"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Private bathroom", "Executive fridge", "Executive desk and furniture", "Breakfast included"]
     },
     "octuple": {
       "name": "Octuple Room",
       "capacity": "8 people",
       "energy": "Great Gathering",
       "description": "Designed to accommodate large groups in a single unified space. Its majestic dimensions ensure absolute comfort for all members, promoting collective rest.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Multiple bathrooms", "Executive fridge", "Executive desk and furniture"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Multiple bathrooms", "Executive fridge", "Executive desk and furniture", "Breakfast included"]
     },
     "acomodacion-10-pax": {
       "name": "10 Pax Accommodation",
       "capacity": "10 people",
       "energy": "Circle of Light",
       "description": "A collective sanctuary perfect for retreats and meditation groups. It allows uninterrupted coexistence and spiritual or group work, keeping our promise of peace intact.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Multiple private bathrooms", "Executive fridge", "Executive desk and furniture"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Multiple private bathrooms", "Executive fridge", "Executive desk and furniture", "Breakfast included"]
     },
     "acomodacion-12-pax": {
       "name": "12 Pax Accommodation",
       "capacity": "12 people",
       "energy": "Collective Retreat",
       "description": "Our most majestic stay. A spacious and brightly lit room that honors the power of community. Ideal for holistic retreats where everyone's rest flows in a single environment.",
-      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Multiple private bathrooms", "Executive fridge", "Executive desk and furniture"]
+      "features": ["Air conditioning", "Satellite TV", "High-speed Wi-Fi", "Multiple private bathrooms", "Executive fridge", "Executive desk and furniture", "Breakfast included"]
     }
   },
   "AttractionsData": {

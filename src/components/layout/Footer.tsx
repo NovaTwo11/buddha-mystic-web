@@ -101,7 +101,12 @@ export default function Footer() {
                                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                                 </svg>
                             </a>
-                            {/* Eliminado el icono de TikTok */}
+                            {/* Icono de TikTok */}
+                            <a href="https://www.tiktok.com/@buddthamystic" target="_blank" rel="noopener noreferrer" className="text-gray-400 dark:text-gray-500 hover:text-[#00A896] dark:hover:text-[#D4AF37] transition-colors duration-300" aria-label="TikTok">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
+                                </svg>
+                            </a>
                         </div>
 
                         <Link href="/terminos" className="text-xs text-gray-400 dark:text-gray-500 hover:text-[#D4AF37] dark:hover:text-[#00A896] transition-colors duration-300 underline underline-offset-4 decoration-gray-200 dark:decoration-gray-800 hover:decoration-[#D4AF37] dark:hover:decoration-[#00A896]">

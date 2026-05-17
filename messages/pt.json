@@ -81,7 +81,7 @@
     "badge": "Nossa Identidade",
     "title_p1": "Nossa",
     "title_highlight": "Essência",
-    "description": "Um espaço meticulosamente projetado onde o tempo parece parar. No Buddha Mystic, criamos o refúgio perfeito para você escapar da rotina e desfrutar de um descanso incomparável, cercado pela serenidade da filosofia budista."
+    "description": "O Hotel Buddha Mystic nasce como uma inspiração à paz, à harmonia e ao equilíbrio da filosofia budista."
   },
   "OurStory": {
     "alt_img": "Filosofia budista no Buddha Mystic",
@@ -95,8 +95,8 @@
   "OurValues": {
     "title_p1": "Nossos",
     "title_highlight": "Pilares",
-    "val1_title": "Atmosfera Cativante",
-    "val1_desc": "Um ambiente inspirado na filosofia budista, cuidadosamente projetado para envolvê-lo em um ambiente de absoluto conforto.",
+    "val1_title": "Identidade e Propósito da Marca",
+    "val1_desc": "Uma identidade única que funde o encanto visual do budismo com a excelência no serviço e conforto absoluto.",
     "val2_title": "Excelência em Serviço",
     "val2_desc": "A nossa vocação é a atenção aos detalhes. Trabalhamos incansavelmente para que cada momento da sua estadia seja impecável.",
     "val3_title": "Descanso Profundo",
@@ -224,6 +224,49 @@
     "galleryAlt": "Galeria Quarto Buddha Mystic {index}",
     "expandedAlt": "Quarto Buddha Mystic Ampliado {index}"
   },
+  "CorporatePackage": {
+    "header": {
+      "title": "Pacotes",
+      "highlight": "Corporativos",
+      "description": "Tarifas desenvolvidas exclusivamente para grupos corporativos, operadores turísticos e agências de viagens."
+    },
+    "packages": {
+      "lowSeason": {
+        "title": "Baixa Temporada",
+        "accommodation": "Acomodação # 1",
+        "description": "Sujeito à disponibilidade do hotel."
+      },
+      "highSeason": {
+        "title": "Alta Temporada",
+        "accommodation": "Acomodação # 2",
+        "description": "Quartos Triplos, Quádruplos, Sêxtuplos e Óctuplos."
+      },
+      "couples": {
+        "title": "Quartos para Casais",
+        "accommodation": "Acomodação # 3",
+        "description": "Exclusivo para acomodação dupla."
+      }
+    },
+    "options": {
+      "basic": "Com calentado, ovos, arepa, pão de queijo e bebida",
+      "meat": "Com calentado, carne, arepa, pão de queijo e bebida",
+      "ribBroth": "Com caldo de costela, arroz, arepa e bebida",
+      "lunch": "Almoço: Prato típico antioquenho (dia seguinte)",
+      "dinner": "Jantar: Menu especial da noite"
+    },
+    "card": {
+      "basePriceLabel": "Valor por pessoa a partir de:",
+      "groupTariff": "Tarifa para grupos (15+ pessoas)",
+      "groupDisclaimer": "Mais IVA. Inclui café da manhã básico (ovos, arepa, pão, queijo, bebida)."
+    },
+    "important": {
+      "title": "Informação Importante",
+      "part1": "Este plano destina-se apenas a",
+      "highlight": "Agências de viagens, Operadores turísticos e Empresas",
+      "part2": "É indispensável comprovar essa representação para ter acesso a estas tarifas.",
+      "quote": "Somos uma experiência que transcende"
+    }
+  },
   "Restaurant": {
     "heroAlt": "Ambiente do Restaurante Mandalas",
     "highFusionCuisine": "Alta Cozinha Fusão",
@@ -348,63 +391,63 @@
       "capacity": "1 pessoa",
       "energy": "Ideal para Introspecção",
       "description": "Um refúgio desenhado para o viajante solitário que busca se reconectar consigo mesmo. Este espaço minimalista oferece o equilíbrio perfeito entre conforto e silêncio, permitindo que a mente descanse sem distrações.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Café da manhã incluído"]
     },
     "pareja": {
       "name": "Quarto Casal",
       "capacity": "2 pessoas",
       "energy": "Refúgio de Paz",
       "description": "Um santuário íntimo criado para fortalecer laços e encontrar serenidade em companhia. Cada detalhe, desde a iluminação até as texturas, é pensado para inspirar tranquilidade e um descanso profundo para duas almas.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Café da manhã incluído"]
     },
     "superior": {
       "name": "Suíte Superior",
       "capacity": "2 pessoas",
       "energy": "Amplitude e Harmonia",
       "description": "Nossa Suíte Superior eleva a experiência de descanso com acabamentos premium e uma disposição espacial que convida à paz profunda. O espaço ideal para uma estadia inesquecível, envolto em um luxo sutil.",
-      "features": ["Ar condicionado", "TV de 50\"", "Wi-Fi de alta velocidade", "Banheiro privado de luxo", "Frigobar executivo"]
+      "features": ["Ar condicionado", "TV de 50\"", "Wi-Fi de alta velocidade", "Banheiro privado de luxo", "Frigobar executivo", "Café da manhã incluído"]
     },
     "triple": {
       "name": "Quarto Triplo",
       "capacity": "3 pessoas",
       "energy": "União e Conforto",
       "description": "Um espaço pensado para famílias pequenas ou grupos íntimos que buscam compartilhar momentos de qualidade. Suas dimensões oferecem o conforto necessário para conviver em completa harmonia.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Móvel e mesa executiva"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Móvel e mesa executiva", "Café da manhã incluído"]
     },
     "cuadruple": {
       "name": "Quarto Quádruplo",
       "capacity": "4 pessoas",
       "energy": "Espaço Compartilhado",
       "description": "Ideal para a família moderna. Este quarto oferece a amplitude necessária para que cada hóspede encontre seu próprio canto de descanso sem perder o calor e a conexão do grupo.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Móvel e mesa executiva"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Móvel e mesa executiva", "Café da manhã incluído"]
     },
     "sextuple": {
       "name": "Quarto Sêxtuplo",
       "capacity": "6 pessoas",
       "energy": "Família Estendida",
       "description": "Um ambiente generoso pensado para acolher grandes famílias. Um refúgio onde a convivência e os risos se harmonizam com o design sutil, limpo e relaxante da essência Buddha Mystic.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Móvel e mesa executiva"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Banheiro privado", "Frigobar executivo", "Móvel e mesa executiva", "Café da manhã incluído"]
     },
     "octuple": {
       "name": "Quarto Óctuplo",
       "capacity": "8 pessoas",
       "energy": "Grande Encontro",
       "description": "Desenhado para abrigar grandes grupos em um único espaço unificado. Suas dimensões majestosas garantem conforto absoluto para todos os integrantes, promovendo o descanso coletivo.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Múltiplos banheiros", "Frigobar executivo", "Móvel e mesa executiva"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Múltiplos banheiros", "Frigobar executivo", "Móvel e mesa executiva", "Café da manhã incluído"]
     },
     "acomodacion-10-pax": {
       "name": "Acomodação 10 pax",
       "capacity": "10 pessoas",
       "energy": "Círculo de Luz",
       "description": "Um santuário coletivo perfeito para retiros e grupos de meditação. Permite a convivência ininterrupta e o trabalho espiritual ou em grupo, mantendo intacta a nossa promessa de paz.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Múltiplos banheiros privados", "Frigobar executivo", "Móvel e mesa executiva"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Múltiplos banheiros privados", "Frigobar executivo", "Móvel e mesa executiva", "Café da manhã incluído"]
     },
     "acomodacion-12-pax": {
       "name": "Acomodação 12 pax",
       "capacity": "12 pessoas",
       "energy": "Retiro Coletivo",
       "description": "Nossa estadia mais majestosa. Um espaço amplo e iluminado que honra o poder da comunidade. Ideal para retiros holísticos onde o descanso de todos flui em um único ambiente.",
-      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Múltiplos banheiros privados", "Frigobar executivo", "Móvel e mesa executiva"]
+      "features": ["Ar condicionado", "TV via Satélite", "Wi-Fi de alta velocidade", "Múltiplos banheiros privados", "Frigobar executivo", "Móvel e mesa executiva", "Café da manhã incluído"]
     }
   },
   "AttractionsData": {

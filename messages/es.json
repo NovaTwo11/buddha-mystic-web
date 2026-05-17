@@ -81,7 +81,7 @@
     "badge": "Nuestra Identidad",
     "title_p1": "Nuestra",
     "title_highlight": "Esencia",
-    "description": "Un espacio diseñado al detalle donde el tiempo parece detenerse. En Buddha Mystic hemos creado el refugio perfecto para que escapes de la rutina y disfrutes de un descanso incomparable, rodeado de la serenidad de la filosofía budista."
+    "description": "Hotel Buddha Mystic nace como una inspiración a la paz, la armonía, y el equilibrio de la filosofía budista."
   },
   "OurStory": {
     "alt_img": "Filosofía budista en Buddha Mystic",
@@ -95,8 +95,8 @@
   "OurValues": {
     "title_p1": "Nuestros",
     "title_highlight": "Pilares",
-    "val1_title": "Atmósfera Cautivadora",
-    "val1_desc": "Un entorno inspirado en la filosofía budista, diseñado cuidadosamente para envolverte en un ambiente de absoluto confort.",
+    "val1_title": "Identidad y Propósito de Marca",
+    "val1_desc": "Una identidad única que fusiona el encanto visual del budismo con la excelencia en servicio y comodidad absoluta.",
     "val2_title": "Servicio de Excelencia",
     "val2_desc": "Nuestra vocación es la atención al detalle. Trabajamos incansablemente para que cada instante de tu estadía sea impecable.",
     "val3_title": "Descanso Pleno",
@@ -224,6 +224,49 @@
     "galleryAlt": "Galería Habitación Buddha Mystic {index}",
     "expandedAlt": "Habitación Buddha Mystic ampliada {index}"
   },
+  "CorporatePackage": {
+    "header": {
+      "title": "Paquetes",
+      "highlight": "Corporativos",
+      "description": "Tarifas diseñadas exclusivamente para grupos corporativos, operadores turísticos y agencias de viaje."
+    },
+    "packages": {
+      "lowSeason": {
+        "title": "Temporada Baja",
+        "accommodation": "Acomodación # 1",
+        "description": "De acuerdo a la disponibilidad del hotel."
+      },
+      "highSeason": {
+        "title": "Temporada Alta",
+        "accommodation": "Acomodación # 2",
+        "description": "Habitaciones Triples, Cuádruples, Séxtuplas y Óctuplas."
+      },
+      "couples": {
+        "title": "Habitaciones para Pareja",
+        "accommodation": "Acomodación # 3",
+        "description": "Exclusivo para acomodación doble."
+      }
+    },
+    "options": {
+      "basic": "Con calentado, huevos, arepa, pan queso, bebida",
+      "meat": "Con calentado, carne, arepa, pan queso, bebida",
+      "ribBroth": "Con caldo de costilla, arroz, arepa, bebida",
+      "lunch": "Almuerzo: plato típico antioqueño (día siguiente)",
+      "dinner": "Cena: menú especial de la noche"
+    },
+    "card": {
+      "basePriceLabel": "Valor por persona desde:",
+      "groupTariff": "Tarifa para grupos (15+ personas)",
+      "groupDisclaimer": "Más IVA. Incluye desayuno básico (huevos, arepa, pan, queso, bebida)."
+    },
+    "important": {
+      "title": "Información Importante",
+      "part1": "Este plan está diseñado solamente para",
+      "highlight": "Agencias de viaje, Operadores turísticos y Empresas",
+      "part2": "Es indispensable acreditar dicha representación para acceder a estas tarifas.",
+      "quote": "Somos una experiencia que trasciende"
+    }
+  },
   "Restaurant": {
     "heroAlt": "Ambiente del Restaurante Mandalas",
     "highFusionCuisine": "Alta Cocina Fusión",
@@ -348,63 +391,63 @@
       "capacity": "1 persona",
       "energy": "Ideal para Introspección",
       "description": "Un refugio diseñado para el viajero solitario que busca reconectar consigo mismo. Este espacio minimalista ofrece el equilibrio perfecto entre confort y silencio, permitiendo que la mente descanse sin distracciones.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Desayuno incluido"]
     },
     "pareja": {
       "name": "Habitación Pareja",
       "capacity": "2 personas",
       "energy": "Refugio de Paz",
       "description": "Un santuario íntimo creado para fortalecer vínculos y encontrar la serenidad en compañía. Cada detalle, desde la iluminación hasta las texturas, está pensado para inspirar tranquilidad y un descanso profundo a dos almas.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Desayuno incluido"]
     },
     "superior": {
       "name": "Suite Superior",
       "capacity": "2 personas",
       "energy": "Amplitud y Armonía",
       "description": "Nuestra Suite Superior eleva la experiencia de descanso con acabados premium y una disposición espacial que invita a la paz profunda. El espacio ideal para una estadía inolvidable, envuelta en lujo sutil.",
-      "features": ["Aire acondicionado", "TV 50\"", "Wifi de alta velocidad", "Baño privado de lujo", "Nevera ejecutiva"]
+      "features": ["Aire acondicionado", "TV 50\"", "Wifi de alta velocidad", "Baño privado de lujo", "Nevera ejecutiva", "Desayuno incluido"]
     },
     "triple": {
       "name": "Habitación Triple",
       "capacity": "3 personas",
       "energy": "Unión y Confort",
       "description": "Un espacio diseñado para familias pequeñas o grupos íntimos que buscan compartir momentos de calidad. Sus dimensiones ofrecen la comodidad necesaria para convivir en completa armonía.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Mueble y mesa ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Mueble y mesa ejecutiva", "Desayuno incluido"]
     },
     "cuadruple": {
       "name": "Habitación Cuádruple",
       "capacity": "4 personas",
       "energy": "Espacio Compartido",
       "description": "Ideal para la familia moderna. Esta habitación ofrece la amplitud necesaria para que cada huésped encuentre su propio rincón de descanso sin perder la calidez y conexión del grupo.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Mueble y mesa ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Mueble y mesa ejecutiva", "Desayuno incluido"]
     },
     "sextuple": {
       "name": "Habitación Séxtuple",
       "capacity": "6 personas",
       "energy": "Familia Extendida",
       "description": "Un ambiente generoso pensado para acoger grandes familias. Un refugio donde la convivencia y la risa se armonizan con el diseño sutil, limpio y relajante de la esencia Buddha Mystic.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Mueble y mesa ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Baño privado", "Nevera ejecutiva", "Mueble y mesa ejecutiva", "Desayuno incluido"]
     },
     "octuple": {
       "name": "Habitación Óctuple",
       "capacity": "8 personas",
       "energy": "Gran Encuentro",
       "description": "Diseñada para albergar a grupos extensos en un solo espacio unificado. Sus dimensiones majestuosas aseguran un confort absoluto para todos los integrantes, promoviendo el descanso colectivo.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Múltiples baños", "Nevera ejecutiva", "Mueble y mesa ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Múltiples baños", "Nevera ejecutiva", "Mueble y mesa ejecutiva", "Desayuno incluido"]
     },
     "acomodacion-10-pax": {
       "name": "Acomodación 10 pax",
       "capacity": "10 personas",
       "energy": "Círculo de Luz",
       "description": "Un santuario colectivo perfecto para retiros y grupos de meditación. Permite la convivencia ininterrumpida y el trabajo espiritual o grupal, manteniendo intacta nuestra promesa de paz.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Múltiples baños privados", "Nevera ejecutiva", "Mueble y mesa ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Múltiples baños privados", "Nevera ejecutiva", "Mueble y mesa ejecutiva", "Desayuno incluido"]
     },
     "acomodacion-12-pax": {
       "name": "Acomodación 12 pax",
       "capacity": "12 personas",
       "energy": "Retiro Colectivo",
       "description": "Nuestra estancia más majestuosa. Un espacio amplio e iluminado que honra el poder de la comunidad. Ideal para retiros holísticos donde el descanso de todos fluye en un solo ambiente.",
-      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Múltiples baños privados", "Nevera ejecutiva", "Mueble y mesa ejecutiva"]
+      "features": ["Aire acondicionado", "TV Satelital", "Wifi de alta velocidad", "Múltiples baños privados", "Nevera ejecutiva", "Mueble y mesa ejecutiva", "Desayuno incluido"]
     }
   },
   "AttractionsData": {
