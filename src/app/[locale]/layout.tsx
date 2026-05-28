@@ -37,16 +37,47 @@ export default async function RootLayout({
     // Estructura de datos JSON-LD para Google (Resultados Enriquecidos)
     const jsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'Hotel',
-        name: 'Hotel Buddha Mystic',
-        description: 'Descubre la esencia del bienestar en Doradal, Antioquia. Un espacio donde el tiempo se detiene para tu descanso físico, mental y espiritual.',
-        url: 'https://buddhamystichotel.com',
-        address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Doradal',
-            addressRegion: 'Antioquia',
-            addressCountry: 'CO'
-        }
+        '@graph': [
+            {
+                '@type': 'Hotel',
+                '@id': 'https://buddhamystichotel.com/#hotel',
+                name: 'Hotel Buddha Mystic',
+                description: 'Descubre la esencia del bienestar en Doradal, Antioquia. Un espacio donde el tiempo se detiene para tu descanso físico, mental y espiritual.',
+                url: 'https://buddhamystichotel.com',
+                telephone: '+573135431537',
+                priceRange: '$$',
+                image: 'https://res.cloudinary.com/doedbiuim/image/upload/v1/Foto_hotel_principal.jpg', // Reemplazar con una URL real si lo deseas
+                address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: 'Doradal, Antioquia',
+                    addressLocality: 'Doradal',
+                    addressRegion: 'Antioquia',
+                    postalCode: '053448',
+                    addressCountry: 'CO'
+                }
+            },
+            {
+                '@type': 'Organization',
+                '@id': 'https://buddhamystichotel.com/#organization',
+                name: 'Hotel Buddha Mystic',
+                url: 'https://buddhamystichotel.com',
+                logo: 'https://buddhamystichotel.com/icon.png',
+                contactPoint: {
+                    '@type': 'ContactPoint',
+                    telephone: '+573135431537',
+                    contactType: 'reservations',
+                    email: 'buddhamystichotel@gmail.com'
+                },
+                address: {
+                    '@type': 'PostalAddress',
+                    streetAddress: 'Doradal, Antioquia',
+                    addressLocality: 'Doradal',
+                    addressRegion: 'Antioquia',
+                    postalCode: '053448',
+                    addressCountry: 'CO'
+                }
+            }
+        ]
     };
 
     return (
