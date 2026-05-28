@@ -44,6 +44,22 @@ export default function OurTeam() {
             )
         },
         {
+            image: "4e241ea8-a600-4835-877a-564c05467368",
+            icon: (
+                <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                </svg>
+            )
+        },
+        {
+            image: "2c2fd5f1-8d0a-414c-ad12-2f1daffb4a80",
+            icon: (
+                <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                </svg>
+            )
+        },
+        {
             image: "f7fc0ea8-d85c-471a-9aee-489624736e9c",
             icon: (
                 <svg className="w-5 h-5 text-[#D4AF37] group-hover:text-white transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.2">
@@ -127,7 +143,7 @@ export default function OurTeam() {
                                             <MysticImage
                                                 src={member.image}
                                                 alt={"member.name"}
-                                                className="object-cover w-full h-full grayscale-[30%] dark:grayscale-[50%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                                                className="object-cover w-full h-full group-hover:scale-105 transition-all duration-700"
                                             />
                                         </div>
                                     </div>
